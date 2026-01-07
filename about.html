@@ -12,7 +12,6 @@
     <meta property="og:description" content="Join thousands of students in our comprehensive learning platform. Access expert-led courses, interactive books, and certification programs designed to advance your career.">
     <meta property="og:image" content="/SwarInfotech/images/icons/academic-cap-white.svg">
     <meta property="og:url" content="index.html">
-
     <!-- JSON-LD -->
     <script type="application/ld+json">
         {
@@ -25,12 +24,9 @@
             ],
             "url": "./index.html"
         }
-
     </script>
-
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/SwarInfotech/assets/images/icons/academic-cap-white.svg">
-
     <!-- Immediate dark theme init -->
     <script>
         let theme = localStorage.getItem('theme');
@@ -38,7 +34,6 @@
             document?.documentElement?.classList?.add('dark');
             document?.body?.classList?.add('dark');
         }
-
     </script>
 
     <!-- Fonts -->
@@ -49,36 +44,27 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/SwarInfotech/assets/plugins/fontawesome-free/css">
-
     <!-- AlpineJS -->
     <script defer src="/SwarInfotech/assets/plugins/alpinejs/dist/cdn.min.js"></script>
-
     <!-- Swiper JS -->
     <script src="/SwarInfotech/assets/plugins/swiper/swiper-bundle.min.js"></script>
 
     <!-- Motion.js -->
     <script src="/SwarInfotech/assets/plugins/motion/dist/motion.js"></script>
-
     <!-- Vanilla Lazyload JS -->
     <script src="/SwarInfotech/assets/plugins/vanilla-lazyload/dist/lazyload.min.js"></script>
-
     <link rel="preload" as="style" href="/SwarInfotech/assets/dist/assets/app.css" />
     <link rel="modulepreload" as="script" href="/SwarInfotech/assets/dist/assets/app.js" />
     <link rel="stylesheet" href="/SwarInfotech/assets/dist/assets/app.css" data-navigate-track="reload" />
     <script type="module" src="/SwarInfotech/assets/dist/assets/app.js" data-navigate-track="reload"></script>
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/SwarInfotech/assets/css/main.css">
-
     <!-- Motion Presets JS -->
     <script src="/SwarInfotech/assets/js/motion-presets.js"></script>
-
     <!-- Custom JS -->
     <script src="/SwarInfotech/assets/js/main.js"></script>
-
     <!-- Theme Switcher JS -->
     <script src="/SwarInfotech/assets/js/theme-switcher.js"></script>
-
     <!-- Completely Unique Custom CSS for hero slider -->
     <style>
         /* New cosmic pulse animation */
@@ -118,7 +104,6 @@
                 transform: translateY(0) translateX(0) rotate(360deg);
             }
         }
-
         /* New wave morphing effect */
         @keyframes wave-morph {
             0% {
@@ -154,7 +139,6 @@
                 transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
             }
         }
-
         @keyframes slide-3d-out {
             from {
                 opacity: 1;
@@ -405,7 +389,7 @@
                             </a>
                         </li>
                         <li class="w-full">
-                            <a href="#"
+                            <a href="Contact.html"
                                class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center cursor-pointer"
                                x-bind:class="{'w-full px-8 py-4 text-xl border-b border-gray-100 dark:border-gray-700 text-md hover:bg-gray-100 dark:hover:bg-gray-700': mobileMenuOpen}">
                                 Contact
@@ -1086,25 +1070,16 @@
                     <p class="text-xl text-white/90 mb-8">
                         Have questions or suggestions? Send us a message and we’ll get back to you.
                     </p>
-
                     <form @submit.prevent="sendMessage()" class="flex flex-col gap-4">
-                        <input x-model="name"
-                               type="text"
-                               placeholder="Your Name"
+                        <input x-model="name"  type="text" placeholder="Your Name"
                                class="px-6 py-4 rounded-lg text-white border border-gray-300 focus:ring-2 focus:ring-white focus:outline-none"
                                required>
-
-                        <input x-model="email"
-                               type="email"
-                               placeholder="Your Email"
+                        <input x-model="email" type="email" placeholder="Your Email"
                                class="px-6 py-4 rounded-lg text-white border border-gray-300 focus:ring-2 focus:ring-white focus:outline-none"
                                required>
-
-                        <textarea x-model="message"
-                                  placeholder="Your Message"
+                        <textarea x-model="message" placeholder="Your Message"
                                   class="px-6 py-4 rounded-lg text-white border border-gray-300 focus:ring-2 focus:ring-white focus:outline-none resize-none"
-                                  rows="5"
-                                  required></textarea>
+                                  rows="5" required></textarea>
 
                         <button type="submit"
                                 :disabled="isSubmitting"
@@ -1113,22 +1088,18 @@
                             <span x-show="isSubmitting">Sending...</span>
                         </button>
                     </form>
-
                     <!-- Success Message -->
                     <div x-show="showSuccess" x-transition class="mt-4 p-4 bg-green-100 text-green-800 rounded-lg">
                         Your message has been sent successfully!
                     </div>
-
                     <!-- Error Message -->
                     <div x-show="showError" x-transition class="mt-4 p-4 bg-red-100 text-red-800 rounded-lg" x-text="errorMessage"></div>
-
                     <p class="text-sm text-white/70 mt-4">
                         We respect your privacy. Your information will not be shared.
                     </p>
                 </div>
             </div>
         </section>
-
         <script>
             function contactForm() {
                 return {
@@ -1139,12 +1110,10 @@
                     showSuccess: false,
                     showError: false,
                     errorMessage: '',
-
                     sendMessage() {
                         this.isSubmitting = true;
                         this.showSuccess = false;
                         this.showError = false;
-
                         // Simulate form submission (replace with real API call)
                         setTimeout(() => {
                             if (this.name && this.email && this.message) {
@@ -1183,22 +1152,18 @@
             </svg>
         </button>
     </div>
-
     <!-- Promotional Modal -->
     <div x-data="{
         open: false,
-
         openModal() {
             if (localStorage.getItem(window.location.host+'_show-promotional-modal-1-1.0') === 'false') {
                 return;
             }
-
             this.open = true;
         },
 
         closeModal() {
             localStorage.setItem(window.location.host+'_show-promotional-modal-1-1.0', false);
-
             this.open = false;
         }
     }"
@@ -1229,7 +1194,6 @@
 
             <!-- This element is to trick the browser into centering the modal contents. -->
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-
             <div x-show="open"
                  x-transition:enter="ease-out duration-700"
                  x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
@@ -1246,7 +1210,6 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
-
                     <div>
                         <!-- Promotional Slider -->
                         <div class="p-1 bg-white/50 dark:bg-gray-800 rounded-2xl shadow-xl"
@@ -1302,7 +1265,7 @@
     }
 ],
 
-                            books: [
+   books: [
     {
         id: 1,
         title: 'IT Consulting & Digital Transformation',
@@ -1419,7 +1382,6 @@
         description: 'User-centric UI/UX design services for web and mobile applications to deliver intuitive digital experiences.'
     }
 ]
-
                         }">
                             <div class="swiper main-swiper relative"
                                  data-swiper="{
@@ -1475,11 +1437,9 @@
                                                                     </noscript>
                                                                 </div>
                                                             </a>
-
                                                             <a href="#">
                                                                 <h3 class="text-sm text-indigo-500 font-semibold truncate" x-text="course.title"></h3>
                                                             </a>
-
                                                             <p class="text-xs text-gray-600 truncate" x-text="'By ' + course.instructor"></p>
                                                         </div>
                                                     </template>
@@ -1520,11 +1480,9 @@
                                                                     </noscript>
                                                                 </div>
                                                             </a>
-
                                                             <a href="#">
                                                                 <h3 class="text-sm text-indigo-500 font-semibold truncate" x-text="book.title"></h3>
                                                             </a>
-
                                                             <p class="text-xs text-gray-600 truncate" x-text="'By ' + book.author"></p>
                                                         </div>
                                                     </template>
