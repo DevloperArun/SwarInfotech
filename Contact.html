@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Mirrored from learnbe-html.eovence.com/blocks/block-contact-01.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Dec 2025 10:28:11 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +25,6 @@
             "url": "./index.html"
         }
     </script>
-
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/SwarInfotech/assets/images/icons/academic-cap-white.svg">
     <!-- Immediate dark theme init -->
@@ -79,7 +77,6 @@
                 box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
             }
         }
-
         /* New floating particles animation */
         @keyframes float-particles {
             0% {
@@ -102,14 +99,12 @@
                 transform: translateY(0) translateX(0) rotate(360deg);
             }
         }
-
         /* New wave morphing effect */
         @keyframes wave-morph {
             0% {
                 border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
                 transform: rotate(0deg);
             }
-
             33% {
                 border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
                 transform: rotate(120deg);
@@ -127,11 +122,11 @@
         }
         /* New slide transitions with 3D effect */
         @keyframes slide-3d-in {
-            from {
+            from 
+            {
                 opacity: 0;
                 transform: perspective(1000px) rotateY(20deg) translateY(50px) scale(0.9);
             }
-
             to {
                 opacity: 1;
                 transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
@@ -166,17 +161,17 @@
         .cosmic-pulse {
             animation: cosmic-pulse 3s infinite;
         }
-
-        .float-particles {
+        .float-particles 
+        {
             animation: float-particles 8s infinite ease-in-out;
         }
-
-        .wave-morph {
+        .wave-morph 
+        {
             border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
             animation: wave-morph 12s infinite ease-in-out;
         }
-
-        .slide-3d-in {
+        .slide-3d-in 
+        {
             animation: slide-3d-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         }
         /* New swiper styling */
@@ -188,16 +183,16 @@
             opacity: 0.5 !important;
             transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
-
-        .cosmic-hero-swiper .swiper-pagination-bullet-active {
+        .cosmic-hero-swiper .swiper-pagination-bullet-active 
+        {
             background: white !important;
             opacity: 1 !important;
             transform: scale(1.4);
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
         }
-
         .cosmic-hero-swiper .swiper-button-next,
-        .cosmic-hero-swiper .swiper-button-prev {
+        .cosmic-hero-swiper .swiper-button-prev 
+        {
             color: white !important;
             background: rgba(255, 255, 255, 0.15) !important;
             backdrop-filter: blur(10px);
@@ -208,13 +203,12 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             top: calc(50vh - var(--spacing) * 18);
         }
-
             .cosmic-hero-swiper .swiper-button-next:hover,
-            .cosmic-hero-swiper .swiper-button-prev:hover {
+            .cosmic-hero-swiper .swiper-button-prev:hover 
+        {
                 background: rgba(255, 255, 255, 0.3) !important;
                 box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
             }
-
             .cosmic-hero-swiper .swiper-button-next::after,
             .cosmic-hero-swiper .swiper-button-prev::after {
                 font-size: 16px !important;
@@ -251,7 +245,6 @@
 
 <body class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 transition-all duration-300 ease-in-out min-h-screen"
       data-motion-enabled="true">
-
     <!-- Preloader -->
     <div class="preloader fixed inset-0 z-[99999] flex items-center justify-center bg-gray-100 dark:bg-gray-900 transition-all duration-300 h-screen">
         <div class="flex flex-col items-center gap-2">
@@ -287,7 +280,6 @@
                         <span class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Swarinfotech</span>
                     </a>
                 </div>
-
                 <!-- Mobile menu button -->
                 <div>
                     <button @click="toggleMobileMenu()" class="mobile-menu-toggle text-gray-700 cursor-pointer dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white transition-colors duration-200 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -333,7 +325,6 @@
                                     <span class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Swarinfotech</span>
                                 </a>
                             </div>
-
                             <!-- Close Button -->
                             <button class="text-gray-400 dark:text-gray-300 hover:text-gray-600 dark:hover:text-white transition-colors duration-200 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700"
                                     @click="closeMobileMenu()">
@@ -343,7 +334,6 @@
                             </button>
                         </div>
                     </div>
-
                     <ul class="flex items-center space-x-1" x-bind:class="{'flex-col !items-start': mobileMenuOpen}">
                         <li class="w-full">
                             <a href="index.html"
@@ -352,7 +342,6 @@
                                 Home
                             </a>
                         </li>
-
                         <li class="w-full">
                             <a href="../SwarInfotech/about.html"
                                class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center cursor-pointer"
@@ -360,7 +349,6 @@
                                 About
                             </a>
                         </li>
-
                         <!-- Courses Mega Menu -->
                         <li class="w-full relative group mega-menu-trigger" @click="toggleMegaMenu('Services')" @mouseenter="openMegaMenuOnHover('Services')">
                             <a href="#"
@@ -401,7 +389,6 @@
                             <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
                         </svg>
                     </button>
-
                     <!-- Direction Toggle -->
                     <button x-data="{ themeSwitcher: new ThemeSwitcher() }"
                             @click="themeSwitcher.toggleDirection()"
@@ -412,10 +399,8 @@
                 </div>
             </div>
         </nav>
-
         <!-- Mega Menu Items -->
-        <div x-show="megaMenuOpen"
-             x-transition:enter="transition ease-out duration-500"
+        <div x-show="megaMenuOpen" x-transition:enter="transition ease-out duration-500"
              x-transition:enter-start="opacity-0 transform translate-y-4"
              x-transition:enter-end="opacity-100 transform translate-y-0"
              class="absolute top-full start-0 w-full max-h-[calc(100vh-10rem)] overflow-y-auto bg-white z-9999 dark:bg-gray-800 shadow-2xl border-t border-gray-100 dark:border-gray-700"
@@ -433,7 +418,6 @@
                             <svg class="h-5 w-5 me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                             </svg>
-
                             Back
                         </button>
                         <!-- Title -->
