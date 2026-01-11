@@ -1260,106 +1260,72 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
         <section class="py-16 lg:py-24 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8"
                  x-data="{
-                               gallery: [
-    {
-        'id': 1,
-        'title': 'RLB School',
-        'description': 'School Website and Student Management',
-        'image':'./assets/images/Custom/Rlb.png',
-        'alt': 'Students studying together in a group discussion session',
-        'category': 'Courses',
-        'categoryColor': 'blue',
-        'type': 'courses'     
-    },
-    {
-        'id': 2,
-        'title': 'Rahat',
-        'description': 'Provide Relief',
-        'image':'./assets/images/Custom/Rahat.png',
-        'alt': 'Student using a laptop for digital learning at home',
-        'category': 'Courses',
-        'categoryColor': 'blue',
-        'type': 'courses'
-      
-    },
-    {
-        'id': 3,
-        'title': 'Food Recipe',
-        'description': 'All type of Recipe',
-        'image': './assets/images/Custom/Food.png',
-        'alt': 'Teacher and students participating in an interactive online class',
-        'category': 'Events',
-        'categoryColor': 'green',
-        'type': 'events'     
-    },
-    {
-        'id': 4,
-        'title': 'Business Skills',
-        'description': 'Professional development training',
-        'image': './assets\/images\/gallery\/gallery-4_pexels-photo-6517328.jpeg',
-        'alt': 'Business students learning professional skills in training class',
-        'category': 'Events',
-        'categoryColor': 'green',
-        'type': '',
-        'subtitle': 'Students engaging in collaborative online learning'
-    },
-    {
-        'id': 5,
-        'title': 'Creative Workshops',
-        'description': 'Design and creativity sessions',
-        'image': './assets\/images\/gallery\/gallery-5_pexels-photo-5302961.jpeg',
-        'alt': 'Students working together in a creative art and design workshop',
-        'category': 'Events',
-        'categoryColor': 'green',
-        'type': 'events',
-        'subtitle': 'Students engaging in collaborative online learning'
-    },
-    {
-        'id': 6,
-        'title': 'Tech Innovation',
-        'description': 'Cutting-edge technology education',
-        'image': './assets\/images\/gallery\/gallery-6_pexels-photo-3747406.jpeg',
-        'alt': 'Student learning technology innovation using modern gadgets',
-        'category': 'Achievements',
-        'categoryColor': 'yellow',
-        'type': 'achievements',
-        'subtitle': 'Students engaging in collaborative online learning'
-    },
-    {
-        'id': 7,
-        'title': 'Project Collaboration',
-        'description': 'Students collaborating on projects',
-        'image': './assets\/images\/gallery\/gallery-7_pexels-photo-5676742.jpeg',
-        'alt': 'Team of students collaborating on academic projects',
-        'category': 'Achievements',
-        'categoryColor': 'yellow',
-        'type': 'achievements',
-        'subtitle': 'Students engaging in collaborative online learning'
-    },
-    {
-        'id': 8,
-        'title': 'Campus Life',
-        'description': 'Snapshots of vibrant campus activities',
-        'image': './assets\/images\/gallery\/gallery-8_pexels-photo-6147395.jpeg',
-        'alt': 'University students enjoying campus activities outdoors',
-        'category': 'Courses',
-        'categoryColor': 'blue',
-        'type': 'courses',
-        'subtitle': 'Students engaging in collaborative online learning'
-    },
-    {
-        'id': 9,
-        'title': 'Coding Night',
-        'description': 'Late-night coding marathon',
-        'image': './assets\/images\/gallery\/gallery-9_pexels-photo-5779671.jpeg',
-        'alt': 'Students coding together late at night in a hackathon',
-        'category': 'Courses',
-        'categoryColor': 'blue',
-        'type': 'courses',
-        'subtitle': 'Students engaging in collaborative online learning'
-    }
-]
-            }">
+                                           gallery: [
+{
+    'id': 1,
+    'title': 'RLB School',
+    'description': 'School Website and Student Management',
+    'image':'./assets/images/Custom/Rlb.png',
+    'alt': 'Students studying together in a group discussion session',
+    'category': 'Courses',
+    'categoryColor': 'blue',
+    'type': 'courses'
+   
+},
+{
+    'id': 2,
+    'title': 'Rahat',
+    'description': 'Provide Relief',
+    'image':'./assets/images/Custom/Rahat.png',
+    'alt': 'Student using a laptop for digital learning at home',
+    'category': 'Courses',
+    'categoryColor': 'blue',
+    'type': 'courses'
+  
+},
+{
+    'id': 3,
+    'title': 'Food Recipe',
+    'description': 'All type of Recipe',
+    'image': './assets/images/Custom/Food.png',
+    'alt': 'Teacher and students participating in an interactive online class',
+    'category': 'Events',
+    'categoryColor': 'green',
+    'type': 'events'     
+},
+{
+    'id': 4,
+    'title': 'Robotics Class',
+    'description': 'AI,Machine and Robotics Lab',
+    'image': './assets/images/Custom/Stemmnatra.png',
+    'alt': 'Business students learning professional skills in training class',
+    'category': 'Events',
+    'categoryColor': 'green',
+    'type': '',
+    'subtitle': 'Students engaging in collaborative online learning'
+},
+{
+    'id': 5,
+    'title': 'Creative Workshops',
+    'description': 'Design and creativity sessions',
+    'image': './assets\/images\/gallery\/gallery-5_pexels-photo-5302961.jpeg',
+    'alt': 'Students working together in a creative art and design workshop',
+    'category': 'Events',
+    'categoryColor': 'green',
+    'type': 'events',
+    'subtitle': 'Students engaging in collaborative online learning'
+},
+{
+    'id': 6,
+    'title': 'Tech Innovation',
+    'description': 'Cutting-edge technology education',
+    'image': './assets\/images\/gallery\/gallery-6_pexels-photo-3747406.jpeg',
+    'alt': 'Student learning technology innovation using modern gadgets',
+    'category': 'Achievements',
+    'categoryColor': 'yellow',
+    'type': 'achievements',
+    'subtitle': 'Students engaging in collaborative online learning'
+}]}">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Our Working Gallery</h2>
                     <p class="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
@@ -2255,6 +2221,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
     </script>
 </body>
 </html>
+
 
 
 
