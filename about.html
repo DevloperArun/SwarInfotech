@@ -35,7 +35,6 @@
             document?.body?.classList?.add('dark');
         }
     </script>
-
     <!-- Fonts -->
     <link rel="stylesheet" href="/SwarInfotech/assets/fonts/quicksand/quicksand.css">
     <!-- Swiper CSS -->
@@ -64,12 +63,11 @@
     <script src="/SwarInfotech/assets/js/theme-switcher.js"></script>
     <!-- Completely Unique Custom CSS for hero slider -->
     <style>
-        /* New cosmic pulse animation */
-        @keyframes cosmic-pulse {
+        @keyframes cosmic-pulse 
+        {
             0% {
                 box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
             }
-
             70% {
                 box-shadow: 0 0 0 15px rgba(102, 126, 234, 0);
             }
@@ -148,15 +146,12 @@
         .cosmic-gradient-1 {
             background: linear-gradient(125deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
         }
-
         .cosmic-gradient-2 {
             background: linear-gradient(125deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
         }
-
         .cosmic-gradient-3 {
             background: linear-gradient(125deg, var(--color-success) 0%, var(--color-success-dark) 100%);
         }
-
         /* New cosmic elements */
         .cosmic-pulse {
             animation: cosmic-pulse 3s infinite;
@@ -359,7 +354,6 @@
                                 About
                             </a>
                         </li>
-
                         <!-- Courses Mega Menu -->
                         <li class="w-full relative group mega-menu-trigger" @click="toggleMegaMenu('Services')" @mouseenter="openMegaMenuOnHover('Services')">
                             <a href="#"
