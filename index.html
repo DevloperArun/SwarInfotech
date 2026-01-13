@@ -236,16 +236,18 @@
                 opacity: 1;
                 transform: perspective(1000px) rotateY(0) translateY(0);
             }
- 
             /* New floating elements */
-            .floating-element-1 {
+            .floating-element-1 
+            {
                 animation: float-particles 6s infinite ease-in-out;
             }
-            .floating-element-2 {
+            .floating-element-2 
+            {
                 animation: float-particles 8s infinite ease-in-out;
                 animation-delay: 1s;
             }
-            .floating-element-3 {
+            .floating-element-3 
+            {
                 animation: float-particles 10s infinite ease-in-out;
                 animation-delay: 2s;
             }
@@ -253,7 +255,6 @@
         </style>
     </head>
 <body class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 transition-all duration-300 ease-in-out min-h-screen" data-motion-enabled="true">
-
     <!-- Audio -->
     <audio autoplay muted id="audio">
         <source src="assets/Audio/saudio.mp3" type="audio/mpeg">
@@ -267,7 +268,6 @@
             audio.play();
         }, { once: true });
     </script>
-
     <!--end audio  -->
 
     <!-- Preloader -->
@@ -433,13 +433,10 @@
         </nav>
 
         <!-- Mega Menu Items -->
-        <div x-show="megaMenuOpen"
-             x-transition:enter="transition ease-out duration-500"
-             x-transition:enter-start="opacity-0 transform translate-y-4"
-             x-transition:enter-end="opacity-100 transform translate-y-0"
+        <div x-show="megaMenuOpen" x-transition:enter="transition ease-out duration-500"
+             x-transition:enter-start="opacity-0 transform translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0"
              class="absolute top-full start-0 w-full max-h-[calc(100vh-10rem)] overflow-y-auto bg-white z-9999 dark:bg-gray-800 shadow-2xl border-t border-gray-100 dark:border-gray-700"
-             x-bind:class="{'!top-0 !max-h-screen': mobileMenuOpen}"
-             @click.stop>
+             x-bind:class="{'!top-0 !max-h-screen': mobileMenuOpen}" @click.stop>
             <!-- Menu content with higher z-index -->
             <div class="relative z-20 mega-menu-content" @click.stop>
                 <!-- Mega Menu Header -->
@@ -452,13 +449,10 @@
                             <svg class="h-5 w-5 me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                             </svg>
-
                             Back
                         </button>
-
                         <!-- Title -->
                         <div class="text-lg font-semibold text-gray-900 dark:text-white" x-text="currentMenu?.title"></div>
-
                         <!-- Close Button -->
                         <button class="text-gray-400 dark:text-gray-300 hover:text-gray-600 dark:hover:text-white transition-colors duration-200"
                                 @click="closeMegaMenu()">
@@ -542,7 +536,6 @@
                                     </a>
                                 </div>
                             </div>
-
                             <!-- Categories -->
                             <div>
                                 <div class="space-y-4">
@@ -630,7 +623,6 @@
 
                                 </div>
                             </div>
-
                             <!-- CTA Section -->
                             <div>
                                 <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-6 text-white">
@@ -640,7 +632,7 @@
                                         We deliver end-to-end web and software development services, focused on quality, performance, and client satisfaction.
                                     </p>
 
-                                    <a href="#" class="inline-block bg-white dark:bg-gray-800 text-blue-600 px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 hover:shadow-lg cursor-pointer">
+                                    <a href="" class="inline-block bg-white dark:bg-gray-800 text-blue-600 px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 hover:shadow-lg cursor-pointer">
                                         View Our Services
                                     </a>
                                 </div>
@@ -678,9 +670,16 @@
                                 <div class="max-w-4xl px-2 md:px-0 mx-auto cosmic-slide-content slide-3d-in">
                                     <!-- New badge with cosmic pulse -->
                                     <div class="inline-flex items-center px-6 py-2 rounded-3xl bg-white/15 backdrop-blur-2xl border border-white/30 text-white text-xs md:text-md font-extrabold mb-8 badge-text">
+                                        <!--<svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+    </svg>-->
                                         <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <!-- Server stack -->
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                            <!-- Cloud overlay -->
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 10a4 4 0 0 0-7.9-.9A3.5 3.5 0 0 0 6.5 12h11a3 3 0 0 0 0-6h-.5"></path>
                                         </svg>
+
                                         Intelligent Personalization
                                     </div>
 
@@ -979,11 +978,9 @@
                 <!-- New Cosmic Swiper Navigation -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-
                 <!-- New Cosmic Swiper Pagination -->
                 <div class="swiper-pagination"></div>
             </div>
-
             <!-- New Cosmic Scroll indicator -->
             <div class="absolute bottom-8 start-1/2 transform -translate-x-1/2 z-20">
                 <div class="flex flex-col items-center space-y-3">
@@ -1013,7 +1010,7 @@
 
                     <!-- Courses Stat -->
                     <div class="group p-8 bg-gradient-to-br from-yellow-50 to-orange-50
-rounded-2xl border border-yellow-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                     rounded-2xl border border-yellow-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                         <div class="flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-xl mb-4 mx-auto">
                             <svg class="h-8 w-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
@@ -1054,7 +1051,7 @@ rounded-2xl border border-yellow-100 hover:shadow-xl transition-all duration-300
             </div>
         </section>
 
-        <!-- Subjects Section -->
+        <!-- Our Services Section -->
         <section class="py-12 lg:py-16 bg-gray-50 dark:bg-gray-800/30">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-8">
@@ -1194,9 +1191,9 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
             </div>
         </section>
 
+        <!-- Our Mission Section -->
         <section class="py-16 lg:py-24 bg-white-50 dark:bg-gray-900">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-
                 <!-- Section Heading -->
                 <div class="text-center mb-14" style="margin-bottom:20px">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
@@ -1256,7 +1253,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                 </div>
             </div>
         </section>
-
+        <!-- Our Gallery Section -->
         <section class="py-16 lg:py-24 bg-white dark:bg-gray-900">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8"
                  x-data="{
@@ -1270,7 +1267,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
     'category': 'Courses',
     'categoryColor': 'blue',
     'type': 'courses'
-   
+
 },
 {
     'id': 2,
@@ -1281,7 +1278,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
     'category': 'Courses',
     'categoryColor': 'blue',
     'type': 'courses'
-  
+
 },
 {
     'id': 3,
@@ -1291,7 +1288,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
     'alt': 'Teacher and students participating in an interactive online class',
     'category': 'Events',
     'categoryColor': 'green',
-    'type': 'events'     
+    'type': 'events'
 },
 {
     'id': 4,
@@ -1392,7 +1389,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                 </div>
             </div>
         </section>
-
+        <!-- CTA Mobile App Section -->
         <section class="py-16 lg:py-24 bg-white-50 dark:bg-gray-900">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
@@ -1554,7 +1551,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
             </div>
         </section>
 
-        <!-- Newsletter Section -->
+        <!-- COntact  Section -->
         <section class="py-16 lg:py-24 gradient-primary" data-motion="false">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div x-data="contactForm()" class="max-w-3xl mx-auto text-center">
