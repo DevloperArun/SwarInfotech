@@ -85,31 +85,25 @@
                 0% {
                     transform: translateY(0) translateX(0) rotate(0deg);
                 }
- 
                 25% {
                     transform: translateY(-20px) translateX(10px) rotate(90deg);
                 }
- 
+
                 50% {
                     transform: translateY(-40px) translateX(0) rotate(180deg);
                 }
- 
                 75% {
                     transform: translateY(-20px) translateX(-10px) rotate(270deg);
                 }
- 
                 100% {
                     transform: translateY(0) translateX(0) rotate(360deg);
                 }
             }
- 
-            /* New wave morphing effect */
             @keyframes wave-morph {
                 0% {
                     border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
                     transform: rotate(0deg);
                 }
- 
                 33% {
                     border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
                     transform: rotate(120deg);
@@ -119,7 +113,6 @@
                     border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
                     transform: rotate(240deg);
                 }
- 
                 100% {
                     border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
                     transform: rotate(360deg);
@@ -139,20 +132,16 @@
                     transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
                 }
             }
- 
             @keyframes slide-3d-out {
                 from {
                     opacity: 1;
                     transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
                 }
- 
                 to {
                     opacity: 0;
                     transform: perspective(1000px) rotateY(-20deg) translateY(-50px) scale(0.9);
                 }
             }
- 
-            /* New gradient overlays */
             .cosmic-gradient-1 
             {
                 background: linear-gradient(125deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
@@ -305,7 +294,6 @@
                         <span class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">Swarinfotech</span>
                     </a>
                 </div>
-
                 <!-- Mobile menu button -->
                 <div>
                     <button @click="toggleMobileMenu()" class="mobile-menu-toggle text-gray-700 cursor-pointer dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white transition-colors duration-200 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -351,7 +339,6 @@
                                     <span class="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">Swarinfotech</span>
                                 </a>
                             </div>
-
                             <!-- Close Button -->
                             <button class="text-gray-400 dark:text-gray-300 hover:text-gray-600 dark:hover:text-white transition-colors duration-200 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700"
                                     @click="closeMobileMenu()">
@@ -370,7 +357,6 @@
                                 Home
                             </a>
                         </li>
-
                         <li class="w-full">
                             <a href="../SwarInfotech/about.html"
                                class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center cursor-pointer"
@@ -461,7 +447,6 @@
                             </svg>
                         </button>
                     </div>
-
                     <!-- Breadcrumbs -->
                     <div x-show="breadcrumbs.length > 1" class="mt-2 flex items-center text-sm text-gray-500 dark:text-gray-400 dark:text-gray-500">
                         <template x-for="(crumb, index) in breadcrumbs" :key="index">
@@ -487,7 +472,6 @@
                             <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Provide Services</h2>
                             <p class="text-gray-600 dark:text-gray-300">Comprehensive technology solutions designed to support business growth and long-term success.</p>
                         </div>
-
                         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
                             <!-- our services -->
                             <div>
@@ -588,7 +572,6 @@
                                     </a>
                                 </div>
                             </div>
-
                             <!-- Learning Paths -->
                             <div>
                                 <div class="space-y-4">
@@ -599,7 +582,6 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                           d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 6H19M7 13l-4-8M10 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" />
                                                 </svg>
-
                                             </div>
                                             <div>
                                                 <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-blue-600 transition-colors">E-Commerce Solutions</div>
@@ -620,18 +602,15 @@
                                             </div>
                                         </div>
                                     </a>
-
                                 </div>
                             </div>
                             <!-- CTA Section -->
                             <div>
                                 <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-6 text-white">
                                     <h3 class="text-lg font-semibold mb-3">Our Services</h3>
-
                                     <p class="text-sm text-blue-100 mb-4 leading-relaxed">
                                         We deliver end-to-end web and software development services, focused on quality, performance, and client satisfaction.
                                     </p>
-
                                     <a href="" class="inline-block bg-white dark:bg-gray-800 text-blue-600 px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 hover:shadow-lg cursor-pointer">
                                         View Our Services
                                     </a>
@@ -640,7 +619,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </header>
@@ -670,27 +648,21 @@
                                 <div class="max-w-4xl px-2 md:px-0 mx-auto cosmic-slide-content slide-3d-in">
                                     <!-- New badge with cosmic pulse -->
                                     <div class="inline-flex items-center px-6 py-2 rounded-3xl bg-white/15 backdrop-blur-2xl border border-white/30 text-white text-xs md:text-md font-extrabold mb-8 badge-text">
-                                        <!--<svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-    </svg>-->
                                         <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <!-- Server stack -->
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                                             <!-- Cloud overlay -->
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 10a4 4 0 0 0-7.9-.9A3.5 3.5 0 0 0 6.5 12h11a3 3 0 0 0 0-6h-.5"></path>
                                         </svg>
-
                                         Intelligent Personalization
                                     </div>
-
                                     <!-- Main heading with 3D effect -->
                                     <h1 class="text-2xl md:text-4xl lg:text-6xl font-black text-white mb-6 leading-none tracking-tight">
                                         <span class="block mb-4">We don’t just adapt to change</span>
                                         <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#aabbff] via-[#ffb6e7] to-[#bda2d4]">
-                                            we create it
+                                            We create it
                                         </span>
                                     </h1>
-
                                     <!-- Subtitle with cosmic styling -->
                                     <p class="text-md md:text-lg text-white/95 mb-8 max-w-4xl mx-auto font-light tracking-wide">
                                         Technology strategies that deliver measurable impact.
@@ -726,11 +698,7 @@
                                                 btn.style.transform = 'scale(1)';
                                             });
                                         </script>
-                                        <!--<a href="auth/register.html" class="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white font-extrabold text-lg rounded-2xl hover:bg-white/15 transition-all duration-300 backdrop-blur-sm transform hover:scale-105 shadow-lg">
-                                    WhatsApp Now
-                                    </a>-->
                                     </div>
-
                                     <!-- New cosmic elements -->
                                     <div class="flex justify-center space-x-6">
                                         <div class="w-12 h-12 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/30 flex items-center justify-center floating-element-1">
@@ -760,7 +728,6 @@
                         <div class="absolute inset-0 bg-gradient-to-br from-[#f093fb] to-[#f5576c]"></div>
                         <div class="absolute w-[500px] h-[500px] top-[-200px] right-[-200px] bg-white/5 wave-morph"></div>
                         <div class="absolute w-[250px] h-[250px] bottom-[-100px] left-[-100px] bg-white/10 wave-morph" style="animation-delay: 3s;"></div>
-
                         <!-- Quantum particles -->
                         <div class="absolute w-5 h-5 top-1/5 left-1/5 bg-white/30 rounded-full floating-element-1"></div>
                         <div class="absolute w-4 h-4 top-2/3 left-1/4 bg-white/20 rounded-full floating-element-2"></div>
@@ -777,7 +744,7 @@
                                             <svg class="w-6 h-6 mr-3 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                                             </svg>
-                                            Secondary Intelligence
+                                           Best Services
                                         </div>
 
                                         <!-- Main heading -->
@@ -787,12 +754,10 @@
                                                 intelligent solutions.
                                             </span>
                                         </h1>
-
                                         <!-- Subtitle -->
                                         <p class="text-lg md:text-xl text-white/95 leading-relaxed mb-6 max-w-xl tracking-wide">
                                             End-to-end IT solutions designed for performance and growth
                                         </p>
-
                                         <!-- New quantum features list -->
                                         <div class="space-y-6 mb-8">
                                             <div class="flex items-start space-x-4 group">
@@ -819,11 +784,9 @@
                                                     <p class="text-base text-white/85">
                                                         Identify learning gaps early and improve performance before assessments
                                                     </p>
-
                                                 </div>
                                             </div>
                                         </div>
-
                                         <!-- CTA -->
                                         <a href="#" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#f093fb] to-[#f5576c] text-white font-extrabold text-base rounded-2xl hover:from-[#f093fb] hover:to-[#f5576c] transition-all duration-300 transform hover:scale-105 shadow-xl cta-button">
                                             <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -881,7 +844,6 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                                 </svg>
                                             </div>
-
                                             <div class="absolute -bottom-6 -left-6 w-12 h-12 rounded-3xl bg-gradient-to-br from-[#fa709a] to-[#fee140] flex items-center justify-center shadow-2xl floating-element-2">
                                                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
@@ -889,7 +851,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -926,12 +887,10 @@
                                             Join Our Team
                                         </span>
                                     </h1>
-
                                     <!-- Subtitle -->
                                     <p class="text-lg md:text-xl text-white/95 mb-8 max-w-3xl mx-auto font-light tracking-wide">
                                         Structured layouts and modern UI components for seamless user experiences
                                     </p>
-
                                     <!-- New galactic community stats -->
                                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-8">
                                         <div class="bg-white/15 backdrop-blur-xl border-2 border-white/25 rounded-3xl p-4 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 shadow-lg">
@@ -950,7 +909,6 @@
                                             <div class="text-base text-white/80">Always Available</div>
                                         </div>
                                     </div>
-
                                     <!-- New galactic CTA Buttons -->
                                     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                                         <a href="contact.html" class="group relative inline-flex items-center px-6 py-3 bg-gradient-to-r from-white to-gray-200 text-gray-900 font-extrabold text-base rounded-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-lg cta-button">
@@ -974,8 +932,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- New Cosmic Swiper Navigation -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <!-- New Cosmic Swiper Pagination -->
@@ -990,7 +946,6 @@
                 </div>
             </div>
         </section>
-
         <!-- Stats Section -->
         <section class="py-16 lg:py-20 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-gray-800 dark:to-gray-900">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -1083,7 +1038,6 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                       d="M4 5h16M4 9h10M4 15h6M4 19h6M14 14l6-6 2 2-6 6-3 1 1-3z" />
                             </svg>
-
                         </div>
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Web Design (UI/UX)</h3>
                         <p class="text-gray-600 dark:text-gray-300 mb-3">User-focused designs that combine creativity with usability, delivering engaging and intuitive digital experiences.</p>
@@ -1118,7 +1072,6 @@
                             Read More →
                         </a>
                     </div>
-
                     <!-- Website Maintenance & Support -->
                     <div class="group p-8 bg-gradient-to-br from-orange-50 to-orange-50 rounded-2xl border border-orange-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                         <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-3">
@@ -1136,8 +1089,7 @@
                     </div>
 
                     <!-- Windows Appication-->
-                    <div class="group p-8 bg-gradient-to-br from-teal-50 to-cyan-50
-rounded-2xl border border-teal-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="group p-8 bg-gradient-to-br from-teal-50 to-cyan-50 rounded-2xl border border-teal-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                         <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-">
                             <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -1152,8 +1104,7 @@ rounded-2xl border border-teal-100 hover:shadow-xl transition-all duration-300 t
                     </div>
 
                     <!-- SEO & Digital Optimization -->
-                    <div class="group p-8 bg-gradient-to-br from-purple-50 to-violet-50
-rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="group p-8 bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                         <div class="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
                             <svg class="h-5 w-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <!-- Magnifying glass = SEO -->
@@ -1172,6 +1123,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                             Read More →
                         </a>
                     </div>
+                        
                     <!-- Hosting and Bulk SMS -->
                     <div class="group p-8 bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl border border-yellow-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                         <div class="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
@@ -1196,9 +1148,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Section Heading -->
                 <div class="text-center mb-14" style="margin-bottom:20px">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-                        Our Vision & Mission
-                    </h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white"> Our Vision & Mission</h2>
                 </div>
 
                 <!-- Cards Grid -->
@@ -1218,7 +1168,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                             and reliable IT services. We strive to deliver scalable, secure, and user-centric digital experiences
                             that help organizations grow, compete, and succeed in a rapidly evolving digital world.
                         </p>
-                        <a href="#" class="btn-primary text-white px-6 py-3 rounded-lg text-lg font-semibold" style="font-size:13px">
+                        <a href="Servic" class="btn-primary text-white px-6 py-3 rounded-lg text-lg font-semibold" style="font-size:13px">
                             Explore Services
                         </a>&nbsp;&nbsp;
                         <a href="#" class="btn-secondary text-white px-6 py-3 rounded-lg text-lg font-semibold" style="font-size:13px">
@@ -1245,11 +1195,10 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                         <a href="#" class="btn-primary text-white px-6 py-3 rounded-lg text-lg font-semibold" style="font-size:13px">
                             Our Solutions
                         </a>&nbsp;&nbsp;
-                        <a href="#" class="btn-secondary text-white px-6 py-3 rounded-lg text-lg font-semibold" style="font-size:13px">
+                        <a href="Contact.html" class="btn-secondary text-white px-6 py-3 rounded-lg text-lg font-semibold" style="font-size:13px">
                             Get in Touch
                         </a>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -1359,9 +1308,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                         </div>
                     </template>
                 </div>
-
                 <!-- View Gallery Link -->
-
             </div>
         </section>
 
@@ -1378,13 +1325,11 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                         <span class="text-gray-900 dark:text-white">to Complete</span>
                         <span class="text-pink-600">Web Solutions</span>
                     </h2>
-
                     <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
                         We work closely with clients to transform ideas into powerful web applications, guiding every project from initial concept and development to a fully functional, scalable digital solution.
                     </p>
                     <div class="overflow-hidden rounded-xl shadow-lg">
-                        <img src="assets/images/Custom/img.png"
-                             alt="Web Development" class="w-full h-56 object-cover hover:scale-105 transition duration-300">
+                        <img src="assets/images/Custom/img.png" alt="Web Development" class="w-full h-56 object-cover hover:scale-105 transition duration-300">
                     </div>
                 </div>
             </div>
@@ -1406,8 +1351,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                         We specialize in building powerful, user-friendly mobile applications that help businesses grow and engage their customers. From idea validation and UI/UX design to development and deployment, we create secure, high-performance mobile apps tailored to your business needs.
                     </p>
                     <div class="overflow-hidden rounded-xl shadow-lg">
-                        <img src="assets/images/Custom/s_mobile.jpg"
-                             alt="Mobile App Development" class="w-full h-56 object-cover hover:scale-105 transition duration-300">
+                        <img src="assets/images/Custom/s_mobile.jpg" alt="Mobile App Development" class="w-full h-56 object-cover hover:scale-105 transition duration-300">
                     </div>
                 </div>
             </div>
@@ -1422,10 +1366,8 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                         Find answers to common questions about our courses and platform
                     </p>
                 </div>
-
                 <div x-data="accordion()" class="max-w-3xl mx-auto">
                     <div class="space-y-4" data-motion="flip-x" data-motion-stagger="0.02">
-
                         <!-- FAQ 1: Web Development -->
                         <div class="card-shadow bg-white dark:bg-gray-800 rounded-xl">
                             <button @click="toggle('faq1')"
@@ -1461,7 +1403,6 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                                 </p>
                             </div>
                         </div>
-
                         <!-- FAQ 3: SEO -->
                         <div class="card-shadow bg-white dark:bg-gray-800 rounded-xl">
                             <button @click="toggle('faq3')"
@@ -1547,11 +1488,10 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <!-- COntact  Section -->
+        <!-- Contact  Section -->
         <section class="py-16 lg:py-24 gradient-primary" data-motion="false">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div x-data="contactForm()" class="max-w-3xl mx-auto text-center">
@@ -1559,7 +1499,6 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                     <p class="text-xl text-white/90 mb-8">
                         Have questions or suggestions? Send us a message and we’ll get back to you.
                     </p>
-
                     <form @submit.prevent="sendMessage()" class="flex flex-col gap-4">
                         <input x-model="name" type="text" placeholder="Your Name"
                                class="px-6 py-4 rounded-lg text-white border border-gray-300 focus:ring-2 focus:ring-white focus:outline-none" required style="color:black">
@@ -1567,63 +1506,22 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                                class="px-6 py-4 rounded-lg text-white border border-gray-300 focus:ring-2 focus:ring-white focus:outline-none" required style="color:black">
                         <textarea x-model="message" placeholder="Your Message"
                                   class="px-6 py-4 rounded-lg text-white border border-gray-300 focus:ring-2 focus:ring-white focus:outline-none resize-none" rows="5" required style="color:black"></textarea>
-
                         <button type="submit" :disabled="isSubmitting"
                                 class="btn-secondary text-white px-8 py-4 rounded-lg font-semibold disabled:opacity-50 cursor-pointer">
                             <span x-show="!isSubmitting">Send Message</span>
                             <span x-show="isSubmitting">Sending...</span>
                         </button>
                     </form>
-
-                    <!-- Success Message -->
                     <div x-show="showSuccess" x-transition class="mt-4 p-4 bg-green-100 text-green-800 rounded-lg">
                         Your message has been sent successfully!
                     </div>
-
-                    <!-- Error Message -->
                     <div x-show="showError" x-transition class="mt-4 p-4 bg-red-100 text-red-800 rounded-lg" x-text="errorMessage"></div>
-
                     <p class="text-sm text-white/70 mt-4">
                         We respect your privacy. Your information will not be shared.
                     </p>
                 </div>
             </div>
         </section>
-
-        <script>
-            function contactForm() {
-                return {
-                    name: '',
-                    email: '',
-                    message: '',
-                    isSubmitting: false,
-                    showSuccess: false,
-                    showError: false,
-                    errorMessage: '',
-
-                    sendMessage() {
-                        this.isSubmitting = true;
-                        this.showSuccess = false;
-                        this.showError = false;
-
-                        // Simulate form submission (replace with real API call)
-                        setTimeout(() => {
-                            if (this.name && this.email && this.message) {
-                                this.showSuccess = true;
-                                this.name = '';
-                                this.email = '';
-                                this.message = '';
-                            } else {
-                                this.errorMessage = "Please fill all fields correctly.";
-                                this.showError = true;
-                            }
-                            this.isSubmitting = false;
-                        }, 1500);
-                    }
-                }
-            }
-        </script>
-
     </main>
     <!-- Go to Top Button -->
     <div x-data="{ show: false }"
@@ -1648,18 +1546,14 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
     <!-- Promotional Modal -->
     <div x-data="{
         open: false,
-
         openModal() {
             if (localStorage.getItem(window.location.host+'_show-promotional-modal-1-1.0') === 'false') {
                 return;
             }
-
             this.open = true;
         },
-
         closeModal() {
             localStorage.setItem(window.location.host+'_show-promotional-modal-1-1.0', false);
-
             this.open = false;
         }
     }"
@@ -1687,10 +1581,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                 "
                 aria-hidden="true">
             </div>
-
-            <!-- This element is to trick the browser into centering the modal contents. -->
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-
             <div x-show="open"
                  x-transition:enter="ease-out duration-700"
                  x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
@@ -1707,12 +1598,10 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
-
                     <div>
                         <!-- Promotional Slider -->
-                        <div class="p-1 bg-white/50 dark:bg-gray-800 rounded-2xl shadow-xl"
-                             x-data="{
-                                 courses: [
+<div class="p-1 bg-white/50 dark:bg-gray-800 rounded-2xl shadow-xl"
+                             x-data="{courses: [
                                  {
                                  id: 1,
                                  title: 'Custom Software Development' ,
@@ -1763,7 +1652,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
     }
 ],
 
-                            books: [
+books: [
     {
         id: 1,
         title: 'IT Consulting & Digital Transformation',
@@ -1814,7 +1703,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
     }
 ],
 
-                            events: [
+events: [
     {
         id: 1,
         title: 'Custom Web Application Development',
@@ -1879,18 +1768,10 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
         alt: 'UI UX design service for web and mobile applications',
         description: 'User-centric UI/UX design services for web and mobile applications to deliver intuitive digital experiences.'
     }
-]
-
-                        }">
-                            <div class="swiper main-swiper relative"
-                                 data-swiper="{
-                                loop: true,
-                                speed: 1000,
-                                slidesPerView: 1,
+]}">
+<div class="swiper main-swiper relative" data-swiper="{loop: true,speed: 1000,slidesPerView: 1,
                                 spaceBetween: 20,
-                                autoplay: {
-                                    delay: 5000,
-                                    pauseOnMouseEnter: true
+                                autoplay: {delay: 5000,pauseOnMouseEnter: true
                                 },
                                 navigation: {
                                     nextEl: '.swiper-button-next',
@@ -1920,27 +1801,22 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                                                     <template x-for="course in courses.slice(0, 4)" :key="`promo-course-${course.id}`">
                                                         <div class="bg-indigo-300/10 backdrop-blur-sm shadow-md rounded-xl p-4">
                                                             <a href="#">
-                                                                <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">
-                                                                    Skeleton overlay
+                                                                <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">                                                           
                                                                     <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-                                                                    Skeleton shimmer
                                                                     <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
                                                                     Lazy image
                                                                     <img data-src=""
                                                                          :data-src="course.image" alt="Image"
                                                                          class="w-full h-24 object-cover rounded-lg mb-2 lazyload"
                                                                          :src="course.image" :alt="course.title" class="w-full h-24 object-cover rounded-lg mb-2">
-                                                                    SEO fallback for non-JS / crawlers
                                                                     <noscript>
                                                                         <img src="#" loading="lazy" alt="Image" :src="course.image" :alt="course.title" class="w-full h-24 object-cover rounded-lg mb-2">
                                                                     </noscript>
                                                                 </div>
                                                             </a>
-
                                                             <a href="#">
                                                                 <h3 class="text-sm text-indigo-500 font-semibold truncate" x-text="course.title"></h3>
                                                             </a>
-
                                                             <p class="text-xs text-gray-600 truncate" x-text="'By ' + course.instructor"></p>
                                                         </div>
                                                     </template>
@@ -1965,14 +1841,10 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                                                     <template x-for="book in books.slice(0, 4)" :key="`promo-book-${book.id}`">
                                                         <div class="bg-indigo-300/10 backdrop-blur-sm shadow-md rounded-xl p-4">
                                                             <a href="">
-                                                                <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">
-                                                                    Skeleton overlay
+                                                                <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">                                                         
                                                                     <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-                                                                    Skeleton shimmer
-                                                                    <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-                                                                    Lazy image
-                                                                    <img data-src=""
-                                                                         :data-src="book.image" alt="Image"
+                                                                    <div class="absolute inset-0 z-0 skeleton-shimmer"></div>                                                           
+                                                                    <img data-src=""  :data-src="book.image" alt="Image"
                                                                          class="w-full h-24 object-cover rounded-lg mb-2 lazyload"
                                                                          :src="book.image" :alt="book.title" class="w-full h-24 object-cover rounded-lg mb-2">
                                                                     SEO fallback for non-JS / crawlers
@@ -1981,11 +1853,9 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                                                                     </noscript>
                                                                 </div>
                                                             </a>
-
                                                             <a href="#">
                                                                 <h3 class="text-sm text-indigo-500 font-semibold truncate" x-text="book.title"></h3>
                                                             </a>
-
                                                             <p class="text-xs text-gray-600 truncate" x-text="'By ' + book.author"></p>
                                                         </div>
                                                     </template>
@@ -2010,23 +1880,18 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                                                     <template x-for="event in events.slice(0, 4)" :key="`promo-event-${event.id}`">
                                                         <div class="bg-indigo-300/10 backdrop-blur-sm shadow-md rounded-xl p-4">
                                                             <a href="#">
-                                                                <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">
-                                                                    Skeleton overlay
-                                                                    <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-                                                                    Skeleton shimmer
-                                                                    <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-                                                                    Lazy image
+                                                                <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">                                                                  
+                                                                    <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>                                                               
+                                                                    <div class="absolute inset-0 z-0 skeleton-shimmer"></div>                                                                
                                                                     <img data-src=""
                                                                          :data-src="event.image" alt="Image"
                                                                          class="w-full h-24 object-cover rounded-lg mb-2 lazyload"
                                                                          :src="event.image" :alt="event.title" class="w-full h-24 object-cover rounded-lg mb-2">
-                                                                    SEO fallback for non-JS / crawlers
                                                                     <noscript>
                                                                         <img src="#" loading="lazy" alt="Image" :src="event.image" :alt="event.title" class="w-full h-24 object-cover rounded-lg mb-2">
                                                                     </noscript>
                                                                 </div>
                                                             </a>
-
                                                             <a href="#">
                                                                 <h3 class="text-sm text-indigo-500 font-semibold truncate" x-text="event.title"></h3>
                                                             </a>
@@ -2037,8 +1902,7 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                
+                                </div>                              
                                 <!-- Navigation Arrows -->
                                 <div class="swiper-button-next"></div>
                                 <div class="swiper-button-prev"></div>
@@ -2096,7 +1960,6 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                         </a>
                     </div>
                 </div>
-
                 <!-- Quick Links -->
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
@@ -2109,7 +1972,6 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Carrier</a></li>
                     </ul>
                 </div>
-
                 <!-- Support -->
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Support</h3>
@@ -2122,7 +1984,6 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
 
                     </ul>
                 </div>
-
                 <!-- Contact Info -->
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
@@ -2149,20 +2010,11 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                     </div>
                 </div>
             </div>
-
-            <!-- Copyright -->
-            <div class="border-t border-gray-800 dark:border-gray-700 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
                 <p class="text-gray-400 dark:text-gray-300 text-sm text-center sm:text-left">
                     © <span x-data x-text="new Date().getFullYear()"></span> Swarinfotech. All rights reserved.
                 </p>
-                <div class="flex flex-wrap justify-center sm:justify-end space-x-6">
-                    <a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white text-sm transition-colors cursor-pointer hover:underline">Terms</a>
-                    <a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white text-sm transition-colors cursor-pointer hover:underline">Privacy</a>
-                </div>
-            </div>
         </div>
     </footer>
-
     <script>
         document.addEventListener('DOMContentLoaded', function ()
         {
@@ -2207,17 +2059,18 @@ rounded-2xl border border-purple-100 hover:shadow-xl transition-all duration-300
                     slideChangeTransitionEnd: function () {
                         // Add active class to current slide
                         const activeSlide = this.slides[this.activeIndex];
-                        if (activeSlide) {
+                        if (activeSlide) 
+                        {
                             activeSlide.classList.add('swiper-slide-active');
                         }
                     }
                 }
             });
         });
-
     </script>
 </body>
 </html>
+
 
 
 
