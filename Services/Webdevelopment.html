@@ -25,7 +25,6 @@
             "url": "../index.html"
         }
     </script>
-
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/SwarInfotech/assets/images/icons/academic-cap-white.svg">
     <!-- Immediate dark theme init -->
@@ -118,7 +117,6 @@
                 border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
                 transform: rotate(240deg);
             }
-
             100% {
                 border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
                 transform: rotate(360deg);
@@ -149,7 +147,6 @@
                 transform: perspective(1000px) rotateY(-20deg) translateY(-50px) scale(0.9);
             }
         }
-
         /* New gradient overlays */
         .cosmic-gradient-1 {
             background: linear-gradient(125deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
@@ -188,7 +185,6 @@
             opacity: 0.5 !important;
             transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
-
         .cosmic-hero-swiper .swiper-pagination-bullet-active {
             background: white !important;
             opacity: 1 !important;
@@ -241,13 +237,12 @@
             animation: float-particles 8s infinite ease-in-out;
             animation-delay: 1s;
         }
-
-        .floating-element-3 {
+        .floating-element-3 
+         {
             animation: float-particles 10s infinite ease-in-out;
             animation-delay: 2s;
         }
     </style>
-
 </head>
 
 <body class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 transition-all duration-300 ease-in-out min-h-screen"
@@ -329,7 +324,6 @@
                                 About
                             </a>
                         </li>
-
                         <!-- Courses Mega Menu -->
                         <li class="w-full relative group mega-menu-trigger" @click="toggleMegaMenu('Services')" @mouseenter="openMegaMenuOnHover('Services')">
                             <a href="#"
@@ -357,7 +351,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <!-- Right side menu -->
                 <div class="flex flex-wrap items-center gap-4" x-bind:class="{'justify-center p-6': mobileMenuOpen}">
                     <!-- Theme Toggle -->
@@ -401,7 +394,7 @@
                                 @click="goBack()">
                             <svg class="h-5 w-5 me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                            </svg>Back
+                            </svg> Back
                         </button>
                         <!-- Title -->
                         <div class="text-lg font-semibold text-gray-900 dark:text-white" x-text="currentMenu?.title"></div>
@@ -413,7 +406,6 @@
                             </svg>
                         </button>
                     </div>
-
                     <!-- Breadcrumbs -->
                     <div x-show="breadcrumbs.length > 1" class="mt-2 flex items-center text-sm text-gray-500 dark:text-gray-400 dark:text-gray-500">
                         <template x-for="(crumb, index) in breadcrumbs" :key="index">
@@ -765,29 +757,24 @@
                                 <span class="text-gray-600 dark:text-gray-300">Certificate included</span>
                             </div>
                         </div>
-
                         <!-- Course Video/Image -->
                         <div class="mb-8">
                             <div class="lazyload-container relative overflow-hidden w-full h-64 md:h-96 object-cover rounded-xl">
                                 <!-- Skeleton overlay -->
                                 <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                 <!-- Skeleton shimmer -->
                                 <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
                                 <!-- Lazy image -->
-                                <img data-src="./../assets/images/lessons/web-development-course-hero.jpg"
+                                <img data-src="../assets/images/lessons/web-development-course-hero.jpg"
                                      alt="Web Development Course"
                                      class="w-full h-64 md:h-96 object-cover rounded-xl lazyload"
                                      class="w-full h-64 md:h-96 object-cover rounded-xl">
-
                                 <!-- SEO fallback for non-JS / crawlers -->
                                 <noscript>
-                                    <img src="../assets/images/lessons/web-development-course-hero.jpg" loading="lazy" alt="Web Development Course" class="w-full h-64 md:h-96 object-cover rounded-xl">
+                                    <img src="../assets/images/custom/Web.png loading="lazy" alt="Web Development Course" class="w-full h-64 md:h-96 object-cover rounded-xl">
                                 </noscript>
                             </div>
                         </div>
-
                         <!-- Course Description -->
                         <div class="mb-12">
                             <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">About this course</h2>
@@ -801,8 +788,7 @@
                                     You'll build multiple real-world projects that you can add to your portfolio.
                                 </p>
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    By the end of this course, you'll have the skills and confidence to apply for web developer
-                                    positions or start your own web development freelance business.
+                                    By the end of this course, you'll have the skills and confidence to apply for web developer positions or start your own web development freelance business.
                                 </p>
                             </div>
                         </div>
