@@ -352,7 +352,7 @@
                             </a>
                         </li>
                         <li class="w-full">
-                            <a href="#"
+                            <a href="Contact.html"
                                class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center cursor-pointer"
                                x-bind:class="{'w-full px-8 py-4 text-xl border-b border-gray-100 dark:border-gray-700 text-md hover:bg-gray-100 dark:hover:bg-gray-700': mobileMenuOpen}">
                                 Contact
@@ -672,41 +672,20 @@
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
                     <h2 class="text-2xl font-bold text-gray-900 dark:text-white text-center mb-4">Technology</h2>
                     <p class="text-gray-600 dark:text-gray-400 text-center mb-8">In the age of technology, intelligence is amplified, not replaced.</p>
-
-                    <!--<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                        <template x-for="category in categoryCards" :key="category.name">
-                            <button @click="selectCategory(category.name)" class="group p-4 border border-gray-200 dark:border-gray-600 rounded-lg hover:border-indigo-500 dark:hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-all duration-200">
-                                <div class="text-center">
-                                    <div class="w-12 h-12 mx-auto mb-3 rounded-lg bg-gray-100 dark:bg-gray-700 group-hover:bg-indigo-100 dark:group-hover:bg-indigo-900/50 flex items-center justify-center transition-colors duration-200">
-                                        <svg class="w-6 h-6 text-gray-600 dark:text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="category.icon"></path>
-                                        </svg>
-                                    </div>
-                                    <h3 class="font-medium text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 mb-1 transition-colors duration-200" x-text="category.name"></h3>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400" x-text="`${category.Text}`"></p>
-                                </div>
-                            </button>
-                        </template>
-                    </div>-->
-
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         <template x-for="category in categoryCards" :key="category.name">
                             <button @click="selectCategory(category.name)"
                                     class="group relative p-5 rounded-2xl transition-all duration-300 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-lg hover:scale-105 hover:border-indigo-400 dark:hover:border-indigo-400 bg-white dark:bg-gray-800 flex flex-col items-center">
-
                                 <!-- Icon with background -->
                                 <div class="w-16 h-16 mb-4 rounded-xl flex items-center justify-center transition-all duration-300"
                                      :class="category.bgColor">
                                     <div class="w-10 h-10" x-html="category.icon"></div>
                                 </div>
-
                                 <!-- Name -->
                                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300"
                                     x-text="category.name"></h3>
-
                                 <!-- Text / Description -->
                                 <p class="text-sm text-gray-500 dark:text-gray-400 text-center" x-text="category.Text"></p>
-
                                 <!-- Hover overlay effect -->
                                 <div class="absolute inset-0 rounded-2xl bg-indigo-50 dark:bg-indigo-900/20 opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                             </button>
@@ -962,7 +941,6 @@
         description: 'User-centric UI/UX design services for web and mobile applications to deliver intuitive digital experiences.'
     }
 ]}">
-
                             <div class="swiper main-swiper relative" data-swiper="{
                                 loop: true,
                                 speed: 1000,
@@ -1061,11 +1039,9 @@
                                                                     </noscript>
                                                                 </div>
                                                             </a>
-
                                                             <a href="#">
                                                                 <h3 class="text-sm text-indigo-500 font-semibold truncate" x-text="book.title"></h3>
                                                             </a>
-
                                                             <p class="text-xs text-gray-600 truncate" x-text="'By ' + book.author"></p>
                                                         </div>
                                                     </template>
@@ -1129,7 +1105,7 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="bg-gray-900 dark:bg-gray-950 text-white">
+   <footer class="bg-gray-900 dark:bg-gray-950 text-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Company Info -->
@@ -1144,9 +1120,9 @@
                         <a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer p-2 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-700">
                             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 0C5.373 0 0 5.373 0 12c0 5.989 4.388 10.94 10.125 11.854v-8.385H7.078V12h3.047V9.356
-                                c0-3.016 1.793-4.688 4.533-4.688 1.313 0 2.686.235 2.686.235v2.953h-1.514
-                                c-1.494 0-1.953.927-1.953 1.875V12h3.328l-.532 3.469h-2.796v8.385C19.612
-                                22.94 24 17.989 24 12c0-6.627-5.373-12-12-12z" />
+                                    c0-3.016 1.793-4.688 4.533-4.688 1.313 0 2.686.235 2.686.235v2.953h-1.514
+                                    c-1.494 0-1.953.927-1.953 1.875V12h3.328l-.532 3.469h-2.796v8.385C19.612
+                                    22.94 24 17.989 24 12c0-6.627-5.373-12-12-12z" />
                             </svg>
                         </a>
                         <a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer p-2 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-700">
@@ -1216,17 +1192,9 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Copyright -->
-            <div class="border-t border-gray-800 dark:border-gray-700 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
                 <p class="text-gray-400 dark:text-gray-300 text-sm text-center sm:text-left">
                     © <span x-data x-text="new Date().getFullYear()"></span> Swarinfotech. All rights reserved.
                 </p>
-                <div class="flex flex-wrap justify-center sm:justify-end space-x-6">
-                    <a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white text-sm transition-colors cursor-pointer hover:underline">Terms</a>
-                    <a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white text-sm transition-colors cursor-pointer hover:underline">Privacy</a>
-                </div>
-            </div>
         </div>
     </footer>
     <script>
@@ -1338,58 +1306,7 @@
                     }
                 ]
 
-                //categoryCards: [
-                //    {
-                //        name: 'Asp.net',
-                //        Text: 'ASP.NET powers fast, secure, and scalable web solutions',
-                //        icon: 'M8 3a2 2 0 00-2 2v14a2 2 0 002 2h8a2 2 0 002-2V9l-6-6H8zm4 1.5L17.5 10H13a1 1 0 01-1-1V4.5zM9 13h6v2H9v-2zm0-4h6v2H9V9z'
-                //    },
-                //    {
-                //        name: 'Php',
-                //        Text: 'PHP powers the web with simplicity, speed, and flexibility',
-                //        icon: 'M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10c5.523 0 10-4.477 10-10S17.523 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z'
-                //    },
-                //    {
-                //        name: 'Wordpress',
-                //        Text: 'WordPress turns ideas into powerful, scalable websites',
-                //        icon: 'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-4.42 3.59-8 8-8s8 3.58 8 8c0 4.41-3.59 8-8 8z'
-                //    },
-                //    {
-                //        name: 'Node JS',
-                //        Text: 'Node.js powers fast, scalable, and real-time applications',
-                //        icon: 'M12 2L2 7v10l10 5 10-5V7l-10-5zm0 18l-8-4V9l8 4 8-4v7l-8 4z'
-                //    },
-                //    {
-                //        name: 'React',
-                //        Text: 'React builds fast, interactive, and scalable user interfaces',
-                //        icon: 'M12 2c-2.21 0-4 3.582-4 8s1.79 8 4 8 4-3.582 4-8-1.79-8-4-8zm0 14c-1.1 0-2-.895-2-2s.9-2 2-2 2 .895 2 2-.9 2-2 2z'
-                //    },
-                //    {
-                //        name: 'Angular',
-                //        Text: 'Angular: Structure, performance, and reliability.',
-                //        icon: 'M12 2L2 7v10l10 5 10-5V7l-10-5zm0 18l-8-4V9l8 4 8-4v7l-8 4z'
-                //    },
-                //    {
-                //        name: 'Android',
-                //        Text: 'Build powerful mobile apps with Android',
-                //        icon: 'M17 2h-1V0h-2v2H10V0H8v2H7c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H7V4h10v16z'
-                //    },
-                //    {
-                //        name: 'Flutter',
-                //        Text: 'Flutter builds beautiful apps for any screen..',
-                //        icon: 'M14.828 9.172l-1.414 1.414L17.586 15H15v2h4v-4h-2.414l-2.172-2.172zM4 2h6l-2 2H4v12h12v-4h2v6H4V2z'
-                //    },
-                //    {
-                //        name: 'Phython',
-                //        Text: 'Write less, do more — Python.',
-                //        icon: 'M12 2c-1.1 0-2 .9-2 2v2H8V2h4zm0 20c1.1 0 2-.9 2-2v-2h2v4h-4zm-8-8c0-1.1.9-2 2-2h2v2H4v2zm16 0c0 1.1-.9 2-2 2h-2v-2h2v-2z'
-                //    },
-                //    {
-                //        name: 'AWS',
-                //        Text: 'AWS powers scalable, reliable, and secure cloud solutions.',
-                //        icon: 'M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z'
-                //    }
-                //]
+              
 
             }
         }
