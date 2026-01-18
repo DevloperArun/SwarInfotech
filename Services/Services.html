@@ -12,7 +12,6 @@
     <meta property="og:description" content="Join thousands of students in our comprehensive learning platform. Access expert-led courses, interactive books, and certification programs designed to advance your career.">
     <meta property="og:image" content="/SwarInfotech/images/icons/academic-cap-white.svg">
     <meta property="og:url" content="index.html">
-
     <script type="application/ld+json">
         {
             "@context": "https:\/\/schema.org",
@@ -25,7 +24,6 @@
             "url": "./index.html"
         }
     </script>
-
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/SwarInfotech/assets/images/icons/academic-cap-white.svg">
     <!-- Immediate dark theme init -->
@@ -69,11 +67,9 @@
             0% {
                 box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
             }
-
             70% {
                 box-shadow: 0 0 0 15px rgba(102, 126, 234, 0);
             }
-
             100% {
                 box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
             }
@@ -172,8 +168,8 @@
             border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
             animation: wave-morph 12s infinite ease-in-out;
         }
-
-        .slide-3d-in {
+        .slide-3d-in 
+        {
             animation: slide-3d-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         }
         /* New swiper styling */
@@ -237,8 +233,8 @@
             animation: float-particles 8s infinite ease-in-out;
             animation-delay: 1s;
         }
-
-        .floating-element-3 {
+        .floating-element-3 
+        {
             animation: float-particles 10s infinite ease-in-out;
             animation-delay: 2s;
         }
@@ -349,7 +345,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <!-- Right side menu -->
                 <div class="flex flex-wrap items-center gap-4" x-bind:class="{'justify-center p-6': mobileMenuOpen}">
                     <!-- Theme Toggle -->
@@ -363,7 +358,6 @@
                             <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
                         </svg>
                     </button>
-
                     <!-- Direction Toggle -->
                     <button x-data="{ themeSwitcher: new ThemeSwitcher() }"
                             @click="themeSwitcher.toggleDirection()"
@@ -376,13 +370,10 @@
         </nav>
 
         <!-- Mega Menu Items -->
-        <div x-show="megaMenuOpen"
-             x-transition:enter="transition ease-out duration-500"
-             x-transition:enter-start="opacity-0 transform translate-y-4"
-             x-transition:enter-end="opacity-100 transform translate-y-0"
+        <div x-show="megaMenuOpen"  x-transition:enter="transition ease-out duration-500"
+             x-transition:enter-start="opacity-0 transform translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0"
              class="absolute top-full start-0 w-full max-h-[calc(100vh-10rem)] overflow-y-auto bg-white z-9999 dark:bg-gray-800 shadow-2xl border-t border-gray-100 dark:border-gray-700"
-             x-bind:class="{'!top-0 !max-h-screen': mobileMenuOpen}"
-             @click.stop>
+             x-bind:class="{'!top-0 !max-h-screen': mobileMenuOpen}"  @click.stop>
             <!-- Menu content with higher z-index -->
             <div class="relative z-20 mega-menu-content" @click.stop>
                 <!-- Mega Menu Header -->
@@ -395,13 +386,10 @@
                             <svg class="h-5 w-5 me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                             </svg>
-
                             Back
                         </button>
-
                         <!-- Title -->
                         <div class="text-lg font-semibold text-gray-900 dark:text-white" x-text="currentMenu?.title"></div>
-
                         <!-- Close Button -->
                         <button class="text-gray-400 dark:text-gray-300 hover:text-gray-600 dark:hover:text-white transition-colors duration-200"
                                 @click="closeMegaMenu()">
@@ -410,7 +398,6 @@
                             </svg>
                         </button>
                     </div>
-
                     <!-- Breadcrumbs -->
                     <div x-show="breadcrumbs.length > 1" class="mt-2 flex items-center text-sm text-gray-500 dark:text-gray-400 dark:text-gray-500">
                         <template x-for="(crumb, index) in breadcrumbs" :key="index">
@@ -423,7 +410,6 @@
                         </template>
                     </div>
                 </div>
-
                 <!-- Courses Mega Menu -->
                 <div x-show="megaMenuOpen === 'Services'"
                      x-transition:enter="transition ease-out duration-500 delay-100"
@@ -436,7 +422,7 @@
                             <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Provide Services</h2>
                             <p class="text-gray-600 dark:text-gray-300">Comprehensive technology solutions designed to support business growth and long-term success.</p>
                         </div>
-
+                        
                         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
                             <!-- our services -->
                             <div>
@@ -509,12 +495,10 @@
                                                     <!-- Magnifying glass = SEO -->
                                                     <circle cx="11" cy="11" r="6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
                                                     <line x1="16.5" y1="16.5" x2="20" y2="20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
-
                                                     <!-- Gear / optimization lines = Website Optimization -->
                                                     <path d="M4 12h2M18 12h2M12 4v2M12 18v2M5.5 5.5l1.5 1.5M17 17l1.5 1.5M5.5 18.5l1.5-1.5M17 7l1.5-1.5"
                                                           stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 </svg>
-
                                             </div>
                                             <div>
                                                 <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-green-600 transition-colors">SEO & Digital Optimization</div>
@@ -537,7 +521,6 @@
                                     </a>
                                 </div>
                             </div>
-
                             <!-- Learning Paths -->
                             <div>
                                 <div class="space-y-4">
@@ -548,7 +531,6 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                           d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 6H19M7 13l-4-8M10 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" />
                                                 </svg>
-
                                             </div>
                                             <div>
                                                 <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-blue-600 transition-colors">E-Commerce Solutions</div>
@@ -598,7 +580,6 @@
                             <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Learning Platform</h2>
                             <p class="text-gray-600 dark:text-gray-300">Everything you need to advance your career and skills</p>
                         </div>
-
                         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
                             <!-- Popular Courses -->
                             <div>
@@ -652,11 +633,8 @@
         </div>
     </header>
     <!-- Main Content -->
-    <main class="pt-16 sm:pt-20 min-h-screen"
-          data-motion="zoom-out"
-          data-motion-delay="0"
-          data-motion-stagger="0.01"
-          data-motion-stagger-exclude=":first,:last"
+    <main class="pt-16 sm:pt-20 min-h-screen" data-motion="zoom-out"
+          data-motion-delay="0" data-motion-stagger="0.01" data-motion-stagger-exclude=":first,:last"
           x-data="tutorApplication">
         <!-- Hero Section -->
         <section class="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900 py-20">
@@ -665,8 +643,7 @@
                     Smart <span class="text-indigo-600 dark:text-indigo-400">IT Services</span> for Digital Growth
                 </h1>
                 <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-                    We deliver reliable IT solutions including software development, web applications,
-                    mobile apps, and cloud services to help your business grow faster and smarter.
+                    We deliver reliable IT solutions including software development, web applications, mobile apps, and cloud services to help your business grow faster and smarter.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="Services.html" class="btn-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:shadow-lg transition-all duration-300">
@@ -678,7 +655,6 @@
                 </div>
             </div>
         </section>
-
         <!-- Benefits Section -->
         <section class="py-20 bg-white dark:bg-gray-900">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -686,7 +662,6 @@
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Our Services</h2>
                     <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Delivering innovative IT solutions that help businesses grow, scale, and succeed in the digital world</p>
                 </div>
-
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <template x-for="benefit in benefits" :key="benefit.id">
                         <div class="text-center p-6 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 hover:shadow-lg dark:hover:shadow-gray-700/25 transition-shadow">
@@ -701,54 +676,8 @@
                 </div>
             </div>
         </section>
-
         <!-- Requirements Section -->
         <section class="py-22 bg-gray-50 dark:bg-gray-800">
-            <!--<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                    Web Development Requirements
-                </h2>
-                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                    We follow industry standards to deliver secure, scalable, and high-performance web solutions
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12">-->
-            <!-- Essential Requirements -->
-            <!--<div>
-                <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-                    Core Technical Skills
-                </h3>
-                <ul class="space-y-4">
-                    <template x-for="requirement in essentialRequirements" :key="requirement.id">
-                        <li class="flex items-start">
-                            <div class="w-6 h-6 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mt-0.5 mr-3 flex-shrink-0">
-                                <i class="fas fa-check text-green-600 dark:text-green-400 text-sm"></i>
-                            </div>
-                            <div class="text-gray-700 dark:text-gray-300" x-text="requirement.text"></div>
-                        </li>
-                    </template>
-                </ul>
-            </div>-->
-            <!-- Preferred Qualifications -->
-            <!--<div>
-                        <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-                            Preferred Expertise
-                        </h3>
-                        <ul class="space-y-4">
-                            <template x-for="qualification in preferredQualifications" :key="qualification.id">
-                                <li class="flex items-start">
-                                    <div class="w-6 h-6 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mt-0.5 mr-3 flex-shrink-0">
-                                        <i class="fas fa-star text-blue-600 dark:text-blue-400 text-sm"></i>
-                                    </div>
-                                    <span class="text-gray-700 dark:text-gray-300" x-text="qualification.text"></span>
-                                </li>
-                            </template>
-                        </ul>
-                    </div>
-                </div>
-            </div>-->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -758,7 +687,6 @@
                         We deliver end-to-end IT solutions that help businesses grow, scale, and succeed in the digital era
                     </p>
                 </div>
-
                 <div class="grid md:grid-cols-2 gap-12">
                     <!-- Core Services -->
                     <div>
@@ -776,7 +704,6 @@
                             </template>
                         </ul>
                     </div>
-
                     <!-- Why We Are Different -->
                     <div>
                         <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
@@ -796,56 +723,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Process Section -->
-        <!--<section id="apply" class="py-20 bg-white dark:bg-gray-900">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Application Process</h2>
-                    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">Simple steps to join our community of expert educators</p>
-                </div>
-
-                <div class="grid md:grid-cols-4 gap-8">
-                    <template x-for="(step, index) in applicationSteps" :key="step.id">
-                        <div class="text-center">
-                            <div class="relative mb-6">
-                                <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto" :class="step.bgColor">
-                                    <i :class="step.icon + ' text-2xl'" :class="step.iconColor"></i>
-                                </div>
-                            </div>
-                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2" x-text="step.title"></h3>
-                            <p class="text-gray-600 dark:text-gray-300 text-sm" x-text="step.description"></p>
-                        </div>
-                    </template>
-                </div>
-            </div>
-        </section>-->
-        <!--<section id="apply" class="py-20 bg-white dark:bg-gray-900">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                        Our Work Process
-                    </h2>
-                    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                        A transparent and proven process to deliver high-quality IT solutions
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-4 gap-8">
-                    <template x-for="(step, index) in projectSteps" :key="step.id">
-                        <div class="text-center">
-                            <div class="relative mb-6">
-                                <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto" :class="step.bgColor">
-                                    <i :class="step.icon + ' text-2xl ' + step.iconColor"></i>
-                                </div>
-                            </div>
-                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2" x-text="step.title"></h3>
-                            <p class="text-gray-600 dark:text-gray-300 text-sm" x-text="step.description"></p>
-                        </div>
-                    </template>
-                </div>
-            </div>
-        </section>-->
         <!-- Our Work Process - IT Services -->
         <section id="apply" class="py-20 bg-white dark:bg-gray-900">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -864,8 +741,7 @@
                         <div class="w-16 h-16 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
                             <!-- Requirement Analysis Icon -->
                             <svg class="w-8 h-8 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      d="M8 10h8M8 14h6M4 6h16v12H4z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h8M8 14h6M4 6h16v12H4z" />
                             </svg>
                         </div>
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
@@ -892,14 +768,12 @@
                             We create UI/UX designs, system architecture, and technology roadmap.
                         </p>
                     </div>
-
                     <!-- Step 3 -->
                     <div class="text-center">
                         <div class="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
                             <!-- Development Icon -->
                             <svg class="w-8 h-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                                <path stroke-linecap="round" stroke-linejoin="round"  d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
                             </svg>
                         </div>
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
@@ -909,14 +783,12 @@
                             We build scalable web apps, mobile solutions, and cloud systems.
                         </p>
                     </div>
-
                     <!-- Step 4 -->
                     <div class="text-center">
                         <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
                             <!-- Deployment Icon -->
                             <svg class="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      d="M5 12l5 5L20 7" />
+                                <path stroke-linecap="round" stroke-linejoin="round"  d="M5 12l5 5L20 7" />
                             </svg>
                         </div>
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
@@ -929,7 +801,6 @@
                 </div>
             </div>
         </section>
-
     </main>
     <!-- Go to Top Button -->
     <div x-data="{ show: false }"
@@ -1005,7 +876,6 @@
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Help Center</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Terms of Service</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Privacy Policy</a></li>
-
                     </ul>
                 </div>
                 <!-- Contact Info -->
@@ -1039,7 +909,6 @@
             </p>
         </div>
     </footer>
-
     <!-- Custom JavaScript -->
     <script>
         document.addEventListener('alpine:init', () => {
