@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f5f3ff; /* light purple background */
+            font-family: 'Segoe UI',sans-serif;
+        }
+
+        .card {
+            max-width: 420px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 22px;
+            box-shadow: 0 12px 35px rgba(88,28,135,.15);
+            border-top: 6px solid #7c3aed;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .logo img {
+            width: 120px;
+            margin-bottom: 6px;
+        }
+
+        .header h1 {
+            margin: 6px 0 0;
+            font-size: 22px;
+            color: #4c1d95;
+        }
+
+        .header p {
+            margin: 4px 0 0;
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        .hr {
+            border-top: 1px solid #e5e7eb;
+            margin: 14px 0;
+        }
+
+        .label {
+            font-size: 13px;
+            color: #6b7280;
+        }
+
+        .value {
+            font-size: 15px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .service {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin: 8px 0;
+        }
+
+            .service span:last-child {
+                color: #4c1d95;
+                font-weight: 600;
+            }
+
+        .total {
+            font-size: 18px;
+            font-weight: 700;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 10px;
+            margin-top: 10px;
+            color: #4c1d95;
+        }
+
+        .features p {
+            margin: 6px 0;
+            font-size: 14px;
+            color: #065f46;
+        }
+
+        .share-btn {
+            width: 100%;
+            margin-top: 18px;
+            padding: 14px;
+            border: none;
+            border-radius: 12px;
+            background: #7c3aed;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+            .share-btn:active {
+                transform: scale(.98);
+            }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #6b7280;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="header">
+            <!-- YOUR LOGO -->
+            <div class="logo">
+                <img src="logo.png" alt="Gujar Infotech">
+            </div>
+            <h1>Gujar Infotech</h1>
+            <p>Web & Mobile Solutions</p>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="label">Quotation</div>
+        <div class="value">#1025 | 30 Jan 2026</div>
+
+        <div class="hr"></div>
+
+        <div class="label">Prepared For</div>
+        <div class="value">Client Name</div>
+        <div class="label">+91 XXXXXXXXXX</div>
+
+        <div class="hr"></div>
+
+        <div class="label">Services</div>
+        <div class="service"><span>Website Development</span><span>₹25,000</span></div>
+        <div class="service"><span>Admin Panel</span><span>₹15,000</span></div>
+        <div class="service"><span>SEO Optimization</span><span>₹5,000</span></div>
+        <div class="service total"><span>Total</span><span>₹45,000</span></div>
+
+        <div class="hr"></div>
+
+        <div class="features">
+            <p>✔ Delivery: 15–20 Days</p>
+            <p>✔ 1 Year Free Support</p>
+            <p>✔ Valid for 7 Days</p>
+        </div>
+
+        <button class="share-btn" onclick="shareQuotation()">
+            📤 Share Quotation
+        </button>
+
+        <div class="footer">
+            Thank you for choosing Gujar Infotech 🙏
+        </div>
+
+    </div>
+
+    <script>
+        function shareQuotation() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Quotation - Gujar Infotech',
+                    text: 'Hello, please check our project quotation.',
+                    url: window.location.href
+                });
+            } else {
+                alert('Share option works on mobile browsers only.');
+            }
+        }
+    </script>
+
+</body>
+</html>
