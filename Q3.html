@@ -162,7 +162,10 @@
 
         <!-- CTA -->
         <div class="cta">
-            <a href="#">📩 Contact Us on WhatsApp</a>
+            <button class="share-btn" onclick="shareQuotation()">
+                📩 Contact Us
+            </button>
+            <a href="#"></a>
         </div>
 
         <div class="footer">
@@ -170,6 +173,20 @@
         </div>
 
     </div>
-
+    <script>
+        function shareQuotation() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Quotation - Gujar Infotech',
+                    text: 'Hello, please check our project quotation.',
+                    url: window.location.href
+                });
+            }
+            else {
+                alert('Share option works on mobile browsers only.');
+            }
+        }
+    </script>
 </body>
+
 </html>
