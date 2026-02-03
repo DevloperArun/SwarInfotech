@@ -369,12 +369,9 @@
                         <div x-show="! themeSwitcher.isRTL()" class="w-5 h-5 d-flex content-center items-center text-xs">RTL</div>
                         <div x-show="themeSwitcher.isRTL()" class="w-5 h-5 d-flex content-center items-center text-xs">LTR</div>
                     </button>
-
-
                 </div>
             </div>
         </nav>
-
         <!-- Mega Menu Items -->
         <div x-show="megaMenuOpen"
              x-transition:enter="transition ease-out duration-500"
@@ -408,7 +405,6 @@
                             </svg>
                         </button>
                     </div>
-
                     <!-- Breadcrumbs -->
                     <div x-show="breadcrumbs.length > 1" class="mt-2 flex items-center text-sm text-gray-500 dark:text-gray-400 dark:text-gray-500">
                         <template x-for="(crumb, index) in breadcrumbs" :key="index">
