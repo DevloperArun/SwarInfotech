@@ -204,7 +204,6 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             top: calc(50vh - var(--spacing) * 18);
         }
-
             .cosmic-hero-swiper .swiper-button-next:hover,
             .cosmic-hero-swiper .swiper-button-prev:hover {
                 background: rgba(255, 255, 255, 0.3) !important;
@@ -227,12 +226,10 @@
             opacity: 1;
             transform: perspective(1000px) rotateY(0) translateY(0);
         }
-
-        /* New floating elements */
-        .floating-element-1 {
+        .floating-element-1 
+         {
             animation: float-particles 6s infinite ease-in-out;
         }
-
         .floating-element-2 {
             animation: float-particles 8s infinite ease-in-out;
             animation-delay: 1s;
@@ -353,7 +350,6 @@
                 </div>
                 <!-- Right side menu -->
                 <div class="flex flex-wrap items-center gap-4" x-bind:class="{'justify-center p-6': mobileMenuOpen}">
-                    <!-- Theme Toggle -->
                     <button x-data="{ themeSwitcher: new ThemeSwitcher() }"
                             @click="themeSwitcher.toggleTheme()"
                             class="theme-toggle p-2 rounded-lg cursor-pointer transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white border border-gray-200 dark:border-gray-600">
@@ -435,7 +431,7 @@
                             <!-- our services -->
                             <div>
                                 <div class="space-y-4">
-                                    <a href="Services/Webdevelopment.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="Webdevelopment.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
                                                 <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -448,7 +444,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="Services/Mobile_Application.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href=Mobile_Application.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
                                                 <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -461,7 +457,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="Services/UIUX.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="UIUX.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-purple-100 transition-colors">
                                                 <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -479,7 +475,7 @@
                             <!-- Categories -->
                             <div>
                                 <div class="space-y-4">
-                                    <a href="Services/WindowApplication.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="WindowApplication.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
                                                 <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
