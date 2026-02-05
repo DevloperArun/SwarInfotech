@@ -141,8 +141,6 @@
                 transform: perspective(1000px) rotateY(-20deg) translateY(-50px) scale(0.9);
             }
         }
-
-        /* New gradient overlays */
         .cosmic-gradient-1 {
             background: linear-gradient(125deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
         }
@@ -165,12 +163,9 @@
             border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
             animation: wave-morph 12s infinite ease-in-out;
         }
-
         .slide-3d-in {
             animation: slide-3d-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         }
-
-        /* New swiper styling */
         .cosmic-hero-swiper .swiper-pagination-bullet {
             background: rgba(255, 255, 255, 0.3) !important;
             width: 16px !important;
@@ -179,14 +174,12 @@
             opacity: 0.5 !important;
             transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
-
         .cosmic-hero-swiper .swiper-pagination-bullet-active {
             background: white !important;
             opacity: 1 !important;
             transform: scale(1.4);
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
         }
-
         .cosmic-hero-swiper .swiper-button-next,
         .cosmic-hero-swiper .swiper-button-prev {
             color: white !important;
@@ -199,52 +192,47 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             top: calc(50vh - var(--spacing) * 18);
         }
-
             .cosmic-hero-swiper .swiper-button-next:hover,
-            .cosmic-hero-swiper .swiper-button-prev:hover {
+            .cosmic-hero-swiper .swiper-button-prev:hover 
+            {
                 background: rgba(255, 255, 255, 0.3) !important;
                 box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
             }
-
             .cosmic-hero-swiper .swiper-button-next::after,
-            .cosmic-hero-swiper .swiper-button-prev::after {
+            .cosmic-hero-swiper .swiper-button-prev::after 
+            {
                 font-size: 16px !important;
                 font-weight: bold !important;
             }
-
         /* New slide content animation */
-        .cosmic-slide-content {
+        .cosmic-slide-content 
+            {
             opacity: 0;
             transform: perspective(1000px) rotateY(10deg) translateY(30px);
             transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-
         .swiper-slide-active .cosmic-slide-content {
             opacity: 1;
             transform: perspective(1000px) rotateY(0) translateY(0);
         }
-
         /* New floating elements */
-        .floating-element-1 {
+        .floating-element-1 
+        {
             animation: float-particles 6s infinite ease-in-out;
         }
-
-        .floating-element-2 {
+        .floating-element-2 
+        {
             animation: float-particles 8s infinite ease-in-out;
             animation-delay: 1s;
         }
-
-        .floating-element-3 {
+        .floating-element-3 
+        {
             animation: float-particles 10s infinite ease-in-out;
             animation-delay: 2s;
         }
     </style>
-
 </head>
-
-<body class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 transition-all duration-300 ease-in-out min-h-screen"
-      data-motion-enabled="true">
-
+<body class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 transition-all duration-300 ease-in-out min-h-screen" data-motion-enabled="true">
     <!-- Preloader -->
     <div class="preloader fixed inset-0 z-[99999] flex items-center justify-center bg-gray-100 dark:bg-gray-900 transition-all duration-300 h-screen">
         <div class="flex flex-col items-center gap-2">
@@ -254,7 +242,7 @@
         </div>
     </div>
     <!-- Header/Navbar -->
-   <header x-data="unifiedNavigation()"
+   <header x-data="unifiedNavigation()" 
             class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
             :class="scrolled ? 'navbar-blur shadow-lg bg-white/90 dark:bg-gray-900/95 backdrop-blur-md' : 'bg-white/90 dark:bg-gray-800/95 backdrop-blur-md'"
             @mouseleave="closeMegaMenu()">
@@ -303,7 +291,6 @@
                             </button>
                         </div>
                     </div>
-
                     <ul class="flex items-center space-x-1" x-bind:class="{'flex-col !items-start': mobileMenuOpen}">
                         <li class="w-full">
                             <a href="/SwarInfotech/index.html"
@@ -312,7 +299,6 @@
                                 Home
                             </a>
                         </li>
-
                         <li class="w-full">
                             <a href="/SwarInfotech/about.html"
                                class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center cursor-pointer"
@@ -347,7 +333,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <!-- Right side menu -->
                 <div class="flex flex-wrap items-center gap-4" x-bind:class="{'justify-center p-6': mobileMenuOpen}">
                     <!-- Theme Toggle -->
@@ -361,7 +346,6 @@
                             <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
                         </svg>
                     </button>
-
                     <!-- Direction Toggle -->
                     <button x-data="{ themeSwitcher: new ThemeSwitcher() }"
                             @click="themeSwitcher.toggleDirection()"
@@ -394,7 +378,6 @@
                             </svg>
                             Back
                         </button>
-
                         <!-- Title -->
                         <div class="text-lg font-semibold text-gray-900 dark:text-white" x-text="currentMenu?.title"></div>
                         <!-- Close Button -->
@@ -417,7 +400,6 @@
                         </template>
                     </div>
                 </div>
-
                 <!-- Courses Mega Menu -->
                 <div x-show="megaMenuOpen === 'Services'"
                      x-transition:enter="transition ease-out duration-500 delay-100"
@@ -438,8 +420,7 @@
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
                                                 <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                          d="M16 18l6-6-6-6M8 6l-6 6 6 6M14 4l-4 16" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 18l6-6-6-6M8 6l-6 6 6 6M14 4l-4 16" />
                                                 </svg>
                                             </div>
                                             <div>
@@ -494,19 +475,16 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="Services/SEO.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
                                                 <svg class="h-5 w-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <!-- Magnifying glass = SEO -->
                                                     <circle cx="11" cy="11" r="6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
                                                     <line x1="16.5" y1="16.5" x2="20" y2="20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
-
-                                                    <!-- Gear / optimization lines = Website Optimization -->
                                                     <path d="M4 12h2M18 12h2M12 4v2M12 18v2M5.5 5.5l1.5 1.5M17 17l1.5 1.5M5.5 18.5l1.5-1.5M17 7l1.5-1.5"
                                                           stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 </svg>
-
                                             </div>
                                             <div>
                                                 <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-green-600 transition-colors">SEO & Digital Optimization</div>
@@ -514,7 +492,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="Services/Maintainence.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-purple-100 transition-colors">
                                                 <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -532,7 +510,7 @@
                             <!-- Learning Paths -->
                             <div>
                                 <div class="space-y-4">
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="Services/Ecommerce.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
                                                 <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -546,7 +524,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="Services/BulkSMS.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
                                                 <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -581,9 +559,7 @@
     </header>
 
     <!-- Main Content -->
-   <main class="pt-16 sm:pt-20 min-h-screen" data-motion="zoom-out" data-motion-delay="0" data-motion-stagger="0.01"
-         data-motion-stagger-exclude=":first,:last">
-
+   <main class="pt-16 sm:pt-20 min-h-screen" data-motion="zoom-out" data-motion-delay="0" data-motion-stagger="0.01" data-motion-stagger-exclude=":first,:last">
        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
            <nav class="flex mb-8" aria-label="Breadcrumb">
                <ol class="inline-flex flex-wrap items-center space-x-1 md:space-x-3">
@@ -610,7 +586,6 @@
                        </div>
                        <p class="text-gray-600 dark:text-gray-300 text-center font-medium">Projects</p>
                    </div>
-
                    <!-- Courses Stat -->
                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
                        <div class="flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-xl mb-4 mx-auto">
@@ -623,7 +598,6 @@
                        </div>
                        <p class="text-gray-600 dark:text-gray-300 text-center font-medium">Happy Client</p>
                    </div>
-
                    <!-- Instructors Stat -->
                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
                        <div class="flex items-center justify-center w-16 h-16 bg-amber-100 dark:bg-amber-900/30 rounded-xl mb-4 mx-auto">
@@ -636,7 +610,6 @@
                        </div>
                        <p class="text-gray-600 dark:text-gray-300 text-center font-medium">Year Experience</p>
                    </div>
-
                    <!-- Success Rate Stat -->
                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
                        <div class="flex items-center justify-center w-16 h-16 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl mb-4 mx-auto">
@@ -656,9 +629,7 @@
        <section class="py-16 bg-white dark:bg-gray-800">
            <div class="container mx-auto px-4">
                <div class="relative rounded-2xl overflow-hidden bg-[#f5f7fb]">
-                   <img src="assets/images/Custom/Our_Mission.png"
-                        alt="Vision and Mission"
-                        class="w-full object-contain rounded-2xl" />
+                   <img src="assets/images/Custom/Our_Mission.png" alt="Vision and Mission" class="w-full object-contain rounded-2xl" />
                </div>
            </div>
        </section>
@@ -671,7 +642,6 @@
                        Our values define who we are, guide our decisions, and shape the way we deliver innovative technology solutions to our clients worldwide.
                    </p>
                </div>
-
                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                    <!-- Value 1 -->
                    <div class="bg-white dark:bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all duration-300">
@@ -685,7 +655,6 @@
                            We strive for excellence in everything we do, delivering high-quality,reliable, and scalable solutions that exceed expectations.
                        </p>
                    </div>
-
                    <!-- Value 2 -->
                    <div class="bg-white dark:bg-gray-800 rounded-xl p-8 card-shadow">
                        <div class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-6">
@@ -699,7 +668,6 @@
                            accessibility best practices to ensure usability, clarity, and equal access.
                        </p>
                    </div>
-
                    <!-- Value 3 -->
                    <div class="bg-white dark:bg-gray-800 rounded-xl p-8 card-shadow">
                        <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
@@ -712,7 +680,6 @@
                            We embrace creativity and emerging technologies to build forward-thinking solutions that keep our clients ahead in a rapidly evolving digital world.
                        </p>
                    </div>
-
                    <!-- Value 4 -->
                    <div class="bg-white dark:bg-gray-800 rounded-xl p-8 card-shadow">
                        <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6">
@@ -726,7 +693,6 @@
                            through teamwork, inclusion, and meaningful connections.
                        </p>
                    </div>
-
                    <!-- Value 5 -->
                    <div class="bg-white dark:bg-gray-800 rounded-xl p-8 card-shadow">
                        <div class="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
@@ -741,7 +707,6 @@
                            ensures long-term relationships with our clients and partners.
                        </p>
                    </div>
-
                    <!-- Value 6 -->
                    <div class="bg-white dark:bg-gray-800 rounded-xl p-8 card-shadow">
                        <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
@@ -757,7 +722,6 @@
                </div>
            </div>
        </section>
-
        <section class="py-16 bg-gray-50 dark:bg-gray-900">
            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                <div class="max-w-4xl mx-auto">
@@ -767,59 +731,41 @@
                            A journey of growth, innovation, and impact — year by year.
                        </p>
                    </div>
-
                    <div class="prose prose-lg max-w-none">
                        <p class="text-gray-600 dark:text-gray-300 mb-6">
-                           Our journey began with a simple idea — to use technology as a force for
-                           positive change. What started as a small team of passionate developers
-                           and problem-solvers has grown into a trusted IT company delivering
+                           Our journey began with a simple idea — to use technology as a force for positive change. What started as a small team of passionate developers and problem-solvers has grown into a trusted IT company delivering
                            impactful digital solutions.
                        </p>
-
                        <p class="text-gray-600 dark:text-gray-300 mb-6">
-                           From web and software development to modern cloud-based systems, we
-                           have consistently focused on innovation, quality, and client success.
-                           Every project we take on is driven by collaboration, integrity, and
-                           a deep understanding of real-world business challenges.
+                           From web and software development to modern cloud-based systems, we have consistently focused on innovation, quality, and client success.
+                           Every project we take on is driven by collaboration, integrity, and a deep understanding of real-world business challenges.
                        </p>
-
                        <p class="text-gray-600 dark:text-gray-300 mb-8">
-                           Today, we continue to evolve with emerging technologies while staying
-                           true to our core values. Our story is still being written — powered by
-                           people, passion, and purpose.
+                           Today, we continue to evolve with emerging technologies while staying true to our core values. Our story is still being written — powered by people, passion, and purpose.
                        </p>
-
                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 card-shadow">
                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">2022 <br /><span style="font-size:10px;color:cadetblue"> The Beginning</span>  </h3>
                                <p class="text-gray-600 dark:text-gray-300">
-                                   Our journey started with a small but passionate team focused on
-                                   delivering reliable web and software solutions. We laid a strong
-                                   foundation built on quality, trust, and client satisfaction.
+                                   Our journey started with a small but passionate team focused on delivering reliable web and software solutions. We laid a strong foundation built on quality, trust, and client satisfaction.
                                </p>
                            </div>
                            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 card-shadow">
                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">2023<br /><span style="font-size:10px;color:darkorchid">Growth & Expansion</span></h3>
                                <p class="text-gray-600 dark:text-gray-300">
-                                   We expanded our services, onboarded new clients, and strengthened
-                                   our expertise in modern web technologies, custom software, and
-                                   digital solutions for growing businesses.
+                                   We expanded our services, onboarded new clients, and strengthened our expertise in modern web technologies, custom software, and digital solutions for growing businesses.
                                </p>
                            </div>
                            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 card-shadow">
                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">2024 <br /><span style="font-size:10px;color:indianred">  Innovation & Trust</span></h3>
                                <p class="text-gray-600 dark:text-gray-300">
-                                   Innovation became our driving force. We adopted new technologies,
-                                   improved development processes, and built long-term partnerships
-                                   by delivering scalable and secure solutions.
+                                   Innovation became our driving force. We adopted new technologies,improved development processes, and built long-term partnerships by delivering scalable and secure solutions.
                                </p>
                            </div>
                            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 card-shadow">
                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">2025 <br /><span style="font-size:10px;color:sandybrown">   Digital Transformation</span></h3>
                                <p class="text-gray-600 dark:text-gray-300">
-                                   Today, we continue to empower businesses through digital
-                                   transformation, focusing on performance, accessibility,
-                                   security, and future-ready IT solutions.
+                                   Today, we continue to empower businesses through digital transformation, focusing on performance, accessibility,security and future-ready IT solutions.
                                </p>
                            </div>
                        </div>
@@ -827,7 +773,6 @@
                </div>
            </div>
        </section>
-
        <!-- CTA Section -->
        <section class="py-16 lg:py-24 gradient-primary" data-motion="false">
            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -837,28 +782,17 @@
                        Have questions or suggestions? Send us a message and we’ll get back to you.
                    </p>
                    <form @submit.prevent="sendMessage()" class="flex flex-col gap-4">
-                       <input x-model="name" type="text" placeholder="Your Name"
-                              class="px-6 py-4 rounded-lg text-white border border-gray-300 focus:ring-2 focus:ring-white focus:outline-none"
-                              required>
-                       <input x-model="email" type="email" placeholder="Your Email"
-                              class="px-6 py-4 rounded-lg text-white border border-gray-300 focus:ring-2 focus:ring-white focus:outline-none"
-                              required>
-                       <textarea x-model="message" placeholder="Your Message"
-                                 class="px-6 py-4 rounded-lg text-white border border-gray-300 focus:ring-2 focus:ring-white focus:outline-none resize-none"
-                                 rows="5" required></textarea>
-
-                       <button type="submit"
-                               :disabled="isSubmitting"
-                               class="btn-secondary text-white px-8 py-4 rounded-lg font-semibold disabled:opacity-50 cursor-pointer">
+                       <input x-model="name" type="text" placeholder="Your Name" class="px-6 py-4 rounded-lg text-white border border-gray-300 focus:ring-2 focus:ring-white focus:outline-none" required>
+                       <input x-model="email" type="email" placeholder="Your Email" class="px-6 py-4 rounded-lg text-white border border-gray-300 focus:ring-2 focus:ring-white focus:outline-none" required>
+                       <textarea x-model="message" placeholder="Your Message" class="px-6 py-4 rounded-lg text-white border border-gray-300 focus:ring-2 focus:ring-white focus:outline-none resize-none" rows="5" required></textarea>
+                       <button type="submit" :disabled="isSubmitting" class="btn-secondary text-white px-8 py-4 rounded-lg font-semibold disabled:opacity-50 cursor-pointer">
                            <span x-show="!isSubmitting">Send Message</span>
                            <span x-show="isSubmitting">Sending...</span>
                        </button>
                    </form>
-                   <!-- Success Message -->
                    <div x-show="showSuccess" x-transition class="mt-4 p-4 bg-green-100 text-green-800 rounded-lg">
                        Your message has been sent successfully!
                    </div>
-                   <!-- Error Message -->
                    <div x-show="showError" x-transition class="mt-4 p-4 bg-red-100 text-red-800 rounded-lg" x-text="errorMessage"></div>
                    <p class="text-sm text-white/70 mt-4">
                        We respect your privacy. Your information will not be shared.
@@ -917,12 +851,10 @@
             </svg>
         </button>
     </div>
-
     <!-- Footer -->
     <footer class="bg-gray-900 dark:bg-gray-950 text-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Company Info -->
                 <div class="col-span-1 sm:col-span-2 lg:col-span-1">
                     <div class="flex items-center space-x-2 mb-6">
                      <img src="assets/images/Custom/logo.png" style="height: 75px;"/>
@@ -961,9 +893,9 @@
                     <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
                     <ul class="space-y-3">
                         <li><a href="about.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">About</a></li>
-                        <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Services</a></li>
-                        <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Technologies</a></li>
-                        <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
+                        <li><a href="Services.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Services</a></li>
+                        <li><a href="tech.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Technologies</a></li>
+                        <li><a href="Contact.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Gallery</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Carrier</a></li>
                     </ul>
@@ -972,7 +904,7 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Support</h3>
                     <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
+                        <li><a href="Contact.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">FAQ</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Help Center</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Terms of Service</a></li>
