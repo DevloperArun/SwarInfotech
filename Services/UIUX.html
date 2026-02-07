@@ -372,7 +372,6 @@
                 </div>
             </div>
         </nav>
-
         <!-- Mega Menu Items -->
         <div x-show="megaMenuOpen"
              x-transition:enter="transition ease-out duration-500"
@@ -490,7 +489,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="SEO.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
                                                 <svg class="h-5 w-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -508,7 +507,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="Maintainence.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-purple-100 transition-colors">
                                                 <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -526,7 +525,7 @@
                             <!-- Learning Paths -->
                             <div>
                                 <div class="space-y-4">
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="Ecommerce.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
                                                 <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -540,7 +539,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="BulkSMS.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
                                                 <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -562,7 +561,7 @@
                                     <p class="text-sm text-blue-100 mb-4 leading-relaxed">
                                         We deliver end-to-end web and software development services, focused on quality, performance, and client satisfaction.
                                     </p>
-                                    <a href="Services/Services.html" class="inline-block bg-white dark:bg-gray-800 text-blue-600 px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 hover:shadow-lg cursor-pointer">
+                                    <a href="Services.html" class="inline-block bg-white dark:bg-gray-800 text-blue-600 px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 hover:shadow-lg cursor-pointer">
                                         View Our Services
                                     </a>
                                 </div>
@@ -654,8 +653,6 @@
                                 </p>
                             </div>
                         </div>
-
-
                         <!-- Tab Navigation -->
                         <div class="border-b border-gray-200 dark:border-gray-600 dark:border-gray-700 mb-8 overflow-x-auto">
                             <nav class="flex space-x-8" aria-label="Tabs">
@@ -681,8 +678,6 @@
                                 </button>
                             </nav>
                         </div>
-
-                   
                         <div x-show="activeTab === 'overview'" x-transition>
                             <!-- What You'll Learn -->
                             <div class="mb-12">
@@ -739,7 +734,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Curriculum Tab -->
                         <div x-show="activeTab === 'curriculum'" x-transition>
                             <!-- Course Curriculum -->
@@ -747,23 +741,19 @@
                                 <div class="flex items-center justify-between mb-6">
                                     <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Course curriculum</h2>
                                 </div>
-
                                 <!-- Course Overview Section -->
                                 <div class="mb-6 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
                                     <div class="flex flex-wrap items-start space-x-4">
                                         <div class="lazyload-container relative overflow-hidden w-20 h-16 object-cover rounded-lg">
                                             <!-- Skeleton overlay -->
                                             <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                             <!-- Skeleton shimmer -->
                                             <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
                                             <!-- Lazy image -->
                                             <img data-src="./../assets/images/lessons/course-overview-thumbnail.jpg"
                                                  alt="Course Overview"
                                                  class="w-20 h-16 object-cover rounded-lg lazyload"
                                                  class="w-20 h-16 object-cover rounded-lg">
-
                                             <!-- SEO fallback for non-JS / crawlers -->
                                             <noscript>
                                                 <img src="../assets/images/lessons/course-overview-thumbnail.jpg" loading="lazy" alt="Course Overview" class="w-20 h-16 object-cover rounded-lg">
@@ -781,7 +771,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div x-data="accordion()" class="space-y-4">
                                     <!-- Section 1 -->
                                     <div class="border border-gray-200 dark:border-gray-600 dark:border-gray-700 rounded-lg overflow-hidden">
@@ -791,16 +780,13 @@
                                                 <div class="lazyload-container relative overflow-hidden w-12 h-12 object-cover rounded-lg">
                                                     <!-- Skeleton overlay -->
                                                     <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                                     <!-- Skeleton shimmer -->
                                                     <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
                                                     <!-- Lazy image -->
                                                     <img data-src="./../assets/images/lessons/html-css-lesson.jpg"
                                                          alt="HTML CSS"
                                                          class="w-12 h-12 object-cover rounded-lg lazyload"
                                                          class="w-12 h-12 object-cover rounded-lg">
-
                                                     <!-- SEO fallback for non-JS / crawlers -->
                                                     <noscript>
                                                         <img src="../assets/images/lessons/html-css-lesson.jpg" loading="lazy" alt="HTML CSS" class="w-12 h-12 object-cover rounded-lg">
@@ -845,7 +831,6 @@
                                                         </button>
                                                     </div>
                                                 </li>
-
                                                 <!-- Locked Video Lesson -->
                                                 <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
                                                     <div class="flex flex-wrap items-center space-x-3">
@@ -879,7 +864,6 @@
                                                         </template>
                                                     </div>
                                                 </li>
-
                                                 <!-- PDF Resource -->
                                                 <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
                                                     <div class="flex flex-wrap items-center space-x-3">
@@ -915,7 +899,6 @@
                                                         </template>
                                                     </div>
                                                 </li>
-
                                                 <!-- Video Lesson -->
                                                 <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
                                                     <div class="flex flex-wrap items-center space-x-3">
@@ -949,7 +932,6 @@
                                                         </template>
                                                     </div>
                                                 </li>
-
                                                 <!-- Project Assignment -->
                                                 <li class="flex items-center justify-between p-3 rounded-lg border border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-900/20">
                                                     <div class="flex flex-wrap items-center space-x-3">
@@ -978,7 +960,6 @@
                                             </ul>
                                         </div>
                                     </div>
-
                                     <!-- Section 2 -->
                                     <div class="border border-gray-200 dark:border-gray-600 dark:border-gray-700 rounded-lg overflow-hidden">
                                         <button @click="toggle('section2')"
@@ -987,16 +968,13 @@
                                                 <div class="lazyload-container relative overflow-hidden w-12 h-12 object-cover rounded-lg">
                                                     <!-- Skeleton overlay -->
                                                     <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                                     <!-- Skeleton shimmer -->
                                                     <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
                                                     <!-- Lazy image -->
                                                     <img data-src="./../assets/images/lessons/javascript-lesson.jpg"
                                                          alt="JavaScript"
                                                          class="w-12 h-12 object-cover rounded-lg lazyload"
                                                          class="w-12 h-12 object-cover rounded-lg">
-
                                                     <!-- SEO fallback for non-JS / crawlers -->
                                                     <noscript>
                                                         <img src="../assets/images/lessons/javascript-lesson.jpg" loading="lazy" alt="JavaScript" class="w-12 h-12 object-cover rounded-lg">
@@ -1166,16 +1144,13 @@
                                                 <div class="lazyload-container relative overflow-hidden w-12 h-12 object-cover rounded-lg">
                                                     <!-- Skeleton overlay -->
                                                     <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                                     <!-- Skeleton shimmer -->
                                                     <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
                                                     <!-- Lazy image -->
                                                     <img data-src="./../assets/images/lessons/react-lesson.jpg"
                                                          alt="React"
                                                          class="w-12 h-12 object-cover rounded-lg lazyload"
                                                          class="w-12 h-12 object-cover rounded-lg">
-
                                                     <!-- SEO fallback for non-JS / crawlers -->
                                                     <noscript>
                                                         <img src="../assets/images/lessons/react-lesson.jpg" loading="lazy" alt="React" class="w-12 h-12 object-cover rounded-lg">
@@ -1337,10 +1312,8 @@
                                                 <div class="lazyload-container relative overflow-hidden w-12 h-12 object-cover rounded-lg">
                                                     <!-- Skeleton overlay -->
                                                     <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                                     <!-- Skeleton shimmer -->
                                                     <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
                                                     <!-- Lazy image -->
                                                     <img data-src="./../assets/images/lessons/nodejs-lesson.jpg"
                                                          alt="Node.js"
@@ -1475,16 +1448,13 @@
                                                 <div class="lazyload-container relative overflow-hidden w-12 h-12 object-cover rounded-lg">
                                                     <!-- Skeleton overlay -->
                                                     <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                                     <!-- Skeleton shimmer -->
                                                     <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
                                                     <!-- Lazy image -->
                                                     <img data-src="./../assets/images/lessons/fullstack-projects-lesson.jpg"
                                                          alt="Full-Stack Projects"
                                                          class="w-12 h-12 object-cover rounded-lg lazyload"
                                                          class="w-12 h-12 object-cover rounded-lg">
-
                                                     <!-- SEO fallback for non-JS / crawlers -->
                                                     <noscript>
                                                         <img src="../assets/images/lessons/fullstack-projects-lesson.jpg" loading="lazy" alt="Full-Stack Projects" class="w-12 h-12 object-cover rounded-lg">
@@ -1554,7 +1524,6 @@
                                                         </button>
                                                     </div>
                                                 </li>
-
                                                 <!-- Social Media App -->
                                                 <li class="flex items-center justify-between p-3 rounded-lg border border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-900/20">
                                                     <div class="flex flex-wrap items-center space-x-3">
@@ -1580,7 +1549,6 @@
                                                         </button>
                                                     </div>
                                                 </li>
-
                                                 <!-- Project Resources -->
                                                 <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
                                                     <div class="flex flex-wrap items-center space-x-3">
@@ -1622,7 +1590,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Instructor Tab -->
                         <div x-show="activeTab === 'instructor'" x-transition>
                             <!-- Instructor -->
@@ -1633,16 +1600,13 @@
                                         <div class="lazyload-container relative overflow-hidden w-24 h-24 rounded-full">
                                             <!-- Skeleton overlay -->
                                             <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                             <!-- Skeleton shimmer -->
                                             <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
                                             <!-- Lazy image -->
                                             <img data-src="./../assets/images/instructors/instructor-large-profile.jpg"
                                                  alt="John Smith"
                                                  class="w-24 h-24 rounded-full lazyload"
                                                  class="w-24 h-24 rounded-full">
-
                                             <!-- SEO fallback for non-JS / crawlers -->
                                             <noscript>
                                                 <img src="../assets/images/instructors/instructor-large-profile.jpg" loading="lazy" alt="John Smith" class="w-24 h-24 rounded-full">
@@ -1694,7 +1658,6 @@
                                             <div class="lazyload-container relative overflow-hidden w-12 h-12 rounded-full">
                                                 <!-- Skeleton overlay -->
                                                 <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                                 <!-- Skeleton shimmer -->
                                                 <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
 
@@ -1814,31 +1777,22 @@
                             </div>
                         </div>
                     </div>
-
-                   
- 
                     <div class="lg:col-span-1">
                         <div class="sticky top-24 mt-6">
                             <!-- Service Card -->
                             <div class="bg-white dark:bg-gray-800 rounded-xl p-6 card-shadow mb-6">
-                              
-
                                 <!-- Client Quote / Impression -->
                                 <div class="mb-6 px-4 py-3 bg-indigo-50 dark:bg-gray-900 rounded-lg text-center">
                                     <p class="text-sm italic text-gray-700 dark:text-gray-300">"One place. Complete your website & portal solutions – we make your business digital-ready!"</p>
                                 </div>
-
                                 <div class="space-y-4 mb-6">
                                     <a href="#" class="w-full btn-primary text-white py-3 rounded-lg font-semibold text-center block">
                                         Request Quote
                                     </a>
-                                 
                                 </div>
-
                                 <div class="text-center text-sm text-gray-600 dark:text-gray-300 mb-6">
                                     100% Satisfaction Guarantee | Quick Turnaround | Expert Support
                                 </div>
-
                                 <!-- Service Includes -->
                                 <div>
                                     <h3 class="font-semibold text-gray-900 dark:text-white mb-4">Our Web Services Include:</h3>
@@ -1882,14 +1836,12 @@
                                     </ul>
                                 </div>
                             </div>
-
                             <!-- Sidebar Ad -->
                             <div class="min-h-[250px] flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-lg p-4 text-center">
                                 <span class="text-gray-500 dark:text-gray-400">Advertisement Space - 300x250</span>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section> 
@@ -1923,13 +1875,10 @@
             if (localStorage.getItem(window.location.host+'_show-promotional-modal-1-1.0') === 'false') {
                 return;
             }
-
             this.open = true;
         },
-
         closeModal() {
             localStorage.setItem(window.location.host+'_show-promotional-modal-1-1.0', false);
-
             this.open = false;
         }
     }"
@@ -2190,27 +2139,22 @@
                                                                 <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">
                                                                     <!-- Skeleton overlay -->
                                                                     <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                                                     <!-- Skeleton shimmer -->
                                                                     <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
                                                                     <!-- Lazy image -->
                                                                     <img data-src=""
                                                                          :data-src="course.image" alt="Image"
                                                                          class="w-full h-24 object-cover rounded-lg mb-2 lazyload"
                                                                          :src="course.image" :alt="course.title" class="w-full h-24 object-cover rounded-lg mb-2">
-
                                                                     <!-- SEO fallback for non-JS / crawlers -->
                                                                     <noscript>
                                                                         <img src="#" loading="lazy" alt="Image" :src="course.image" :alt="course.title" class="w-full h-24 object-cover rounded-lg mb-2">
                                                                     </noscript>
                                                                 </div>
                                                             </a>
-
                                                             <a href="#">
                                                                 <h3 class="text-sm text-indigo-500 font-semibold truncate" x-text="course.title"></h3>
                                                             </a>
-
                                                             <p class="text-xs text-gray-600 truncate" x-text="'By ' + course.instructor"></p>
                                                         </div>
                                                     </template>
@@ -2218,7 +2162,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <!-- Books Slide -->
                                     <div class="swiper-slide">
                                         <div class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 rounded-2xl p-4 lg:p-30 w-full">
@@ -2256,11 +2199,9 @@
                                                                     </noscript>
                                                                 </div>
                                                             </a>
-
                                                             <a href="#">
                                                                 <h3 class="text-sm text-indigo-500 font-semibold truncate" x-text="book.title"></h3>
                                                             </a>
-
                                                             <p class="text-xs text-gray-600 truncate" x-text="'By ' + book.author"></p>
                                                         </div>
                                                     </template>
@@ -2268,15 +2209,11 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <!-- Events Slide -->
-                                    
                                 </div>
-
                                 <!-- Navigation Arrows -->
                                 <div class="swiper-button-next"></div>
                                 <div class="swiper-button-prev"></div>
-
                                 <!-- Pagination -->
                                 <div class="swiper-pagination hidden"></div>
                             </div>
@@ -2328,10 +2265,10 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
                     <ul class="space-y-3">
-                        <li><a href="about.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">About</a></li>
-                        <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Services</a></li>
-                        <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Technologies</a></li>
-                        <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
+                        <li><a href="../about.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">About</a></li>
+                        <li><a href="Services.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Services</a></li>
+                        <li><a href="..Tech.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Technologies</a></li>
+                        <li><a href="../Contact.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Gallery</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Carrier</a></li>
                     </ul>
@@ -2340,7 +2277,7 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Support</h3>
                     <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
+                        <li><a href="../Contact.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">FAQ</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Help Center</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Terms of Service</a></li>
