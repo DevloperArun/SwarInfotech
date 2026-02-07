@@ -314,7 +314,6 @@
                                 Home
                             </a>
                         </li>
-
                         <li class="w-full">
                             <a href="../about.html"
                                class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center cursor-pointer"
@@ -1144,16 +1143,13 @@
                                                                 <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">
                                                                     <!-- Skeleton overlay -->
                                                                     <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                                                     <!-- Skeleton shimmer -->
                                                                     <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
                                                                     <!-- Lazy image -->
                                                                     <img data-src=""
                                                                          :data-src="book.image" alt="Image"
                                                                          class="w-full h-24 object-cover rounded-lg mb-2 lazyload"
                                                                          :src="book.image" :alt="book.title" class="w-full h-24 object-cover rounded-lg mb-2">
-
                                                                     <!-- SEO fallback for non-JS / crawlers -->
                                                                     <noscript>
                                                                         <img src="#" loading="lazy" alt="Image" :src="book.image" :alt="book.title" class="w-full h-24 object-cover rounded-lg mb-2">
