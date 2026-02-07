@@ -204,7 +204,6 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             top: calc(50vh - var(--spacing) * 18);
         }
-
             .cosmic-hero-swiper .swiper-button-next:hover,
             .cosmic-hero-swiper .swiper-button-prev:hover {
                 background: rgba(255, 255, 255, 0.3) !important;
@@ -227,12 +226,10 @@
             opacity: 1;
             transform: perspective(1000px) rotateY(0) translateY(0);
         }
-
         /* New floating elements */
         .floating-element-1 {
             animation: float-particles 6s infinite ease-in-out;
         }
-
         .floating-element-2 {
             animation: float-particles 8s infinite ease-in-out;
             animation-delay: 1s;
@@ -244,7 +241,6 @@
         }
     </style>
 </head>
-
 <body class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 transition-all duration-300 ease-in-out min-h-screen"
       data-motion-enabled="true">
     <!-- Preloader -->
@@ -416,167 +412,7 @@
                     </div>
                 </div>
                 <!-- Courses Mega Menu -->
-                <div x-show="megaMenuOpen === 'Services'"
-                     x-transition:enter="transition ease-out duration-500 delay-100"
-                     x-transition:enter-start="opacity-0 transform translate-y-4"
-                     x-transition:enter-end="opacity-100 transform translate-y-0"
-                     class="container mx-auto px-6 lg:px-8 py-12">
-                    <div class="w-full" data-motion="fade-up" data-motion-stagger="0.2">
-                        <!-- Header Section -->
-                        <div class="mb-8">
-                            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Provide Services</h2>
-                            <p class="text-gray-600 dark:text-gray-300">Comprehensive technology solutions designed to support business growth and long-term success.</p>
-                        </div>
-                        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
-                            <!-- our services -->
-                            <div>
-                                <div class="space-y-4">
-                                    <a href="../Services/Webdevelopment.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
-                                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-blue-600 transition-colors">Web Development</div>
-                                                <div class="text-xs text-gray-500 dark:text-gray-400">Complete Frontend & Backend</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
-                                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-green-600 transition-colors">Mobile Applications</div>
-                                                <div class="text-xs text-gray-500 dark:text-gray-400">AI & Machine Learning</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-purple-100 transition-colors">
-                                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h4a2 2 0 002-2V9a2 2 0 00-2-2H7a2 2 0 00-2 2v6a2 2 0 002 2z"></path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-purple-600 transition-colors">Web Design(UI/UX)</div>
-                                                <div class="text-xs text-gray-500 dark:text-gray-400">Design Thinking & Tools</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Categories -->
-                            <div>
-                                <div class="space-y-4">
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
-                                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-blue-600 transition-colors">Windows Appication</div>
-                                                <div class="text-xs text-gray-500 dark:text-gray-400">Complete Frontend & Backend</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
-                                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-green-600 transition-colors">SEO & Digital Optimization</div>
-                                                <div class="text-xs text-gray-500 dark:text-gray-400">AI & Machine Learning</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-purple-100 transition-colors">
-                                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h4a2 2 0 002-2V9a2 2 0 00-2-2H7a2 2 0 00-2 2v6a2 2 0 002 2z"></path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-purple-600 transition-colors">UI/UX Design</div>
-                                                <div class="text-xs text-gray-500 dark:text-gray-400">Design Thinking & Tools</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Learning Paths -->
-                            <div>
-                                <div class="space-y-4">
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
-                                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-blue-600 transition-colors">Web Development</div>
-                                                <div class="text-xs text-gray-500 dark:text-gray-400">Complete Frontend & Backend</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
-                                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-green-600 transition-colors">Data Science</div>
-                                                <div class="text-xs text-gray-500 dark:text-gray-400">AI & Machine Learning</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-purple-100 transition-colors">
-                                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h4a2 2 0 002-2V9a2 2 0 00-2-2H7a2 2 0 00-2 2v6a2 2 0 002 2z"></path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-purple-600 transition-colors">UI/UX Design</div>
-                                                <div class="text-xs text-gray-500 dark:text-gray-400">Design Thinking & Tools</div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- CTA Section -->
-                            <div>
-                                <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-6 text-white">
-                                    <h3 class="text-lg font-semibold mb-3">Our Services</h3>
-                                    <p class="text-sm text-blue-100 mb-4 leading-relaxed">
-                                        We deliver end-to-end web and software development services, focused on quality, performance, and client satisfaction.
-                                    </p>
-                                    <a href="Services.html" class="inline-block bg-white dark:bg-gray-800 text-blue-600 px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 hover:shadow-lg cursor-pointer">
-                                        View Our Services
-                                    </a>
-                                </div>
-                            </div>                      
-                        </div>
-                    </div>
-                </div>
-                <!-- Technologies Mega Menu -->
-                   <div x-show="megaMenuOpen === 'Services'"
+                  <div x-show="megaMenuOpen === 'Services'"
                      x-transition:enter="transition ease-out duration-500 delay-100"
                      x-transition:enter-start="opacity-0 transform translate-y-4"
                      x-transition:enter-end="opacity-100 transform translate-y-0"
