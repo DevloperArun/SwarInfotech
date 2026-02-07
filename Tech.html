@@ -354,7 +354,6 @@
                         </li>
                     </ul>
                 </div>
-
                 <!-- Right side menu -->
                 <div class="flex flex-wrap items-center gap-4" x-bind:class="{'justify-center p-6': mobileMenuOpen}">
                     <!-- Theme Toggle -->
@@ -368,7 +367,6 @@
                             <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
                         </svg>
                     </button>
-
                     <!-- Direction Toggle -->
                     <button x-data="{ themeSwitcher: new ThemeSwitcher() }"
                             @click="themeSwitcher.toggleDirection()"
@@ -376,22 +374,9 @@
                         <div x-show="! themeSwitcher.isRTL()" class="w-5 h-5 d-flex content-center items-center text-xs">RTL</div>
                         <div x-show="themeSwitcher.isRTL()" class="w-5 h-5 d-flex content-center items-center text-xs">LTR</div>
                     </button>
-
-                    <!-- Cart -->
-                    <!--<div x-data="cart()" class="relative">
-                        <a href="shop/cart.html" class="relative p-2 text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white transition-colors block cursor-pointer">
-                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-                            </svg>
-                            <span x-show="getItemCount() > 0" x-text="getItemCount()" class="absolute -top-1 -end-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center"></span>
-                        </a>
-                    </div>-->
-                    <!--<a href="auth/login.html" class="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer">Login</a>
-                    <a href="auth/register.html" class="btn-primary text-white px-6 py-2 rounded-lg text-sm font-medium cursor-pointer">Join Now</a>-->
                 </div>
             </div>
         </nav>
-
         <!-- Mega Menu Items -->
         <div x-show="megaMenuOpen"
              x-transition:enter="transition ease-out duration-500"
@@ -415,10 +400,8 @@
 
                             Back
                         </button>
-
                         <!-- Title -->
                         <div class="text-lg font-semibold text-gray-900 dark:text-white" x-text="currentMenu?.title"></div>
-
                         <!-- Close Button -->
                         <button class="text-gray-400 dark:text-gray-300 hover:text-gray-600 dark:hover:text-white transition-colors duration-200"
                                 @click="closeMegaMenu()">
@@ -485,8 +468,9 @@
                                     <a href="Services/UIUX.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-purple-100 transition-colors">
-                                                <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2 d="M4 5h16M4 9h10M4 15h6M4 19h6M14 14l6-6 2 2-6 6-3 1 1-3z" />
+                                               <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                          d="M4 5h16M4 9h10M4 15h6M4 19h6M14 14l6-6 2 2-6 6-3 1 1-3z" />
                                                 </svg>
                                             </div>
                                             <div>
@@ -514,19 +498,15 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="Services/SEO.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
                                                 <svg class="h-5 w-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <!-- Magnifying glass = SEO -->
                                                     <circle cx="11" cy="11" r="6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
                                                     <line x1="16.5" y1="16.5" x2="20" y2="20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
-
-                                                    <!-- Gear / optimization lines = Website Optimization -->
                                                     <path d="M4 12h2M18 12h2M12 4v2M12 18v2M5.5 5.5l1.5 1.5M17 17l1.5 1.5M5.5 18.5l1.5-1.5M17 7l1.5-1.5"
                                                           stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 </svg>
-
                                             </div>
                                             <div>
                                                 <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-green-600 transition-colors">SEO & Digital Optimization</div>
@@ -534,7 +514,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="Services/Maintainence.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-purple-100 transition-colors">
                                                 <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -552,7 +532,7 @@
                             <!-- Learning Paths -->
                             <div>
                                 <div class="space-y-4">
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="Services/Ecommerce.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
                                                 <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -566,7 +546,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="#" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
+                                    <a href="Services/BulkSMS.html" class="group block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 cursor-pointer">
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-100 transition-colors">
                                                 <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
