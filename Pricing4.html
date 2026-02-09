@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Plans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .billing-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 40px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+            .billing-toggle span {
+                opacity: .6;
+            }
+
+                .billing-toggle span.active {
+                    opacity: 1;
+                }
+
+            .billing-toggle .switch {
+                width: 50px;
+                height: 26px;
+                background: #fff;
+                border-radius: 30px;
+                position: relative;
+                cursor: pointer;
+            }
+
+                .billing-toggle .switch::after {
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    background: #667eea;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 3px;
+                    left: 4px;
+                    transition: .3s;
+                }
+
+        .yearly .switch::after {
+            left: 26px;
+        }
+
+        /* PLANS */
+        .plans {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+            gap: 30px;
+        }
+
+        .plan-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 26px;
+            padding: 28px 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,.2);
+            transition: .4s ease;
+        }
+
+            .plan-card:hover {
+                transform: translateY(-12px) scale(1.04);
+                box-shadow: 0 35px 70px rgba(0,0,0,.35);
+            }
+
+        .price {
+            font-size: 34px;
+            font-weight: 700;
+            color: #16a34a;
+        }
+
+        .plan-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 22px 0;
+        }
+
+            .plan-card ul li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+        .plan-card button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            color: #fff;
+            background: linear-gradient(135deg,#667eea,#764ba2);
+            cursor: pointer;
+        }
+
+        /* BADGES */
+        .badge {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px
+        }
+
+            .badge.blue {
+                background: #e0e7ff;
+                color: #3730a3
+            }
+
+            .badge.gold {
+                background: #fff3cd;
+                color: #92400e
+            }
+
+            .badge.purple {
+                background: #ede9fe;
+                color: #5b21b6
+            }
+
+        /* FLOATING ANIMATION */
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .delay1 {
+            animation-delay: 1s
+        }
+
+        .delay2 {
+            animation-delay: 2s
+        }
+
+        .delay3 {
+            animation-delay: 3s
+        }
+
+        @keyframes float {
+            0%,100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-12px)
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOGGLE -->
+    <div class="billing-toggle">
+        <span class="active" id="monthlyBtn">Monthly</span>
+        <div class="switch" onclick="toggleBilling()"></div>
+        <span id="yearlyBtn">Yearly <small>(Save 20%)</small></span>
+    </div>
+
+    <div class="plans">
+
+        <div class="plan-card float">
+            <span class="badge">Starter</span>
+            <h3>Basic Care</h3>
+            <p class="desc">Essential care for expecting moms</p>
+
+            <div class="price">
+                ₹<span data-month="4999" data-year="3999">4999</span>
+                <small>/ <span class="cycle">month</span></small>
+            </div>
+
+            <ul>
+                <li><i>🩺</i> Daily Health Reminders</li>
+                <li><i>🥗</i> Diet & Nutrition Plan</li>
+                <li><i>🧘‍♀️</i> Yoga & Exercise</li>
+                <li><i>🤖</i> AI Health Assistant</li>
+            </ul>
+
+            <button>Select Plan</button>
+        </div>
+
+        <div class="plan-card float delay1">
+            <span class="badge blue">Popular</span>
+            <h3>Essential Care</h3>
+            <p class="desc">Most chosen by moms</p>
+
+            <div class="price">
+                ₹<span data-month="9999" data-year="7999">9999</span>
+                <small>/ <span class="cycle">month</span></small>
+            </div>
+
+            <ul>
+                <li><i>🩺</i> All Basic Features</li>
+                <li><i>🎥</i> Doctor Video Consult</li>
+                <li><i>📊</i> Monthly Reports</li>
+                <li><i>⚡</i> Priority Support</li>
+            </ul>
+
+            <button>Select Plan</button>
+        </div>
+
+        <div class="plan-card highlight float delay2">
+            <span class="badge gold">Best Value</span>
+            <h3>Premium Care</h3>
+            <p class="desc">Complete premium experience</p>
+
+            <div class="price">
+                ₹<span data-month="14999" data-year="11999">14999</span>
+                <small>/ <span class="cycle">month</span></small>
+            </div>
+
+            <ul>
+                <li><i>👩‍⚕️</i> Personal Health Coach</li>
+                <li><i>📡</i> IoT Health Monitoring</li>
+                <li><i>📅</i> Weekly Tracking</li>
+                <li><i>⭐</i> Priority Doctor Access</li>
+            </ul>
+
+            <button>Choose Premium</button>
+        </div>
+
+        <div class="plan-card float delay3">
+            <span class="badge purple">Elite</span>
+            <h3>Super Mom</h3>
+            <p class="desc">For moms who want the best</p>
+
+            <div class="price">
+                ₹<span data-month="24999" data-year="19999">24999</span>
+                <small>/ <span class="cycle">month</span></small>
+            </div>
+
+            <ul>
+                <li><i>♾️</i> Unlimited Consultations</li>
+                <li><i>🕒</i> 24/7 Dedicated Support</li>
+                <li><i>🧠</i> Mental Wellness Sessions</li>
+                <li><i>👶</i> Baby Growth Tracker</li>
+            </ul>
+
+            <button>Go Elite</button>
+        </div>
+
+    </div>
+    <script>
+        let yearly = false;
+
+        function toggleBilling() {
+            yearly = !yearly;
+            document.body.classList.toggle("yearly", yearly);
+
+            document.querySelectorAll(".price span[data-month]").forEach(el => {
+                el.textContent = yearly ? el.dataset.year : el.dataset.month;
+            });
+
+            document.querySelectorAll(".cycle").forEach(el => {
+                el.textContent = yearly ? "year" : "month";
+            });
+
+            document.getElementById("monthlyBtn").classList.toggle("active", !yearly);
+            document.getElementById("yearlyBtn").classList.toggle("active", yearly);
+        }
+    </script>
+
+    <!-- Share Buttons -->
+    <div class="share-box">
+        <button class="share-btn whatsapp" onclick="shareWhatsApp()">
+            WhatsApp Share
+        </button>
+        <button class="share-btn instagram" onclick="shareInstagram()">
+            Instagram Share
+        </button>
+    </div>
+
+    <script>
+        function shareWhatsApp() {
+            let text = `Our Service Plans:
+
+Basic Care - ₹4,999
+Essential Care - ₹9,999
+Premium Care - ₹14,999
+Super Mom - ₹24,999
+
+Contact us for details.`;
+
+            let url = "https://wa.me/?text=" + encodeURIComponent(text);
+            window.open(url, "_blank");
+        }
+
+        function shareInstagram() {
+            navigator.clipboard.writeText(
+                `Our Service Plans:
+
+Basic Care - ₹4,999
+Essential Care - ₹9,999
+Premium Care - ₹14,999
+Super Mom - ₹24,999
+
+Contact us for details.`
+            );
+            alert("Text copied! Now open Instagram & paste in story or DM 📸");
+        }
+    </script>
+
+</body>
+
+
+
+
+</html>

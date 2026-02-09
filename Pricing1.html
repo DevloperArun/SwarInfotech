@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Plans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --brand1: #667eea;
+            --brand2: #764ba2;
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg,var(--brand1),var(--brand2));
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+            .header img {
+                height: 60px;
+                margin-bottom: 10px;
+            }
+
+        /* Input */
+        .input-box {
+            max-width: 500px;
+            margin: 0 auto 30px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            display: flex;
+            gap: 10px;
+        }
+
+            .input-box input {
+                flex: 1;
+                padding: 10px;
+                border-radius: 8px;
+                border: 1px solid #ddd;
+            }
+
+        /* Plans */
+        .plans {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .plan {
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transition: all .4s ease;
+            position: relative;
+        }
+
+            .plan:hover {
+                transform: translateY(-12px) scale(1.03);
+                box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+            }
+
+            .plan::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: 16px;
+                background: linear-gradient(135deg,var(--brand1),var(--brand2));
+                opacity: 0;
+                z-index: -1;
+            }
+
+            .plan:hover::before {
+                opacity: 0.15;
+            }
+
+            .plan h2 {
+                margin: 0 0 10px
+            }
+
+        .price {
+            font-size: 30px;
+            color: #1f9d55;
+            font-weight: bold
+        }
+
+        .duration {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px
+        }
+
+        ul {
+            list-style: none;
+            padding: 0
+        }
+
+            ul li {
+                margin-bottom: 8px;
+                font-size: 14px
+            }
+
+                ul li::before {
+                    content: "✔ ";
+                    color: #1f9d55
+                }
+
+        .share-btn {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(135deg,var(--brand1),var(--brand2));
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* Floating Share */
+        .floating {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+            .floating button {
+                padding: 12px 16px;
+                border-radius: 30px;
+                border: none;
+                cursor: pointer;
+                font-weight: 600;
+            }
+
+        .whatsapp {
+            background: #25D366;
+            color: #fff
+        }
+
+        .poster {
+            background: #111;
+            color: #fff
+        }
+
+        canvas {
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <!-- LOGO -->
+        <img src="https://dummyimage.com/200x60/ffffff/000000&text=YOUR+LOGO">
+        <h2>Choose the Best Care Plan</h2>
+    </div>
+
+    <div class="input-box">
+        <input type="text" id="clientName" placeholder="Enter Client Name">
+    </div>
+
+    <div class="plans">
+
+        <div class="plan" onclick="selectPlan('Basic Care','₹4,999')">
+            <h2>Basic Care</h2>
+            <div class="price">₹ 4,999</div>
+            <div class="duration">9 Months</div>
+            <ul>
+                <li>Daily Reminders</li>
+                <li>Diet Plan</li>
+                <li>Yoga</li>
+            </ul>
+            <button class="share-btn">Select & Share</button>
+        </div>
+
+        <div class="plan" onclick="selectPlan('Essential Care','₹9,999')">
+            <h2>Essential Care</h2>
+            <div class="price">₹ 9,999</div>
+            <div class="duration">9 Months</div>
+            <ul>
+                <li>All Basic</li>
+                <li>Video Consult</li>
+                <li>Reports</li>
+            </ul>
+            <button class="share-btn">Select & Share</button>
+        </div>
+
+        <div class="plan" onclick="selectPlan('Premium Care','₹14,999')">
+            <h2>Premium Care</h2>
+            <div class="price">₹ 14,999</div>
+            <div class="duration">9 Months</div>
+            <ul>
+                <li>Coach</li>
+                <li>IoT Kit</li>
+                <li>Weekly Tracking</li>
+            </ul>
+            <button class="share-btn">Select & Share</button>
+        </div>
+
+        <div class="plan" onclick="selectPlan('Super Mom','₹24,999')">
+            <h2>Super Mom</h2>
+            <div class="price">₹ 24,999</div>
+            <div class="duration">9 Months</div>
+            <ul>
+                <li>Unlimited Consult</li>
+                <li>24/7 Support</li>
+                <li>Baby Tracker</li>
+            </ul>
+            <button class="share-btn">Select & Share</button>
+        </div>
+
+    </div>
+
+    <!-- Floating Buttons -->
+    <div class="floating">
+        <button class="whatsapp" onclick="shareWhatsApp()">WhatsApp</button>
+        <button class="poster" onclick="generatePoster()">Generate Poster</button>
+    </div>
+
+    <canvas id="poster" width="1080" height="1350"></canvas>
+
+    <script>
+        let selectedPlan = "", selectedPrice = "";
+
+        function selectPlan(plan, price) {
+            selectedPlan = plan;
+            selectedPrice = price;
+            alert(plan + " selected");
+        }
+
+        function shareWhatsApp() {
+            let name = document.getElementById("clientName").value || "Client";
+            let text = `Hello ${name},
+
+Plan Selected: ${selectedPlan}
+Price: ${selectedPrice}
+
+View Plans:
+${window.location.href}`;
+
+            window.open("https://wa.me/?text=" + encodeURIComponent(text));
+        }
+
+        function generatePoster() {
+            let name = document.getElementById("clientName").value || "Client";
+            let c = document.getElementById("poster");
+            let ctx = c.getContext("2d");
+
+            let grd = ctx.createLinearGradient(0, 0, 1080, 1350);
+            grd.addColorStop(0, "#667eea");
+            grd.addColorStop(1, "#764ba2");
+            ctx.fillStyle = grd;
+            ctx.fillRect(0, 0, 1080, 1350);
+
+            ctx.fillStyle = "#fff";
+            ctx.font = "bold 60px Arial";
+            ctx.fillText("Service Plan", 350, 200);
+
+            ctx.font = "40px Arial";
+            ctx.fillText("Client: " + name, 200, 350);
+            ctx.fillText("Plan: " + selectedPlan, 200, 450);
+            ctx.fillText("Price: " + selectedPrice, 200, 550);
+
+            let img = c.toDataURL("image/png");
+            let a = document.createElement("a");
+            a.href = img;
+            a.download = "plan-poster.png";
+            a.click();
+        }
+    </script>
+
+</body>
+</html>

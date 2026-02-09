@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Plans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Plans */
+        .plans {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .plan {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+        }
+
+            .plan h2 {
+                margin: 0 0 10px
+            }
+
+        .price {
+            font-size: 28px;
+            color: #1f9d55;
+            font-weight: bold
+        }
+
+        .duration {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px
+        }
+
+        ul {
+            list-style: none;
+            padding: 0
+        }
+
+            ul li {
+                margin-bottom: 10px;
+                font-size: 14px
+            }
+
+                ul li::before {
+                    content: "✔ ";
+                    color: #1f9d55
+                }
+
+        .highlight {
+            border: 2px solid #6c63ff
+        }
+
+        .tag {
+            background: #6c63ff;
+            color: #fff;
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        /* Share Buttons */
+        .share-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 999;
+        }
+
+        .share-btn {
+            padding: 12px 16px;
+            border-radius: 30px;
+            color: #fff;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .whatsapp {
+            background: #25D366
+        }
+
+        .instagram {
+            background: #E1306C
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="plans" id="plans">
+
+        <div class="plan">
+            <h2>Basic Care</h2>
+            <div class="price">₹ 4,999</div>
+            <div class="duration">9 Months</div>
+            <ul>
+                <li>Daily Reminders</li>
+                <li>Diet Plan</li>
+                <li>Yoga & Exercise</li>
+                <li>AI Assistant</li>
+            </ul>
+        </div>
+
+        <div class="plan">
+            <h2>Essential Care</h2>
+            <div class="price">₹ 9,999</div>
+            <div class="duration">9 Months</div>
+            <ul>
+                <li>All Basic Features</li>
+                <li>Video Consultation</li>
+                <li>Monthly Reports</li>
+            </ul>
+        </div>
+
+        <div class="plan highlight">
+            <span class="tag">Most Popular</span>
+            <h2>Premium Care</h2>
+            <div class="price">₹ 14,999</div>
+            <div class="duration">9 Months</div>
+            <ul>
+                <li>Personal Coach</li>
+                <li>IoT Health Kit</li>
+                <li>Weekly Tracking</li>
+            </ul>
+        </div>
+
+        <div class="plan">
+            <h2>Super Mom</h2>
+            <div class="price">₹ 24,999</div>
+            <div class="duration">9 Months</div>
+            <ul>
+                <li>Unlimited Consultations</li>
+                <li>24/7 Support</li>
+                <li>Baby Tracker</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Share Buttons -->
+    <div class="share-box">
+        <button class="share-btn whatsapp" onclick="shareWhatsApp()">
+            WhatsApp Share
+        </button>
+        <button class="share-btn instagram" onclick="shareInstagram()">
+            Instagram Share
+        </button>
+    </div>
+
+    <script>
+        function shareWhatsApp() {
+            let text = `Our Service Plans:
+
+Basic Care - ₹4,999
+Essential Care - ₹9,999
+Premium Care - ₹14,999
+Super Mom - ₹24,999
+
+Contact us for details.`;
+
+            let url = "https://wa.me/?text=" + encodeURIComponent(text);
+            window.open(url, "_blank");
+        }
+
+        function shareInstagram() {
+            navigator.clipboard.writeText(
+                `Our Service Plans:
+
+Basic Care - ₹4,999
+Essential Care - ₹9,999
+Premium Care - ₹14,999
+Super Mom - ₹24,999
+
+Contact us for details.`
+            );
+            alert("Text copied! Now open Instagram & paste in story or DM 📸");
+        }
+    </script>
+
+</body>
+</html>

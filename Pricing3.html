@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Plans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .plans{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:28px;
+    }
+
+    .plan-card{
+    position:relative;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(12px);
+    border-radius:24px;
+    padding:28px 24px;
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.18),
+    inset 0 0 0 1px rgba(255,255,255,.6);
+    transition:all .45s ease;
+    overflow:hidden;
+    }
+
+    .plan-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    opacity:0;
+    transition:.4s;
+    }
+
+    .plan-card:hover::before{
+    opacity:.12;
+    }
+
+    .plan-card:hover{
+    transform:translateY(-14px) scale(1.04);
+    box-shadow:0 35px 70px rgba(0,0,0,.35);
+    }
+
+    .plan-card h3{
+    font-size:22px;
+    margin:10px 0 4px;
+    }
+
+    .plan-card .desc{
+    font-size:14px;
+    color:#555;
+    margin-bottom:18px;
+    }
+
+    .price{
+    font-size:34px;
+    font-weight:700;
+    color:#16a34a;
+    }
+
+    .price span{
+    font-size:18px;
+    vertical-align:top;
+    }
+
+    .price small{
+    display:block;
+    font-size:13px;
+    color:#666;
+    margin-top:4px;
+    }
+
+    .plan-card ul{
+    list-style:none;
+    padding:0;
+    margin:22px 0;
+    }
+
+    .plan-card ul li{
+    font-size:14px;
+    margin-bottom:10px;
+    position:relative;
+    padding-left:22px;
+    }
+
+    .plan-card ul li::before{
+    content:"✔";
+    position:absolute;
+    left:0;
+    color:#16a34a;
+    }
+
+    .plan-card button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:600;
+    color:#fff;
+    cursor:pointer;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    transition:.3s;
+    }
+
+    .plan-card button:hover{
+    opacity:.9;
+    }
+
+    /* Badges */
+    .badge{
+    display:inline-block;
+    padding:6px 14px;
+    font-size:12px;
+    border-radius:20px;
+    background:#e5e7eb;
+    font-weight:600;
+    }
+
+    .badge.blue{background:#e0e7ff;color:#3730a3}
+    .badge.gold{background:#fff3cd;color:#92400e}
+    .badge.purple{background:#ede9fe;color:#5b21b6}
+
+    .highlight{
+    border:2px solid #667eea;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="plans">
+
+        <div class="plan-card">
+            <div class="badge">Starter</div>
+            <h3>Basic Care</h3>
+            <p class="desc">Perfect for essential pregnancy care</p>
+
+            <div class="price">
+                <span>₹</span>4,999
+                <small>/ 9 months</small>
+            </div>
+
+            <ul>
+                <li>Daily Health Reminders</li>
+                <li>Diet & Nutrition Plan</li>
+                <li>Yoga & Exercise</li>
+                <li>AI Health Assistant</li>
+            </ul>
+
+            <button>Select Plan</button>
+        </div>
+
+        <div class="plan-card">
+            <div class="badge blue">Popular</div>
+            <h3>Essential Care</h3>
+            <p class="desc">Most chosen by expecting moms</p>
+
+            <div class="price">
+                <span>₹</span>9,999
+                <small>/ 9 months</small>
+            </div>
+
+            <ul>
+                <li>All Basic Features</li>
+                <li>Doctor Video Consult</li>
+                <li>Monthly Health Reports</li>
+                <li>Priority Support</li>
+            </ul>
+
+            <button>Select Plan</button>
+        </div>
+
+        <div class="plan-card highlight">
+            <div class="badge gold">Best Value</div>
+            <h3>Premium Care</h3>
+            <p class="desc">Complete premium pregnancy experience</p>
+
+            <div class="price">
+                <span>₹</span>14,999
+                <small>/ 9 months</small>
+            </div>
+
+            <ul>
+                <li>Personal Health Coach</li>
+                <li>IoT Health Monitoring</li>
+                <li>Weekly Progress Tracking</li>
+                <li>Doctor Priority Access</li>
+            </ul>
+
+            <button>Choose Premium</button>
+        </div>
+
+        <div class="plan-card">
+            <div class="badge purple">Elite</div>
+            <h3>Super Mom</h3>
+            <p class="desc">For moms who want the best</p>
+
+            <div class="price">
+                <span>₹</span>24,999
+                <small>/ 9 months</small>
+            </div>
+
+            <ul>
+                <li>Unlimited Consultations</li>
+                <li>24/7 Dedicated Support</li>
+                <li>Mental Wellness Sessions</li>
+                <li>Baby Growth Tracker</li>
+            </ul>
+
+            <button>Go Elite</button>
+        </div>
+
+    </div>
+
+
+    <!-- Share Buttons -->
+    <div class="share-box">
+        <button class="share-btn whatsapp" onclick="shareWhatsApp()">
+            WhatsApp Share
+        </button>
+        <button class="share-btn instagram" onclick="shareInstagram()">
+            Instagram Share
+        </button>
+    </div>
+
+    <script>
+        function shareWhatsApp() {
+            let text = `Our Service Plans:
+
+Basic Care - ₹4,999
+Essential Care - ₹9,999
+Premium Care - ₹14,999
+Super Mom - ₹24,999
+
+Contact us for details.`;
+
+            let url = "https://wa.me/?text=" + encodeURIComponent(text);
+            window.open(url, "_blank");
+        }
+
+        function shareInstagram() {
+            navigator.clipboard.writeText(
+                `Our Service Plans:
+
+Basic Care - ₹4,999
+Essential Care - ₹9,999
+Premium Care - ₹14,999
+Super Mom - ₹24,999
+
+Contact us for details.`
+            );
+            alert("Text copied! Now open Instagram & paste in story or DM 📸");
+        }
+    </script>
+
+</body>
+</html>
