@@ -322,8 +322,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-                 
+                </div>                
                 <!-- Right side menu -->
                 <div class="flex flex-wrap items-center gap-4" x-bind:class="{'justify-center p-6': mobileMenuOpen}">
                     <!-- Theme Toggle -->
@@ -347,7 +346,6 @@
                 </div>
             </div>
         </nav>
-
         <!-- Mega Menu Items -->
         <div x-show="megaMenuOpen"
              x-transition:enter="transition ease-out duration-500"
@@ -582,46 +580,17 @@
                         </li>
                     </ol>
                 </nav>
-
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start min-h-screen">
                     <!-- Course Content -->
                     <div class="lg:col-span-2" x-data="{ activeTab: 'overview' }">
                         <div class="mb-6">
                             <span class="bg-blue-100 dark:bg-blue-900/20 text-blue-800 dark:text-blue-300 text-sm font-medium px-3 py-1 rounded-full border border-blue-200 dark:border-blue-800">Services</span>
                         </div>
-                        <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Complete Web Development Bootcamp</h1>
+                        <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Complete Web Development</h1>
                         <p class="text-xl text-gray-600 dark:text-gray-300 mb-6">
                             Master HTML, CSS, JavaScript, React, Node.js and build real-world projects that will get you hired as a web developer.
                         </p>
-                        <!-- Course Stats -->
-                        <div class="flex flex-wrap items-center gap-6 mb-8">
-                            <div class="flex items-center">
-                                <svg class="h-5 w-5 text-yellow-400 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                </svg>
-                                <span class="text-lg font-medium text-gray-900 dark:text-white">4.9</span>
-                                <span class="text-gray-600 dark:text-gray-300 ml-1">(1,542 reviews)</span>
-                            </div>
-                            <div class="flex items-center">
-                                <svg class="h-5 w-5 text-gray-400 dark:text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM9 3a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                                </svg>
-                                <span class="text-gray-600 dark:text-gray-300">15,420 students</span>
-                            </div>
-                            <div class="flex items-center">
-                                <svg class="h-5 w-5 text-gray-400 dark:text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                                <span class="text-gray-600 dark:text-gray-300">40 hours</span>
-                            </div>
-                            <div class="flex items-center">
-                                <svg class="h-5 w-5 text-gray-400 dark:text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                                <span class="text-gray-600 dark:text-gray-300">Certificate included</span>
-                            </div>
-                        </div>
-                        <!-- Course Video/Image -->
+                  
                         <div class="mb-8">
                             <div class="lazyload-container relative overflow-hidden w-full h-64 md:h-96 object-cover rounded-xl">
                                 <!-- Skeleton overlay -->
@@ -658,1135 +627,88 @@
                         </div>
 
                         <!-- Tab Navigation -->
-                        <div class="border-b border-gray-200 dark:border-gray-600 dark:border-gray-700 mb-8 overflow-x-auto">
-                            <nav class="flex space-x-8" aria-label="Tabs">
-                                <button @click="activeTab = 'overview'"
-                                        :class="activeTab === 'overview' ? 'border-indigo-500 text-indigo-600 dark:text-indigo-400' : 'border-transparent text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600'"
-                                        class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm transition-colors cursor-pointer">
+                        <div class="border-b border-gray-200 dark:border-gray-700 mb-8">
+                            <nav class="flex flex-wrap gap-6">
+                                <button @click="activeTab='overview'" class="py-2 border-b-2"
+                                        :class="activeTab==='overview'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
                                     Overview
                                 </button>
-                                <button @click="activeTab = 'curriculum'"
-                                        :class="activeTab === 'curriculum' ? 'border-indigo-500 text-indigo-600 dark:text-indigo-400' : 'border-transparent text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600'"
-                                        class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm transition-colors cursor-pointer">
-                                    Curriculum
+                                <button @click="activeTab='services'" class="py-2 border-b-2"
+                                        :class="activeTab==='services'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
+                                    Services
                                 </button>
-                                <button @click="activeTab = 'instructor'"
-                                        :class="activeTab === 'instructor' ? 'border-indigo-500 text-indigo-600 dark:text-indigo-400' : 'border-transparent text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600'"
-                                        class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm transition-colors cursor-pointer">
-                                    Instructor
+                                <button @click="activeTab='expertise'" class="py-2 border-b-2"
+                                        :class="activeTab==='expertise'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
+                                    Expertise
                                 </button>
-                                <button @click="activeTab = 'reviews'"
-                                        :class="activeTab === 'reviews' ? 'border-indigo-500 text-indigo-600 dark:text-indigo-400' : 'border-transparent text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600'"
-                                        class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm transition-colors cursor-pointer">
-                                    Reviews
+                                <button @click="activeTab='process'" class="py-2 border-b-2"
+                                        :class="activeTab==='process'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
+                                    Process
+                                </button>
+                                <button @click="activeTab='reviews'" class="py-2 border-b-2"
+                                        :class="activeTab==='reviews'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
+                                    Client Reviews
                                 </button>
                             </nav>
                         </div>
-                        <div x-show="activeTab === 'overview'" x-transition>
-                            <!-- What You'll Learn -->
-                            <div class="mb-12">
-                                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">What you'll learn</h2>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div class="flex items-start">
-                                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span class="text-gray-700 dark:text-gray-300">Build responsive websites with HTML5 and CSS3</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span class="text-gray-700 dark:text-gray-300">Master modern JavaScript (ES6+)</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span class="text-gray-700 dark:text-gray-300">Build dynamic web apps with React.js</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span class="text-gray-700 dark:text-gray-300">Create APIs with Node.js and Express</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span class="text-gray-700 dark:text-gray-300">Work with databases (MongoDB)</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span class="text-gray-700 dark:text-gray-300">Deploy applications to the cloud</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span class="text-gray-700 dark:text-gray-300">Use Git and GitHub for version control</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <svg class="h-6 w-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                        </svg>
-                                        <span class="text-gray-700 dark:text-gray-300">Build a complete portfolio website</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Curriculum Tab -->
-                        <div x-show="activeTab === 'curriculum'" x-transition>
-                            <!-- Course Curriculum -->
-                            <div class="mb-12" x-data="{ userPurchased: false }">
-                                <div class="flex items-center justify-between mb-6">
-                                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Course curriculum</h2>
-                                </div>
-                                <!-- Course Overview Section -->
-                                <div class="mb-6 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-                                    <div class="flex flex-wrap items-start space-x-4">
-                                        <div class="lazyload-container relative overflow-hidden w-20 h-16 object-cover rounded-lg">
-                                            <!-- Skeleton overlay -->
-                                            <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-                                            <!-- Skeleton shimmer -->
-                                            <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-                                            <!-- Lazy image -->
-                                            <img data-src="./../assets/images/lessons/course-overview-thumbnail.jpg"
-                                                 alt="Course Overview"
-                                                 class="w-20 h-16 object-cover rounded-lg lazyload"
-                                                 class="w-20 h-16 object-cover rounded-lg">
-                                            <!-- SEO fallback for non-JS / crawlers -->
-                                            <noscript>
-                                                <img src="../assets/images/lessons/course-overview-thumbnail.jpg" loading="lazy" alt="Course Overview" class="w-20 h-16 object-cover rounded-lg">
-                                            </noscript>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Complete Web Development Journey</h3>
-                                            <p class="text-gray-600 dark:text-gray-300 text-sm mb-2">This comprehensive curriculum will take you from beginner to professional web developer with hands-on projects and real-world applications.</p>
-                                            <div class="flex flex-wrap items-center space-x-4 text-sm text-gray-500 dark:text-gray-400">
-                                                <span>44 lessons</span>
-                                                <span>32 hours total</span>
-                                                <span>15 projects</span>
-                                                <span>8 downloadable resources</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div x-data="accordion()" class="space-y-4">
-                                    <!-- Section 1 -->
-                                    <div class="border border-gray-200 dark:border-gray-600 dark:border-gray-700 rounded-lg overflow-hidden">
-                                        <button @click="toggle('section1')"
-                                                class="w-full px-6 py-4 text-left flex items-center justify-between bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer">
-                                            <div class="flex flex-wrap items-center space-x-3">
-                                                <div class="lazyload-container relative overflow-hidden w-12 h-12 object-cover rounded-lg">
-                                                    <!-- Skeleton overlay -->
-                                                    <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-                                                    <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-                                                    <!-- Lazy image -->
-                                                    <img data-src="./../assets/images/lessons/html-css-lesson.jpg" alt="HTML CSS" class="w-12 h-12 object-cover rounded-lg lazyload"
-                                                         class="w-12 h-12 object-cover rounded-lg">
-                                                    <!-- SEO fallback for non-JS / crawlers -->
-                                                    <noscript>
-                                                        <img src="../assets/images/lessons/html-css-lesson.jpg" loading="lazy" alt="HTML CSS" class="w-12 h-12 object-cover rounded-lg">
-                                                    </noscript>
-                                                </div>
-                                                <div>
-                                                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">1. HTML & CSS Fundamentals</h3>
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300">6 lessons • 3 hours • 2 projects</p>
-                                                </div>
-                                            </div>
-                                            <svg class="h-5 w-5 text-gray-500 dark:text-gray-400 transform transition-transform cursor-pointer"
-                                                 :class="isActive('section1') ? 'rotate-180' : ''"
-                                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                            </svg>
-                                        </button>
-                                        <div x-show="isActive('section1')" x-transition class="px-6 py-4">
-                                            <ul class="space-y-4">
-                                                <!-- Free Preview Lesson -->
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg class="h-4 w-4 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path d="M8 5v10l6-5-6-5z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <div class="flex items-center space-x-2">
-                                                                <span class="text-gray-900 dark:text-white font-medium">Introduction to HTML</span>
-                                                                <span class="bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-300 text-xs px-2 py-0.5 rounded-full">FREE PREVIEW</span>
-                                                            </div>
-                                                            <p class="text-sm text-gray-600 dark:text-gray-300">Learn the basics of HTML structure and elements</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">15 min</span>
-                                                        <button class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300">
-                                                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </li>
-
-                                                <!-- Locked Video Lesson -->
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path d="M8 5v10l6-5-6-5z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <span class="text-gray-700 dark:text-gray-300 font-medium">HTML Elements and Structure</span>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">Deep dive into HTML elements, attributes, and semantic markup</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">25 min</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-
-                                                <!-- PDF Resource -->
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-red-100 dark:bg-red-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-red-600 dark:text-red-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 0v12h8V6H8l-2-2z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <div class="flex items-center space-x-2">
-                                                                <span class="text-gray-700 dark:text-gray-300 font-medium">CSS Cheat Sheet</span>
-                                                                <span class="bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 text-xs px-2 py-0.5 rounded-full">PDF</span>
-                                                            </div>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">Comprehensive CSS properties and selectors reference guide</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">12 pages</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-red-600 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-
-                                                <!-- Video Lesson -->
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path d="M8 5v10l6-5-6-5z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <span class="text-gray-700 dark:text-gray-300 font-medium">CSS Layout with Flexbox</span>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">Master modern CSS layouts using Flexbox properties</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">35 min</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-
-                                                <!-- Project Assignment -->
-                                                <li class="flex items-center justify-between p-3 rounded-lg border border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-900/20">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-purple-100 dark:bg-purple-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg class="h-4 w-4 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 4a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1V8zm8 0a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1h-4a1 1 0 01-1-1V8z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <div class="flex items-center space-x-2">
-                                                                <span class="text-gray-900 dark:text-white font-medium">Project: Personal Portfolio</span>
-                                                                <span class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 text-xs px-2 py-0.5 rounded-full">PROJECT</span>
-                                                            </div>
-                                                            <p class="text-sm text-gray-600 dark:text-gray-300">Build your first responsive portfolio website using HTML and CSS</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">2 hours</span>
-                                                        <button class="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300">
-                                                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- Section 2 -->
-                                    <div class="border border-gray-200 dark:border-gray-600 dark:border-gray-700 rounded-lg overflow-hidden">
-                                        <button @click="toggle('section2')"
-                                                class="w-full px-6 py-4 text-left flex items-center justify-between bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer">
-                                            <div class="flex flex-wrap items-center space-x-3">
-                                                <div class="lazyload-container relative overflow-hidden w-12 h-12 object-cover rounded-lg">
-                                                    <!-- Skeleton overlay -->
-                                                    <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
-                                                    <!-- Skeleton shimmer -->
-                                                    <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
-                                                    <!-- Lazy image -->
-                                                    <img data-src="./../assets/images/lessons/javascript-lesson.jpg"
-                                                         alt="JavaScript"
-                                                         class="w-12 h-12 object-cover rounded-lg lazyload"
-                                                         class="w-12 h-12 object-cover rounded-lg">
-
-                                                    <!-- SEO fallback for non-JS / crawlers -->
-                                                    <noscript>
-                                                        <img src="../assets/images/lessons/javascript-lesson.jpg" loading="lazy" alt="JavaScript" class="w-12 h-12 object-cover rounded-lg">
-                                                    </noscript>
-                                                </div>
-                                                <div>
-                                                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">2. JavaScript Fundamentals</h3>
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300">8 lessons • 5 hours • 3 projects</p>
-                                                </div>
-                                            </div>
-                                            <svg class="h-5 w-5 text-gray-500 dark:text-gray-400 transform transition-transform cursor-pointer"
-                                                 :class="isActive('section2') ? 'rotate-180' : ''"
-                                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                            </svg>
-                                        </button>
-                                        <div x-show="isActive('section2')" x-transition class="px-6 py-4">
-                                            <ul class="space-y-4">
-                                                <!-- Video Lesson -->
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-yellow-100 dark:bg-yellow-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-yellow-600 dark:text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path d="M8 5v10l6-5-6-5z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <span class="text-gray-700 dark:text-gray-300 font-medium">Variables and Data Types</span>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">Understanding JavaScript variables, strings, numbers, and booleans</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">20 min</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-yellow-600 dark:text-yellow-400 hover:text-yellow-700 dark:hover:text-yellow-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-
-                                                <!-- Code Examples (Images) -->
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-green-100 dark:bg-green-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <div class="flex items-center space-x-2">
-                                                                <span class="text-gray-700 dark:text-gray-300 font-medium">Code Examples Gallery</span>
-                                                                <span class="bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-300 text-xs px-2 py-0.5 rounded-full">IMAGES</span>
-                                                            </div>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">Visual examples of JavaScript functions and scope in action</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">15 images</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-                                                <!-- External Link -->
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-indigo-100 dark:bg-indigo-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-indigo-600 dark:text-indigo-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <div class="flex items-center space-x-2">
-                                                                <span class="text-gray-700 dark:text-gray-300 font-medium">MDN JavaScript Reference</span>
-                                                                <span class="bg-indigo-100 dark:bg-indigo-900/40 text-indigo-800 dark:text-indigo-300 text-xs px-2 py-0.5 rounded-full">LINK</span>
-                                                            </div>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">Official JavaScript documentation and reference guide</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">External</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-                                                <!-- Video Lesson -->
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path d="M8 5v10l6-5-6-5z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <span class="text-gray-700 dark:text-gray-300 font-medium">DOM Manipulation</span>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">Learn to interact with HTML elements using JavaScript</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">45 min</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!-- Section 3 -->
-                                    <div class="border border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden">
-                                        <button @click="toggle('section3')"
-                                                class="w-full px-6 py-4 text-left flex items-center justify-between bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer">
-                                            <div class="flex flex-wrap items-center space-x-3">
-                                                <div class="lazyload-container relative overflow-hidden w-12 h-12 object-cover rounded-lg">
-                                                    <!-- Skeleton overlay -->
-                                                    <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
-                                                    <!-- Skeleton shimmer -->
-                                                    <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
-                                                    <!-- Lazy image -->
-                                                    <img data-src="./../assets/images/lessons/react-lesson.jpg"
-                                                         alt="React"
-                                                         class="w-12 h-12 object-cover rounded-lg lazyload"
-                                                         class="w-12 h-12 object-cover rounded-lg">
-
-                                                    <!-- SEO fallback for non-JS / crawlers -->
-                                                    <noscript>
-                                                        <img src="../assets/images/lessons/react-lesson.jpg" loading="lazy" alt="React" class="w-12 h-12 object-cover rounded-lg">
-                                                    </noscript>
-                                                </div>
-                                                <div>
-                                                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">3. React.js Development</h3>
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300">12 lessons • 8 hours • 4 projects</p>
-                                                </div>
-                                            </div>
-                                            <svg class="h-5 w-5 text-gray-500 dark:text-gray-400 transform transition-transform cursor-pointer"
-                                                 :class="isActive('section3') ? 'rotate-180' : ''"
-                                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                            </svg>
-                                        </button>
-                                        <div x-show="isActive('section3')" x-transition class="px-6 py-4">
-                                            <ul class="space-y-4">
-                                                <!-- React Introduction Video -->
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-cyan-100 dark:bg-cyan-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-cyan-600 dark:text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path d="M8 5v10l6-5-6-5z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <span class="text-gray-700 dark:text-gray-300 font-medium">Introduction to React</span>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">Understanding components, JSX, and the React ecosystem</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">35 min</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-cyan-600 dark:text-cyan-400 hover:text-cyan-700 dark:hover:text-cyan-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-                                                <!-- Component Architecture Diagrams -->
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-orange-100 dark:bg-orange-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-orange-600 dark:text-orange-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <div class="flex items-center space-x-2">
-                                                                <span class="text-gray-700 dark:text-gray-300 font-medium">Component Architecture Diagrams</span>
-                                                                <span class="bg-orange-100 dark:bg-orange-900/40 text-orange-800 dark:text-orange-300 text-xs px-2 py-0.5 rounded-full">DIAGRAMS</span>
-                                                            </div>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">Visual guides showing React component hierarchy and data flow</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">8 diagrams</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-
-                                                <!-- Downloadable Starter Files -->
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-purple-100 dark:bg-purple-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <div class="flex items-center space-x-2">
-                                                                <span class="text-gray-700 dark:text-gray-300 font-medium">React Starter Project Files</span>
-                                                                <span class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 text-xs px-2 py-0.5 rounded-full">ZIP</span>
-                                                            </div>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">Complete project boilerplate with components and styling</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">2.5 MB</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-                                                <!-- Interactive Project -->
-                                                <li class="flex items-center justify-between p-3 rounded-lg border border-emerald-200 dark:border-emerald-800 bg-emerald-50 dark:bg-emerald-900/20">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-emerald-100 dark:bg-emerald-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg class="h-4 w-4 text-emerald-600 dark:text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 4a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1V8zm8 0a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1h-4a1 1 0 01-1-1V8z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <div class="flex items-center space-x-2">
-                                                                <span class="text-gray-900 dark:text-white font-medium">Project: Todo App with React Hooks</span>
-                                                                <span class="bg-emerald-100 dark:bg-emerald-900/40 text-emerald-800 dark:text-emerald-300 text-xs px-2 py-0.5 rounded-full">HANDS-ON</span>
-                                                            </div>
-                                                            <p class="text-sm text-gray-600 dark:text-gray-300">Build a complete todo application using React hooks and state management</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">3 hours</span>
-                                                        <button class="text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300">
-                                                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- Section 4 -->
-                                    <div class="border border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden">
-                                        <button @click="toggle('section4')"
-                                                class="w-full px-6 py-4 text-left flex items-center justify-between bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer">
-                                            <div class="flex flex-wrap items-center space-x-3">
-                                                <div class="lazyload-container relative overflow-hidden w-12 h-12 object-cover rounded-lg">
-                                                    <!-- Skeleton overlay -->
-                                                    <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-                                                    <!-- Skeleton shimmer -->
-                                                    <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-                                                    <!-- Lazy image -->
-                                                    <img data-src="./../assets/images/lessons/nodejs-lesson.jpg" alt="Node.js"
-                                                         class="w-12 h-12 object-cover rounded-lg lazyload"
-                                                         class="w-12 h-12 object-cover rounded-lg">
-                                                    <noscript>
-                                                        <img src="../assets/images/lessons/nodejs-lesson.jpg" loading="lazy" alt="Node.js" class="w-12 h-12 object-cover rounded-lg">
-                                                    </noscript>
-                                                </div>
-                                                <div>
-                                                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">4. Backend with Node.js</h3>
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300">10 lessons • 6 hours • 2 projects</p>
-                                                </div>
-                                            </div>
-                                            <svg class="h-5 w-5 text-gray-500 dark:text-gray-400 transform transition-transform cursor-pointer"
-                                                 :class="isActive('section4') ? 'rotate-180' : ''"
-                                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                            </svg>
-                                        </button>
-                                        <div x-show="isActive('section4')" x-transition class="px-6 py-4">
-                                            <ul class="space-y-4">
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-green-100 dark:bg-green-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path d="M8 5v10l6-5-6-5z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <span class="text-gray-700 dark:text-gray-300 font-medium">Express.js Basics</span>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">Setting up Express server and understanding middleware</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">30 min</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path d="M8 5v10l6-5-6-5z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <span class="text-gray-700 dark:text-gray-300 font-medium">Building REST APIs</span>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">Creating RESTful endpoints and handling HTTP requests</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">45 min</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-purple-100 dark:bg-purple-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path d="M8 5v10l6-5-6-5z" />
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <span class="text-gray-700 dark:text-gray-300 font-medium">Database Integration</span>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">Connecting MongoDB and performing CRUD operations</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">60 min</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- Section 5 -->
-                                    <div class="border border-gray-200 dark:border-gray-600 rounded-lg overflow-hidden">
-                                        <button @click="toggle('section5')"
-                                                class="w-full px-6 py-4 text-left flex items-center justify-between bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer">
-                                            <div class="flex flex-wrap items-center space-x-3">
-                                                <div class="lazyload-container relative overflow-hidden w-12 h-12 object-cover rounded-lg">
-                                                    <!-- Skeleton overlay -->
-                                                    <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
-                                                    <!-- Skeleton shimmer -->
-                                                    <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
-                                                    <!-- Lazy image -->
-                                                    <img data-src="./../assets/images/lessons/fullstack-projects-lesson.jpg"
-                                                         alt="Full-Stack Projects"
-                                                         class="w-12 h-12 object-cover rounded-lg lazyload"
-                                                         class="w-12 h-12 object-cover rounded-lg">
-
-                                                    <!-- SEO fallback for non-JS / crawlers -->
-                                                    <noscript>
-                                                        <img src="../assets/images/lessons/fullstack-projects-lesson.jpg" loading="lazy" alt="Full-Stack Projects" class="w-12 h-12 object-cover rounded-lg">
-                                                    </noscript>
-                                                </div>
-                                                <div>
-                                                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">5. Full-Stack Projects</h3>
-                                                    <p class="text-sm text-gray-600 dark:text-gray-300">8 lessons • 10 hours • 3 major projects</p>
-                                                </div>
-                                            </div>
-                                            <svg class="h-5 w-5 text-gray-500 dark:text-gray-400 transform transition-transform cursor-pointer"
-                                                 :class="isActive('section5') ? 'rotate-180' : ''"
-                                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                            </svg>
-                                        </button>
-                                        <div x-show="isActive('section5')" x-transition class="px-6 py-4">
-                                            <ul class="space-y-4">
-                                                <!-- E-Commerce Project -->
-                                                <li class="flex items-center justify-between p-3 rounded-lg border border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg class="h-4 w-4 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 4a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1V8zm8 0a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1h-4a1 1 0 01-1-1V8z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <div class="flex items-center space-x-2">
-                                                                <span class="text-gray-900 dark:text-white font-medium">Project 1: E-Commerce Website</span>
-                                                                <span class="bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 text-xs px-2 py-0.5 rounded-full">CAPSTONE</span>
-                                                            </div>
-                                                            <p class="text-sm text-gray-600 dark:text-gray-300">Complete online store with shopping cart, payment integration, and admin panel</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">4 hours</span>
-                                                        <button class="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300">
-                                                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </li>
-                                                <!-- Blogging Platform -->
-                                                <li class="flex items-center justify-between p-3 rounded-lg border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-green-100 dark:bg-green-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg class="h-4 w-4 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 4a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1V8zm8 0a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1h-4a1 1 0 01-1-1V8z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <div class="flex items-center space-x-2">
-                                                                <span class="text-gray-900 dark:text-white font-medium">Project 2: Blogging Platform</span>
-                                                                <span class="bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-300 text-xs px-2 py-0.5 rounded-full">PORTFOLIO</span>
-                                                            </div>
-                                                            <p class="text-sm text-gray-600 dark:text-gray-300">Full-featured blog with user authentication, comments, and content management</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">3 hours</span>
-                                                        <button class="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300">
-                                                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </li>
-                                                <!-- Social Media App -->
-                                                <li class="flex items-center justify-between p-3 rounded-lg border border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-900/20">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-purple-100 dark:bg-purple-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg class="h-4 w-4 text-purple-600 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 4a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1V8zm8 0a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1h-4a1 1 0 01-1-1V8z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <div class="flex items-center space-x-2">
-                                                                <span class="text-gray-900 dark:text-white font-medium">Project 3: Social Media App</span>
-                                                                <span class="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 text-xs px-2 py-0.5 rounded-full">ADVANCED</span>
-                                                            </div>
-                                                            <p class="text-sm text-gray-600 dark:text-gray-300">Real-time social platform with posts, likes, follows, and messaging features</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">5 hours</span>
-                                                        <button class="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300">
-                                                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </li>
-
-                                                <!-- Project Resources -->
-                                                <li class="flex flex-wrap items-center justify-between p-3 rounded-lg" :class="userPurchased ? 'bg-gray-50 dark:bg-gray-800/50' : 'bg-gray-100 dark:bg-gray-800 opacity-75'">
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <div class="w-8 h-8 bg-orange-100 dark:bg-orange-900/40 rounded-lg flex items-center justify-center">
-                                                            <svg x-show="!userPurchased" class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                            <svg x-show="userPurchased" class="h-4 w-4 text-orange-600 dark:text-orange-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="flex-1">
-                                                            <div class="flex items-center space-x-2">
-                                                                <span class="text-gray-700 dark:text-gray-300 font-medium">Complete Project Source Code</span>
-                                                                <span class="bg-orange-100 dark:bg-orange-900/40 text-orange-800 dark:text-orange-300 text-xs px-2 py-0.5 rounded-full">BONUS</span>
-                                                            </div>
-                                                            <p class="text-sm text-gray-500 dark:text-gray-400">All project files, documentation, and deployment guides included</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="flex flex-wrap items-center space-x-3">
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">15 files</span>
-                                                        <template x-if="!userPurchased">
-                                                            <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                                                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
-                                                            </svg>
-                                                        </template>
-                                                        <template x-if="userPurchased">
-                                                            <button class="text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300">
-                                                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </template>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <!-- Overview -->
+                        <div x-show="activeTab==='overview'">
+                            <h2 class="text-2xl font-bold mb-4">What We Offer</h2>
+                            <ul class="grid md:grid-cols-2 gap-3 text-gray-600 dark:text-gray-300">
+                                <li>✔ Custom and responsive website development</li>
+                                <li>✔ Fast, secure, and SEO-friendly web solutions</li>
+                                <li>✔ Scalable websites for startups & enterprises</li>
+                                <li>✔ Ongoing support, maintenance & upgrades</li>
+                            </ul>
                         </div>
 
-                        <!-- Instructor Tab -->
-                        <div x-show="activeTab === 'instructor'" x-transition>
-                            <!-- Instructor -->
-                            <div class="mb-12">
-                                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Your instructor</h2>
-                                <div class="bg-white dark:bg-gray-800 rounded-xl p-6 card-shadow">
-                                    <div class="flex items-start space-x-4">
-                                        <div class="lazyload-container relative overflow-hidden w-24 h-24 rounded-full">
-                                            <!-- Skeleton overlay -->
-                                            <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
-                                            <!-- Skeleton shimmer -->
-                                            <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
-                                            <!-- Lazy image -->
-                                            <img data-src="./../assets/images/instructors/instructor-large-profile.jpg"
-                                                 alt="John Smith"
-                                                 class="w-24 h-24 rounded-full lazyload"
-                                                 class="w-24 h-24 rounded-full">
-
-                                            <!-- SEO fallback for non-JS / crawlers -->
-                                            <noscript>
-                                                <img src="../assets/images/instructors/instructor-large-profile.jpg" loading="lazy" alt="John Smith" class="w-24 h-24 rounded-full">
-                                            </noscript>
-                                        </div>
-                                        <div class="flex-1">
-                                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">John Smith</h3>
-                                            <p class="text-indigo-600 mb-3">Senior Full-Stack Developer</p>
-                                            <p class="text-gray-600 dark:text-gray-300 mb-4">
-                                                John has over 8 years of experience in web development and has worked for
-                                                companies like Google and Microsoft. He's passionate about teaching and
-                                                has helped over 50,000 students learn to code.
-                                            </p>
-                                            <div class="flex items-center space-x-6 text-sm text-gray-600 dark:text-gray-300">
-                                                <div class="flex items-center">
-                                                    <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                                    </svg>
-                                                    <span class="text-gray-600 dark:text-gray-300">25 courses</span>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM9 3a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                                                    </svg>
-                                                    <span class="text-gray-600 dark:text-gray-300">50K+ students</span>
-                                                </div>
-                                                <div class="flex items-center">
-                                                    <svg class="h-4 w-4 mr-1 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                                    </svg>
-                                                    <span class="text-gray-600 dark:text-gray-300">4.8 rating</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <!-- Services -->
+                        <div x-show="activeTab==='services'">
+                            <h2 class="text-2xl font-bold mb-4">Our Web Development Services</h2>
+                            <ul class="grid md:grid-cols-2 gap-3 text-gray-600 dark:text-gray-300">
+                                <li>✔ Static & dynamic website development</li>
+                                <li>✔ Corporate, portfolio & business websites</li>
+                                <li>✔ E-commerce website development</li>
+                                <li>✔ Website redesign & performance optimization</li>
+                            </ul>
                         </div>
 
-                        <!-- Reviews Tab -->
-                        <div x-show="activeTab === 'reviews'" x-transition>
-                            <!-- Reviews -->
-                            <div class="mb-12">
-                                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Student reviews</h2>
-                                <div class="space-y-6">
-                                    <!-- Review 1 -->
-                                    <div class="bg-white dark:bg-gray-800 rounded-xl p-6 card-shadow">
-                                        <div class="flex items-start space-x-4">
-                                            <div class="lazyload-container relative overflow-hidden w-12 h-12 rounded-full">
-                                                <!-- Skeleton overlay -->
-                                                <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
+                        <!-- Expertise -->
+                        <div x-show="activeTab==='expertise'">
+                            <h2 class="text-2xl font-bold mb-4">Our Expertise</h2>
+                            <ul class="grid md:grid-cols-2 gap-3 text-gray-600 dark:text-gray-300">
+                                <li>✔ HTML, CSS, JavaScript & Tailwind CSS</li>
+                                <li>✔ ASP.NET Core, MVC & Web APIs</li>
+                                <li>✔ React, Alpine.js & modern UI frameworks</li>
+                                <li>✔ SQL Server, MySQL & backend integrations</li>
+                            </ul>
+                        </div>
 
-                                                <!-- Skeleton shimmer -->
-                                                <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
+                        <!-- Process -->
+                        <div x-show="activeTab==='process'">
+                            <h2 class="text-2xl font-bold mb-4">Our Development Process</h2>
+                            <ul class="grid md:grid-cols-2 gap-3 text-gray-600 dark:text-gray-300">
+                                <li>✔ Requirement analysis & project planning</li>
+                                <li>✔ UI/UX design & responsive layout</li>
+                                <li>✔ Development, testing & optimization</li>
+                                <li>✔ Deployment, monitoring & ongoing support</li>
+                            </ul>
+                        </div>
 
-                                                <!-- Lazy image -->
-                                                <img data-src="./../assets/images/instructors/student-profile-small.jpg"
-                                                     alt="Student"
-                                                     class="w-12 h-12 rounded-full lazyload"
-                                                     class="w-12 h-12 rounded-full">
-
-                                                <!-- SEO fallback for non-JS / crawlers -->
-                                                <noscript>
-                                                    <img src="../assets/images/instructors/student-profile-small.jpg" loading="lazy" alt="Student" class="w-12 h-12 rounded-full">
-                                                </noscript>
-                                            </div>
-                                            <div class="flex-1">
-                                                <div class="flex items-center justify-between mb-2">
-                                                    <h4 class="font-semibold text-gray-900 dark:text-white">Sarah Johnson</h4>
-                                                    <div class="flex items-center">
-                                                        <div class="star-rating flex text-yellow-400 mr-2">
-                                                            <span>★★★★★</span>
-                                                        </div>
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">2 days ago</span>
-                                                    </div>
-                                                </div>
-                                                <p class="text-gray-600 dark:text-gray-300">
-                                                    Excellent course! John explains everything clearly and the projects are really helpful.
-                                                    I went from knowing nothing about web development to building my own websites.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Review 2 -->
-                                    <div class="bg-white dark:bg-gray-800 rounded-xl p-6 card-shadow">
-                                        <div class="flex items-start space-x-4">
-                                            <div class="lazyload-container relative overflow-hidden w-12 h-12 rounded-full">
-                                                <!-- Skeleton overlay -->
-                                                <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
-                                                <!-- Skeleton shimmer -->
-                                                <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
-                                                <!-- Lazy image -->
-                                                <img data-src="./../assets/images/instructors/student-profile-small.jpg"
-                                                     alt="Student"
-                                                     class="w-12 h-12 rounded-full lazyload"
-                                                     class="w-12 h-12 rounded-full">
-
-                                                <!-- SEO fallback for non-JS / crawlers -->
-                                                <noscript>
-                                                    <img src="../assets/images/instructors/student-profile-small.jpg" loading="lazy" alt="Student" class="w-12 h-12 rounded-full">
-                                                </noscript>
-                                            </div>
-                                            <div class="flex-1">
-                                                <div class="flex items-center justify-between mb-2">
-                                                    <h4 class="font-semibold text-gray-900 dark:text-white">Mike Chen</h4>
-                                                    <div class="flex items-center">
-                                                        <div class="star-rating flex text-yellow-400 mr-2">
-                                                            <span>★★★★★</span>
-                                                        </div>
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">1 week ago</span>
-                                                    </div>
-                                                </div>
-                                                <p class="text-gray-600 dark:text-gray-300">
-                                                    This course is worth every penny. The curriculum is well-structured and up-to-date with
-                                                    industry standards. I got a job as a frontend developer 3 months after completing it!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Review 3 -->
-                                    <div class="bg-white dark:bg-gray-800 rounded-xl p-6 card-shadow">
-                                        <div class="flex items-start space-x-4">
-                                            <div class="lazyload-container relative overflow-hidden w-12 h-12 rounded-full">
-                                                <!-- Skeleton overlay -->
-                                                <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
-                                                <!-- Skeleton shimmer -->
-                                                <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
-                                                <!-- Lazy image -->
-                                                <img data-src="./../assets/images/instructors/student-profile-small.jpg"
-                                                     alt="Student"
-                                                     class="w-12 h-12 rounded-full lazyload"
-                                                     class="w-12 h-12 rounded-full">
-
-                                                <!-- SEO fallback for non-JS / crawlers -->
-                                                <noscript>
-                                                    <img src="../assets/images/instructors/student-profile-small.jpg" loading="lazy" alt="Student" class="w-12 h-12 rounded-full">
-                                                </noscript>
-                                            </div>
-                                            <div class="flex-1">
-                                                <div class="flex items-center justify-between mb-2">
-                                                    <h4 class="font-semibold text-gray-900 dark:text-white">Lisa Brown</h4>
-                                                    <div class="flex items-center">
-                                                        <div class="star-rating flex text-yellow-400 mr-2">
-                                                            <span>★★★★☆</span>
-                                                        </div>
-                                                        <span class="text-sm text-gray-500 dark:text-gray-400">2 weeks ago</span>
-                                                    </div>
-                                                </div>
-                                                <p class="text-gray-600 dark:text-gray-300">
-                                                    Great course with practical projects. The only thing I'd suggest is more advanced
-                                                    JavaScript topics, but overall it's a solid foundation for beginners.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <!-- Reviews -->
+                        <div x-show="activeTab==='reviews'">
+                            <h2 class="text-2xl font-bold mb-4">Client Reviews</h2>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="p-5 bg-white dark:bg-gray-800 rounded-xl shadow">
+                                    “Our website loads fast, looks modern, and works perfectly on all devices.”
                                 </div>
-                                <div class="text-center mt-6">
-                                    <button class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-medium">
-                                        Show more reviews
-                                    </button>
+                                <div class="p-5 bg-white dark:bg-gray-800 rounded-xl shadow">
+                                    “Professional web development with excellent support and timely delivery.”
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="lg:col-span-1">
                         <div class="sticky top-24 mt-6">
                             <!-- Service Card -->
@@ -1856,7 +778,6 @@
             </div>
         </section> 
     </main>
-
     <!-- Go to Top Button -->
     <div x-data="{ show: false }"
          x-init="window.addEventListener('scroll', () => { show = window.scrollY > 300 })"
@@ -1876,11 +797,9 @@
             </svg>
         </button>
     </div>
-
     <!-- Promotional Modal -->
     <div x-data="{
         open: false,
-
         openModal() {
             if (localStorage.getItem(window.location.host+'_show-promotional-modal-1-1.0') === 'false') {
                 return;
