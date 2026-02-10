@@ -25,7 +25,9 @@
             "url": "./index.html"
         }
     </script>
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/SwarInfotech/assets/images/icons/academic-cap-white.svg">
+    <!-- Immediate dark theme init -->
     <script>
         let theme = localStorage.getItem('theme');
         if (theme && theme == 'dark') {
@@ -33,9 +35,13 @@
             document?.body?.classList?.add('dark');
         }
     </script>
+    <!-- Fonts -->
     <link rel="stylesheet" href="/SwarInfotech/assets/fonts/quicksand/quicksand.css">
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="/SwarInfotech/assets/plugins/swiper/swiper-bundle.min.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="/SwarInfotech/assets/plugins/fontawesome-free/css">
+    <!-- AlpineJS -->
     <script defer src="/SwarInfotech/assets/plugins/alpinejs/dist/cdn.min.js"></script>
     <!-- Swiper JS -->
     <script src="/SwarInfotech/assets/plugins/swiper/swiper-bundle.min.js"></script>
@@ -235,23 +241,6 @@
         .floating-element-3 {
             animation: float-particles 10s infinite ease-in-out;
             animation-delay: 2s;
-        }
-        .section-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #111827;
-        }
-
-        .dark .section-title {
-            color: #ffffff;
-        }
-
-        .section-text {
-            color: #4b5563;
-        }
-
-        .dark .section-text {
-            color: #d1d5db;
         }
     </style>
 </head>
@@ -593,355 +582,488 @@
         <section class="py-20 bg-gray-50 dark:bg-gray-900">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Terms & Conditions</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Privacy Policy</h2>
                     <p class="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
-                        Your use of the website and/or purchase from us are governed by following Terms and Conditions:
+                        This privacy policy sets out how Swarinfotech uses and protects any information that you give Swarinfotech when you visit their website and/or agree to purchase from them.
                     </p>
                 </div>
-                <!--<div class="max-w-4xl mx-auto px-6 py-10 bg-white dark:bg-gray-900 rounded-xl card-shadow">-->
-                <!-- Dynamic Company Info -->
-                <!--<h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-            Terms & Conditions
-        </h1>
-        <p class="text-gray-600 dark:text-gray-300 mb-6">
-            Welcome to <strong>Swarinfotech</strong>. Ye Terms & Conditions hamari IT services, website aur software solutions ke use ko govern karti hain.
-            Hamari services use karne ka matlab hai ki aap in sabhi terms se agree karte hain.
-        </p>
 
-        <p class="text-gray-600 dark:text-gray-300 mb-6">
-            <strong>Company Name:</strong> Swarinfotech <br>
-            <strong>Address:</strong> <span class="italic">[Your Office Address Here]</span>
-        </p>
-
-        <div class="space-y-6">
-            <div>
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    1. Acceptance of Terms
-                </h2>
-                <p class="text-gray-600 dark:text-gray-300">
-                    Jab aap hamari website ya services (web development, software development, hosting, SEO, etc.) use karte ho,
-                    tab aap automatically in Terms & Conditions ko accept karte ho.
-                    Agar aap agree nahi karte, to please hamari services use na karein.
-                </p>
-            </div>
-            <div>
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    2. Scope of IT Services
-                </h2>
-                <p class="text-gray-600 dark:text-gray-300">
-                    Swarinfotech following IT services provide karta hai: website development, software development,
-                    mobile apps, UI/UX design, SEO, hosting aur digital solutions.
-                    Project ka exact scope, timeline aur cost written agreement ya quotation me define hota hai.
-                </p>
-            </div>
-
-            <div>
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    3. Payments & Billing
-                </h2>
-                <p class="text-gray-600 dark:text-gray-300">
-                    Payments project milestones ya invoice ke according clear hone chahiye.
-                    Late payment hone par services temporarily suspend ki ja sakti hain.
-                    Once payment ho jaaye, wo generally non-refundable hoti hai (jab tak written me mention na ho).
-                </p>
-            </div>
-
-            <div>
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    4. Intellectual Property Rights
-                </h2>
-                <p class="text-gray-600 dark:text-gray-300">
-                    Jab tak full payment clear nahi hoti, tab tak source code, designs aur materials
-                    Swarinfotech ki property rehte hain.
-                    Payment complete hone ke baad final deliverables ka ownership client ko transfer kar diya jaata hai.
-                </p>
-            </div>
-
-            <div>
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    5. Confidentiality & Data Protection
-                </h2>
-                <p class="text-gray-600 dark:text-gray-300">
-                    Hum client ke data aur business information ko confidential rakhte hain.
-                    Reasonable security measures follow kiye jaate hain, lekin client bhi responsible hota hai
-                    ki wo legal aur correct data provide kare.
-                </p>
-            </div>
-
-            <div>
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    6. Limitation of Liability
-                </h2>
-                <p class="text-gray-600 dark:text-gray-300">
-                    Swarinfotech kisi bhi indirect, accidental ya consequential loss ke liye responsible nahi hoga.
-                    Hamari maximum liability sirf us amount tak limited hogi jo client ne services ke liye pay kiya hai.
-                </p>
-            </div>
-
-            <div>
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    7. Termination of Services
-                </h2>
-                <p class="text-gray-600 dark:text-gray-300">
-                    Agar payment delay ho, misuse ho ya terms ka violation ho,
-                    to Swarinfotech bina notice ke services suspend ya terminate kar sakta hai.
-                </p>
-            </div>
-
-            <div>
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    8. Privacy Policy
-                </h2>
-                <p class="text-gray-600 dark:text-gray-300">
-                    Client data ka use kaise hota hai, ye detail me jaanne ke liye
-                    hamari Privacy Policy read karein:
-                    <a href="/privacy-policy.html" class="text-blue-600 hover:underline dark:text-blue-400">
-                        Privacy Policy
-                    </a>
-                </p>
-            </div>
-
-            <div>
-                <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    9. Governing Law
-                </h2>
-                <p class="text-gray-600 dark:text-gray-300">
-                    Ye Terms & Conditions India ke laws ke according governed hongi.
-                    Kisi bhi dispute ka jurisdiction Indian courts ke under rahega.
-                </p>
-            </div>
-        </div>
-        <p class="text-sm text-gray-500 dark:text-gray-400 mt-8">
-            Last updated: February 2026
-        </p>
+                <!--<div class="max-w-4xl mx-auto px-6 py-10 bg-white rounded-xl shadow">-->
+                <!-- Language Switch -->
+                <!--<div class="flex justify-end mb-6 gap-2">
+        <button onclick="setLang('en')" class="px-4 py-2 text-sm border rounded hover:bg-gray-100">
+            English
+        </button>
+        <button onclick="setLang('hi')" class="px-4 py-2 text-sm border rounded hover:bg-gray-100">
+            हिंदी
+        </button>
     </div>-->
+                <!-- ENGLISH CONTENT (DEFAULT) -->
+                <!--<div id="lang-en">
 
-                <div class="max-w-4xl mx-auto px-6 py-10 bg-white dark:bg-gray-900 rounded-xl card-shadow">
+        <h1 class="text-3xl font-bold mb-4">Terms & Conditions</h1>
 
-                    <!-- Header + Language Switch -->
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
-                        <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
+        <p class="text-gray-600 mb-6">
+            Welcome to <strong>Swarinfotech</strong>. These Terms & Conditions govern the use of our
+            IT services, software solutions, and website. By using our services, you agree to these terms.
+        </p>
+
+        <p class="text-gray-600 mb-6">
+            <strong>Company Name:</strong> Swarinfotech<br>
+            <strong>Address:</strong> <em>[Your Office Address Here]</em>
+        </p>
+
+        <h2 class="text-xl font-semibold mb-2">1. Acceptance of Terms</h2>
+        <p class="text-gray-600 mb-4">
+            By accessing or using our services, you agree to comply with these Terms & Conditions.
+            If you do not agree, please do not use our services.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-2">2. Services</h2>
+        <p class="text-gray-600 mb-4">
+            Swarinfotech provides IT services including web development, software development,
+            mobile applications, hosting, SEO, and digital solutions.
+            Project scope and pricing are defined in written agreements.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-2">3. Payments</h2>
+        <p class="text-gray-600 mb-4">
+            Payments must be made as per agreed milestones or invoices.
+            Delayed payments may result in service suspension.
+            Payments once made are non-refundable unless stated otherwise.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-2">4. Intellectual Property</h2>
+        <p class="text-gray-600 mb-4">
+            All source code, designs, and materials remain the property of Swarinfotech
+            until full payment is received. Ownership is transferred after payment completion.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-2">5. Confidentiality</h2>
+        <p class="text-gray-600 mb-4">
+            We respect client confidentiality and take reasonable steps to protect client data.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-2">6. Limitation of Liability</h2>
+        <p class="text-gray-600 mb-4">
+            Swarinfotech shall not be liable for indirect or consequential damages.
+            Liability is limited to the amount paid for the service.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-2">7. Termination</h2>
+        <p class="text-gray-600 mb-4">
+            Services may be suspended or terminated in case of non-payment or violation of terms.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-2">8. Privacy Policy</h2>
+        <p class="text-gray-600 mb-4">
+            Please review our
+            <a href="/privacy-policy.html" class="text-blue-600 hover:underline">
+                Privacy Policy
+            </a>
+            to understand how we handle your data.
+        </p>
+
+        <h2 class="text-xl font-semibold mb-2">9. Governing Law</h2>
+        <p class="text-gray-600">
+            These terms are governed by the laws of India.
+        </p>
+
+    </div>-->
+                <!-- HINDI CONTENT -->
+                <!--<div id="lang-hi" style="display:none;">
+
+            <h1 class="text-3xl font-bold mb-4">नियम और शर्तें</h1>
+
+            <p class="text-gray-600 mb-6">
+                <strong>Swarinfotech</strong> में आपका स्वागत है।
+                ये नियम और शर्तें हमारी IT सेवाओं, सॉफ्टवेयर और वेबसाइट के उपयोग को नियंत्रित करती हैं।
+            </p>
+
+            <p class="text-gray-600 mb-6">
+                <strong>कंपनी का नाम:</strong> Swarinfotech<br>
+                <strong>पता:</strong> <em>[आपका ऑफिस पता]</em>
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">1. शर्तों की स्वीकृति</h2>
+            <p class="text-gray-600 mb-4">
+                हमारी सेवाओं का उपयोग करने का मतलब है कि आप इन नियमों से सहमत हैं।
+                यदि आप सहमत नहीं हैं, तो कृपया हमारी सेवाओं का उपयोग न करें।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">2. सेवाएं</h2>
+            <p class="text-gray-600 mb-4">
+                Swarinfotech वेब डेवलपमेंट, सॉफ्टवेयर डेवलपमेंट, मोबाइल ऐप,
+                होस्टिंग, SEO और डिजिटल सेवाएं प्रदान करता है।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">3. भुगतान</h2>
+            <p class="text-gray-600 mb-4">
+                भुगतान तय किए गए इनवॉइस या माइलस्टोन के अनुसार करना होगा।
+                देर से भुगतान होने पर सेवाएं रोकी जा सकती हैं।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">4. बौद्धिक संपदा</h2>
+            <p class="text-gray-600 mb-4">
+                पूरा भुगतान होने तक सभी कोड और डिज़ाइन Swarinfotech की संपत्ति रहेंगे।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">5. गोपनीयता</h2>
+            <p class="text-gray-600 mb-4">
+                हम ग्राहक की जानकारी को सुरक्षित और गोपनीय रखते हैं।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">6. जिम्मेदारी की सीमा</h2>
+            <p class="text-gray-600 mb-4">
+                किसी भी अप्रत्यक्ष नुकसान के लिए Swarinfotech जिम्मेदार नहीं होगा।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">7. सेवा समाप्ति</h2>
+            <p class="text-gray-600 mb-4">
+                नियमों के उल्लंघन या भुगतान न होने पर सेवाएं बंद की जा सकती हैं।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">8. गोपनीयता नीति</h2>
+            <p class="text-gray-600 mb-4">
+                कृपया हमारी
+                <a href="/privacy-policy.html" class="text-blue-600 hover:underline">
+                    Privacy Policy
+                </a>
+                पढ़ें।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">9. लागू कानून</h2>
+            <p class="text-gray-600">
+                ये नियम भारत के कानूनों के अनुसार लागू होंगे।
+            </p>
+
+        </div>
+
+    </div>
+
+    <script>
+        function setLang(lang) {
+            document.getElementById('lang-en').style.display = lang === 'en' ? 'block' : 'none';
+            document.getElementById('lang-hi').style.display = lang === 'hi' ? 'block' : 'none';
+        }
+    </script>-->
+                <!--<div class="max-w-4xl mx-auto px-6 py-10 bg-white rounded-xl shadow">
+
+         Language Switch
+        <div class="flex justify-end mb-6 gap-2">
+            <button onclick="setLang('en')" class="px-4 py-2 text-sm border rounded hover:bg-gray-100">
+                English
+            </button>
+            <button onclick="setLang('hi')" class="px-4 py-2 text-sm border rounded hover:bg-gray-100">
+                हिंदी
+            </button>
+        </div>
+
+         ENGLISH CONTENT (DEFAULT)
+        <div id="lang-en">
+
+            <h1 class="text-3xl font-bold mb-4">Terms & Conditions</h1>
+
+            <p class="text-gray-600 mb-6">
+                Welcome to <strong>Swarinfotech</strong>. These Terms & Conditions govern the use of our
+                IT services, software solutions, and website. By using our services, you agree to these terms.
+            </p>
+
+            <p class="text-gray-600 mb-6">
+                <strong>Company Name:</strong> Swarinfotech<br>
+                <strong>Address:</strong> <em>[Your Office Address Here]</em>
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">1. Acceptance of Terms</h2>
+            <p class="text-gray-600 mb-4">
+                By accessing or using our services, you agree to comply with these Terms & Conditions.
+                If you do not agree, please do not use our services.
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">2. Services</h2>
+            <p class="text-gray-600 mb-4">
+                Swarinfotech provides IT services including web development, software development,
+                mobile applications, hosting, SEO, and digital solutions.
+                Project scope and pricing are defined in written agreements.
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">3. Payments</h2>
+            <p class="text-gray-600 mb-4">
+                Payments must be made as per agreed milestones or invoices.
+                Delayed payments may result in service suspension.
+                Payments once made are non-refundable unless stated otherwise.
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">4. Intellectual Property</h2>
+            <p class="text-gray-600 mb-4">
+                All source code, designs, and materials remain the property of Swarinfotech
+                until full payment is received. Ownership is transferred after payment completion.
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">5. Confidentiality</h2>
+            <p class="text-gray-600 mb-4">
+                We respect client confidentiality and take reasonable steps to protect client data.
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">6. Limitation of Liability</h2>
+            <p class="text-gray-600 mb-4">
+                Swarinfotech shall not be liable for indirect or consequential damages.
+                Liability is limited to the amount paid for the service.
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">7. Termination</h2>
+            <p class="text-gray-600 mb-4">
+                Services may be suspended or terminated in case of non-payment or violation of terms.
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">8. Privacy Policy</h2>
+            <p class="text-gray-600 mb-4">
+                Please review our
+                <a href="/privacy-policy.html" class="text-blue-600 hover:underline">
+                    Privacy Policy
+                </a>
+                to understand how we handle your data.
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">9. Governing Law</h2>
+            <p class="text-gray-600">
+                These terms are governed by the laws of India.
+            </p>
+
+        </div>
+
+         HINDI CONTENT
+        <div id="lang-hi" style="display:none;">
+
+            <h1 class="text-3xl font-bold mb-4">नियम और शर्तें</h1>
+
+            <p class="text-gray-600 mb-6">
+                <strong>Swarinfotech</strong> में आपका स्वागत है।
+                ये नियम और शर्तें हमारी IT सेवाओं, सॉफ्टवेयर और वेबसाइट के उपयोग को नियंत्रित करती हैं।
+            </p>
+
+            <p class="text-gray-600 mb-6">
+                <strong>कंपनी का नाम:</strong> Swarinfotech<br>
+                <strong>पता:</strong> <em>[आपका ऑफिस पता]</em>
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">1. शर्तों की स्वीकृति</h2>
+            <p class="text-gray-600 mb-4">
+                हमारी सेवाओं का उपयोग करने का मतलब है कि आप इन नियमों से सहमत हैं।
+                यदि आप सहमत नहीं हैं, तो कृपया हमारी सेवाओं का उपयोग न करें।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">2. सेवाएं</h2>
+            <p class="text-gray-600 mb-4">
+                Swarinfotech वेब डेवलपमेंट, सॉफ्टवेयर डेवलपमेंट, मोबाइल ऐप,
+                होस्टिंग, SEO और डिजिटल सेवाएं प्रदान करता है।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">3. भुगतान</h2>
+            <p class="text-gray-600 mb-4">
+                भुगतान तय किए गए इनवॉइस या माइलस्टोन के अनुसार करना होगा।
+                देर से भुगतान होने पर सेवाएं रोकी जा सकती हैं।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">4. बौद्धिक संपदा</h2>
+            <p class="text-gray-600 mb-4">
+                पूरा भुगतान होने तक सभी कोड और डिज़ाइन Swarinfotech की संपत्ति रहेंगे।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">5. गोपनीयता</h2>
+            <p class="text-gray-600 mb-4">
+                हम ग्राहक की जानकारी को सुरक्षित और गोपनीय रखते हैं।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">6. जिम्मेदारी की सीमा</h2>
+            <p class="text-gray-600 mb-4">
+                किसी भी अप्रत्यक्ष नुकसान के लिए Swarinfotech जिम्मेदार नहीं होगा।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">7. सेवा समाप्ति</h2>
+            <p class="text-gray-600 mb-4">
+                नियमों के उल्लंघन या भुगतान न होने पर सेवाएं बंद की जा सकती हैं।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">8. गोपनीयता नीति</h2>
+            <p class="text-gray-600 mb-4">
+                कृपया हमारी
+                <a href="/Policy.html" class="text-blue-600 hover:underline">
+                    Privacy Policy
+                </a>
+                पढ़ें।
+            </p>
+
+            <h2 class="text-xl font-semibold mb-2">9. लागू कानून</h2>
+            <p class="text-gray-600">
+                ये नियम भारत के कानूनों के अनुसार लागू होंगे।
+            </p>
+
+        </div>
+
+    </div>
+
+    <script>
+        function setLang(lang) {
+            document.getElementById('lang-en').style.display = lang === 'en' ? 'block' : 'none';
+            document.getElementById('lang-hi').style.display = lang === 'hi' ? 'block' : 'none';
+        }
+    </script>-->
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-10 bg-white rounded-xl shadow">
+
+                    <!-- Language Switch -->
+                    <div class="flex flex-wrap justify-end mb-6 gap-2">
+                        <button onclick="setLang('en')"
+                                class="px-4 py-2 text-sm border rounded-md hover:bg-gray-100 transition">
+                            English
+                        </button>
+                        <button onclick="setLang('hi')"
+                                class="px-4 py-2 text-sm border rounded-md hover:bg-gray-100 transition">
+                            हिंदी
+                        </button>
+                    </div>
+
+                    <!-- ENGLISH (DEFAULT) -->
+                    <div id="lang-en">
+
+                        <h1 class="text-2xl sm:text-3xl font-bold mb-4">
                             Terms & Conditions
                         </h1>
 
-                        <div class="mt-3 sm:mt-0">
-                            <button onclick="setLang('en')" id="btn-en"
-                                    class="px-4 py-1 text-sm rounded-lg bg-blue-600 text-white mr-2">
-                                English
-                            </button>
-                            <button onclick="setLang('hi')" id="btn-hi"
-                                    class="px-4 py-1 text-sm rounded-lg bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-200">
-                                हिंदी
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Company Info -->
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">
-                        <strong>Company Name:</strong> Swarinfotech <br>
-                        <strong>Address:</strong> <span class="italic">[Your Office Address Here]</span>
-                    </p>
-
-                    <!-- ================= ENGLISH CONTENT ================= -->
-                    <div id="content-en">
-
-                        <p class="text-gray-600 dark:text-gray-300 mb-6">
-                            These Terms & Conditions govern the use of Swarinfotech’s IT services, website, and software solutions.
-                            By using our services, you agree to these terms.
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Welcome to <strong>Swarinfotech</strong>. These Terms & Conditions govern the use of our
+                            IT services, software solutions, and website.
                         </p>
 
-                        <div class="space-y-6">
-
-                            <div>
-                                <h2 class="section-title">1. Acceptance of Terms</h2>
-                                <p class="section-text">
-                                    By accessing or using our services, you agree to be bound by these Terms & Conditions.
-                                    If you do not agree, please discontinue using our services.
-                                </p>
-                            </div>
-
-                            <div>
-                                <h2 class="section-title">2. Scope of Services</h2>
-                                <p class="section-text">
-                                    Swarinfotech provides IT services including web development, software development,
-                                    mobile applications, UI/UX design, SEO, hosting, and digital solutions.
-                                    Project scope is defined in written agreements or quotations.
-                                </p>
-                            </div>
-
-                            <div>
-                                <h2 class="section-title">3. Payments & Billing</h2>
-                                <p class="section-text">
-                                    Payments must be made as per agreed milestones or invoices.
-                                    Delayed payments may result in suspension of services.
-                                    All payments are non-refundable unless stated otherwise in writing.
-                                </p>
-                            </div>
-
-                            <div>
-                                <h2 class="section-title">4. Intellectual Property Rights</h2>
-                                <p class="section-text">
-                                    All source code, designs, and deliverables remain the property of Swarinfotech
-                                    until full payment is received. Ownership is transferred after payment completion.
-                                </p>
-                            </div>
-
-                            <div>
-                                <h2 class="section-title">5. Confidentiality & Data Protection</h2>
-                                <p class="section-text">
-                                    We maintain confidentiality of client data and apply reasonable security practices.
-                                    Clients are responsible for providing lawful and accurate information.
-                                </p>
-                            </div>
-
-                            <div>
-                                <h2 class="section-title">6. Limitation of Liability</h2>
-                                <p class="section-text">
-                                    Swarinfotech shall not be liable for indirect or consequential damages.
-                                    Our maximum liability is limited to the amount paid for the service.
-                                </p>
-                            </div>
-
-                            <div>
-                                <h2 class="section-title">7. Termination of Services</h2>
-                                <p class="section-text">
-                                    We reserve the right to suspend or terminate services due to non-payment,
-                                    misuse, or violation of these terms.
-                                </p>
-                            </div>
-
-                            <div>
-                                <h2 class="section-title">8. Privacy Policy</h2>
-                                <p class="section-text">
-                                    Please review our
-                                    <a href="/privacy-policy.html" class="text-blue-600 hover:underline dark:text-blue-400">
-                                        Privacy Policy
-                                    </a>
-                                    to understand how we collect and use your data.
-                                </p>
-                            </div>
-
-                            <div>
-                                <h2 class="section-title">9. Governing Law</h2>
-                                <p class="section-text">
-                                    These Terms & Conditions are governed by the laws of India.
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- ================= HINDI CONTENT ================= -->
-                    <div id="content-hi" class="hidden">
-
-                        <p class="text-gray-600 dark:text-gray-300 mb-6">
-                            ये नियम एवं शर्तें Swarinfotech द्वारा प्रदान की जाने वाली
-                            आईटी सेवाओं, वेबसाइट तथा सॉफ़्टवेयर समाधानों के उपयोग को नियंत्रित करती हैं।
-                            हमारी सेवाओं का उपयोग करने का अर्थ है कि आप इन नियमों एवं शर्तों से सहमत हैं।
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            <strong>Company Name:</strong> Swarinfotech<br>
+                            <strong>Address:</strong> <em>[Your Office Address Here]</em>
                         </p>
 
-                        <div class="space-y-6">
+                        <h2 class="text-lg sm:text-xl font-semibold mb-2">
+                            1. Acceptance of Terms
+                        </h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            By using our services, you agree to these Terms & Conditions.
+                        </p>
 
-                            <div>
-                                <h2 class="section-title">1. नियमों की स्वीकृति</h2>
-                                <p class="section-text">
-                                    हमारी सेवाओं का उपयोग करते ही आप इन सभी नियमों एवं शर्तों को स्वीकार करते हैं।
-                                    यदि आप इनसे सहमत नहीं हैं, तो कृपया हमारी सेवाओं का उपयोग न करें।
-                                </p>
-                            </div>
+                        <h2 class="text-lg sm:text-xl font-semibold mb-2">
+                            2. Services
+                        </h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            We provide web development, software development, mobile applications,
+                            hosting, SEO, and other IT services.
+                        </p>
 
-                            <div>
-                                <h2 class="section-title">2. सेवाओं का दायरा</h2>
-                                <p class="section-text">
-                                    Swarinfotech वेब विकास, सॉफ़्टवेयर विकास, मोबाइल एप्लिकेशन,
-                                    यूआई/यूएक्स डिज़ाइन, एसईओ, होस्टिंग तथा अन्य डिजिटल सेवाएँ प्रदान करता है।
-                                    प्रत्येक परियोजना का विवरण लिखित समझौते में निर्धारित किया जाता है।
-                                </p>
-                            </div>
+                        <h2 class="text-lg sm:text-xl font-semibold mb-2">
+                            3. Payments
+                        </h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Payments must be made as per agreed invoices or milestones.
+                            Payments once made are non-refundable unless stated otherwise.
+                        </p>
 
-                            <div>
-                                <h2 class="section-title">3. भुगतान एवं बिलिंग</h2>
-                                <p class="section-text">
-                                    भुगतान पूर्व निर्धारित चरणों अथवा सहमत माइलस्टोन के अनुसार किया जाना आवश्यक है।
-                                    विलंबित भुगतान की स्थिति में सेवाएँ अस्थायी रूप से निलंबित की जा सकती हैं।
-                                    सामान्यतः किया गया भुगतान धनवापसी योग्य नहीं होता।
-                                </p>
-                            </div>
+                        <h2 class="text-lg sm:text-xl font-semibold mb-2">
+                            4. Intellectual Property
+                        </h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            All materials remain the property of Swarinfotech until full payment is received.
+                        </p>
 
-                            <div>
-                                <h2 class="section-title">4. बौद्धिक संपदा अधिकार</h2>
-                                <p class="section-text">
-                                    पूर्ण भुगतान प्राप्त होने तक समस्त स्रोत कोड, डिज़ाइन एवं सामग्री
-                                    Swarinfotech की संपत्ति बनी रहेगी।
-                                    भुगतान पूर्ण होने के पश्चात स्वामित्व ग्राहक को प्रदान किया जाएगा।
-                                </p>
-                            </div>
+                        <h2 class="text-lg sm:text-xl font-semibold mb-2">
+                            5. Privacy Policy
+                        </h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Please read our
+                            <a href="/privacy-policy.html" class="text-blue-600 hover:underline">
+                                Privacy Policy
+                            </a>.
+                        </p>
 
-                            <div>
-                                <h2 class="section-title">5. डेटा सुरक्षा</h2>
-                                <p class="section-text">
-                                    हम ग्राहक के डेटा को गोपनीय रखते हैं तथा उसकी सुरक्षा के लिए
-                                    उपयुक्त और युक्तिसंगत सुरक्षा उपायों का पालन करते हैं।
-                                </p>
-                            </div>
+                        <h2 class="text-lg sm:text-xl font-semibold mb-2">
+                            6. Governing Law
+                        </h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            These terms are governed by the laws of India.
+                        </p>
 
-                            <div>
-                                <h2 class="section-title">6. दायित्व की सीमा</h2>
-                                <p class="section-text">
-                                    Swarinfotech किसी भी अप्रत्यक्ष, आकस्मिक या परिणामी हानि के लिए
-                                    उत्तरदायी नहीं होगा।
-                                    हमारी कुल देयता केवल ग्राहक द्वारा भुगतान की गई राशि तक सीमित रहेगी।
-                                </p>
-                            </div>
-
-                            <div>
-                                <h2 class="section-title">7. सेवा समाप्ति</h2>
-                                <p class="section-text">
-                                    भुगतान में विलंब, नियमों के उल्लंघन अथवा सेवाओं के दुरुपयोग की स्थिति में
-                                    Swarinfotech को सेवाएँ समाप्त करने का अधिकार सुरक्षित है।
-                                </p>
-                            </div>
-
-                            <div>
-                                <h2 class="section-title">8. गोपनीयता नीति</h2>
-                                <p class="section-text">
-                                    ग्राहक की जानकारी किस प्रकार एकत्रित, उपयोग एवं सुरक्षित की जाती है,
-                                    इसके लिए कृपया हमारी
-                                    <a href="/privacy-policy.html" class="text-blue-600 hover:underline dark:text-blue-400">
-                                        गोपनीयता नीति
-                                    </a>
-                                    अवश्य पढ़ें।
-                                </p>
-                            </div>
-
-                            <div>
-                                <h2 class="section-title">9. लागू कानून</h2>
-                                <p class="section-text">
-                                    ये नियम एवं शर्तें भारत के प्रचलित कानूनों के अनुसार लागू और व्याख्यायित की जाएँगी।
-                                </p>
-                            </div>
-
-                        </div>
                     </div>
 
-                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-8">
-                        अंतिम बार अद्यतन: फ़रवरी 2026
-                    </p>
+                    <!-- PURE HINDI -->
+                    <div id="lang-hi" style="display:none;">
 
+                        <h1 class="text-2xl sm:text-3xl font-bold mb-4">
+                            नियम एवं शर्तें
+                        </h1>
+
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            <strong>Swarinfotech</strong> में आपका स्वागत है।
+                            यह नियम एवं शर्तें हमारी सूचना प्रौद्योगिकी सेवाओं,
+                            सॉफ़्टवेयर समाधानों तथा वेबसाइट के उपयोग को नियंत्रित करती हैं।
+                        </p>
+
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            <strong>कंपनी का नाम:</strong> Swarinfotech<br>
+                            <strong>पता:</strong> <em>[आपका कार्यालय पता]</em>
+                        </p>
+
+                        <h2 class="text-lg sm:text-xl font-semibold mb-2">
+                            1. नियमों की स्वीकृति
+                        </h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            हमारी सेवाओं का उपयोग करने का अर्थ है कि आप इन सभी नियमों एवं शर्तों से सहमत हैं।
+                            यदि आप सहमत नहीं हैं, तो कृपया हमारी सेवाओं का उपयोग न करें।
+                        </p>
+
+                        <h2 class="text-lg sm:text-xl font-semibold mb-2">
+                            2. सेवाओं का विवरण
+                        </h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Swarinfotech वेब विकास, सॉफ़्टवेयर विकास, मोबाइल एप्लिकेशन,
+                            होस्टिंग, एसईओ तथा अन्य आईटी सेवाएँ प्रदान करता है।
+                        </p>
+
+                        <h2 class="text-lg sm:text-xl font-semibold mb-2">
+                            3. भुगतान नीति
+                        </h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            भुगतान सहमति अनुसार जारी किए गए इनवॉइस या निर्धारित चरणों के अनुसार किया जाना अनिवार्य है।
+                            एक बार किया गया भुगतान सामान्यतः वापस नहीं किया जाता।
+                        </p>
+
+                        <h2 class="text-lg sm:text-xl font-semibold mb-2">
+                            4. बौद्धिक संपदा अधिकार
+                        </h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            पूर्ण भुगतान प्राप्त होने तक सभी सामग्री Swarinfotech की संपत्ति रहेगी।
+                        </p>
+
+                        <h2 class="text-lg sm:text-xl font-semibold mb-2">
+                            5. गोपनीयता नीति
+                        </h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            कृपया हमारी
+                            <a href="/privacy-policy.html" class="text-blue-600 hover:underline">
+                                गोपनीयता नीति
+                            </a>
+                            पढ़ें।
+                        </p>
+
+                        <h2 class="text-lg sm:text-xl font-semibold mb-2">
+                            6. लागू कानून
+                        </h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            यह नियम एवं शर्तें भारत के कानूनों के अनुसार लागू होंगी।
+                        </p>
+
+                    </div>
                 </div>
                 <script>
                     function setLang(lang) {
-                        document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
-                        document.getElementById('content-hi').classList.toggle('hidden', lang !== 'hi');
-
-                        document.getElementById('btn-en').classList.toggle('bg-blue-600', lang === 'en');
-                        document.getElementById('btn-en').classList.toggle('text-white', lang === 'en');
-
-                        document.getElementById('btn-hi').classList.toggle('bg-blue-600', lang === 'hi');
-                        document.getElementById('btn-hi').classList.toggle('text-white', lang === 'hi');
+                        document.getElementById('lang-en').style.display = lang === 'en' ? 'block' : 'none';
+                        document.getElementById('lang-hi').style.display = lang === 'hi' ? 'block' : 'none';
                     }
                 </script>
-
             </div>
         </section>
     </main>
