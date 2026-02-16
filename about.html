@@ -571,60 +571,82 @@
           <img src="assets/images/Custom/about.png" alt="About Swarinfotech Background" class="w-full h-full object-cover" />       
        </div>
        <!-- Statistics Section -->
-       <section class="py-16 lg:py-20 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-gray-800 dark:to-gray-900">
-           <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                   <!-- Students Stat -->
-                   <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                       <div class="flex items-center justify-center w-16 h-16 bg-indigo-100 dark:bg-indigo-900/30 rounded-xl mb-4 mx-auto">
-                           <svg class="h-8 w-8 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                           </svg>
-                       </div>
-                       <div x-data="counter()" data-target="30" data-duration="2000" class="text-4xl font-bold text-center text-indigo-600 dark:text-indigo-400 mb-2">
-                           <span x-text="count.toLocaleString()">0</span>
-                       </div>
-                       <p class="text-gray-600 dark:text-gray-300 text-center font-medium">Projects</p>
-                   </div>
-                   <!-- Courses Stat -->
-                   <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                       <div class="flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-xl mb-4 mx-auto">
-                           <svg class="h-8 w-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                           </svg>
-                       </div>
-                       <div x-data="counter()" data-target="50" data-duration="2000" class="text-4xl font-bold text-center text-green-600 dark:text-green-400 mb-2">
-                           <span x-text="count">0</span>
-                       </div>
-                       <p class="text-gray-600 dark:text-gray-300 text-center font-medium">Happy Client</p>
-                   </div>
-                   <!-- Instructors Stat -->
-                   <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                       <div class="flex items-center justify-center w-16 h-16 bg-amber-100 dark:bg-amber-900/30 rounded-xl mb-4 mx-auto">
-                           <svg class="h-8 w-8 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                           </svg>
-                       </div>
-                       <div x-data="counter()" data-target="5+" data-duration="2000" class="text-4xl font-bold text-center text-amber-600 dark:text-amber-400 mb-2">
-                           <span x-text="count">0</span>
-                       </div>
-                       <p class="text-gray-600 dark:text-gray-300 text-center font-medium">Year Experience</p>
-                   </div>
-                   <!-- Success Rate Stat -->
-                   <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
-                       <div class="flex items-center justify-center w-16 h-16 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl mb-4 mx-auto">
-                           <svg class="h-8 w-8 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                           </svg>
-                       </div>
-                       <div x-data="counter()" data-target="98" data-duration="2000" class="text-4xl font-bold text-center text-emerald-600 dark:text-emerald-400 mb-2">
-                           <span x-text="count + '%'">0%</span>
-                       </div>
-                       <p class="text-gray-600 dark:text-gray-300 text-center font-medium">Success Rate</p>
-                   </div>
-               </div>
-           </div>
-       </section>
+      <section class="py-16 lg:py-20 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 card-container">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Students Stat -->
+            <div class="card card-1">
+                <div class="flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-xl mb-4 mx-auto icon5">
+                    <svg class="h-8 w-8" fill="none" stroke="white" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M3 7a2 2 0 012-2h3l2 2h9a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 13l-2 2 2 2M15 13l2 2-2 2" />
+                    </svg>
+                </div>
+                <div x-data="counter()" data-target="30" data-duration="2000"
+                     class="text-4xl font-bold text-center text-black mb-2">
+                    <span x-text="count.toLocaleString()">0</span>
+                </div>
+                <!-- Title -->
+                <p class="text-gray-600 dark:text-gray-300 text-center font-medium">
+                    Projects
+                </p>
+                <div class="progress"></div>
+            </div>
+            <!-- Courses Stat -->
+            <div class="card card-2">
+                <div class="flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-xl mb-4 mx-auto icon5">
+                    <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <!-- Face -->
+                        <circle cx="12" cy="12" r="9" stroke-width="2"></circle>
+                        <!-- Eyes -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 10h.01M15 10h.01"></path>
+                        <!-- Smile -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 14c1.5 1 4.5 1 6 0"></path>
+                    </svg>
+                </div>
+                <div x-data="counter()" data-target="50" data-duration="2000" class="text-4xl font-bold text-center text-black mb-2">
+                    <span x-text="count">0</span>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-center font-medium">Happy Client</p>
+                <div class="progress"></div>
+            </div>
+            <!-- Instructors Stat -->
+            <div class="card card-3">
+                <div class="flex items-center justify-center w-16 h-16 bg-amber-100 dark:bg-amber-900/30 rounded-xl mb-4 mx-auto icon5">
+                    <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2m5 2H4a2 2 0 00-2 2v3h20v-3a2 2 0 00-2-2z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M22 13H2v5a2 2 0 002 2h16a2 2 0 002-2v-5z"></path>
+                    </svg>
+                </div>
+                <div x-data="counter()" data-target="5+" data-duration="2000" class="text-4xl font-bold text-center text-black mb-2">
+                    <span x-text="count">0</span>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-center font-medium">Year Experience</p>
+                <div class="progress"></div>
+            </div>
+            <!-- Success Rate Stat -->
+            <div class="card card-4">
+                <div class="flex items-center justify-center w-16 h-16 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl mb-4 mx-auto icon5">
+                    <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div x-data="counter()" data-target="98" data-duration="2000" class="text-4xl font-bold text-center text-black mb-2">
+                    <span x-text="count + '%'">0%</span>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-center font-medium">Success Rate</p>
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+</section>
        <!-- Mission -->
        <section class="py-16 bg-white dark:bg-gray-800">
            <div class="container mx-auto px-4">
