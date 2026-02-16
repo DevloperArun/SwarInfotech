@@ -1,0 +1,110 @@
+﻿.card-container 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card 
+{
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb; /* ✅ default light gray border */
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.card:hover 
+{
+     border: 1px solid #6366f1; /* common hover border */
+     box-shadow: 0 8px 25px rgba(99, 102, 241, 0.18); /* premium soft glow */
+     transform: translateY(-4px); /* slight lift effect */
+}
+
+/* Icon */
+.icon5 {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 15px;
+    background: var(--main-color);
+}
+
+/* Progress Bar */
+.progress 
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: var(--main-color);
+    transition: width 0.4s ease;
+}
+
+.card:hover .progress {
+    width: 100%;
+}
+
+/* Different icon colors */
+.card-1 {
+    --main-color: #a652fc;
+}
+
+.card-2 {
+    --main-color: #f18feffc;
+}
+
+.card-3 {
+    --main-color: oklch(0.77 0.19 70.08 / 0.63);
+}
+
+.card-4 {
+    --main-color: oklch(0.8 0.15 172.4);
+}
+
+.card-5 {
+    --main-color: #22c55e;
+}
+
+.card-6 {
+    --main-color: #14b8a6;
+}
+
+.card-7 {
+    --main-color: #f43f5e;
+}
+
+.card-8 {
+    --main-color: #8b5cf6;
+}
+.bg-teal-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(137 47 252 / 68%);
+}
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.w-16 {
+    width: 4rem;
+}
+
+.h-1 {
+    height: 0.25rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
