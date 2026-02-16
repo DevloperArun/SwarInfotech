@@ -1,14 +1,11 @@
-﻿<%@ Page Title="Sanskrit Scholarship" Language="C#" MasterPageFile="BlocksMasterPage.master" AutoEventWireup="true" CodeFile="ChatCopy.aspx.cs" Inherits="Chat" %>
-
+﻿<%@ Page Title="Sanskrit Scholarship" Language="C#" AutoEventWireup="true" CodeFile="ChatCopy.aspx.cs" Inherits="Chat" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-
  <style>
 body {
   font-family: Arial, sans-serif;
   background: #f5f7fa;
   padding: 40px;
 }
-
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -134,3 +131,4 @@ body {
 
 
 </asp:Content>
+
