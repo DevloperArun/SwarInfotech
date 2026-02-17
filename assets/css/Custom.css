@@ -87,7 +87,7 @@
     --main-color: #8b5cf6;
 }
 .card-address {
-    --main-color: var(--color-blue-100);
+    --main-color: oklch(0.44 0.18 255.91);
 }
 .card-email {
     --main-color: var(--color-green-600);
