@@ -94,10 +94,12 @@
 .card-email {
     --main-color: var(--color-green-600);
 }
-.card-contact {
+.card-contact 
+{
     --main-color: var(--color-purple-600);
 }
-.bg-teal-500 {
+.bg-teal-500 
+{
     --tw-bg-opacity: 1;
     background-color: rgb(137 47 252 / 68%);
 }
