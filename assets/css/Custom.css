@@ -21,7 +21,8 @@
      transform: translateY(-4px); /* slight lift effect */
 }
 /* Icon */
-.icon5 {
+.icon5 
+{
     width: 55px;
     height: 55px;
     display: flex;
@@ -33,7 +34,8 @@
     margin-top: 15px;
     background: var(--main-color);
 }
-.icon6 {
+.icon6 
+{
     width: 55px;
     height: 55px;
     display: flex;
@@ -56,13 +58,13 @@
     background: var(--main-color);
     transition: width 0.4s ease;
 }
-
-.card:hover .progress {
+.card:hover .progress 
+{
     width: 100%;
 }
-
 /* Different icon colors */
-.card-1 {
+.card-1 
+{
     --main-color: #a652fc;
 }
 .card-2 {
