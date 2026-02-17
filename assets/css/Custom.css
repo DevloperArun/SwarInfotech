@@ -33,6 +33,18 @@
     margin-top: 15px;
     background: var(--main-color);
 }
+.icon6 {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:36px;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+    background: var(--main-color);
+}
 /* Progress Bar */
 .progress 
 {
