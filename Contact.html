@@ -276,7 +276,6 @@
                     </button>
                 </div>
             </div>
-
             <div class="hidden lg:flex items-center justify-between h-20"
                  x-bind:class="{'navbar-menu-mobile bg-white dark:bg-gray-800 !block fixed inset-0 z-[60] h-screen overflow-y-auto': mobileMenuOpen}">
                 <!-- Logo -->
@@ -313,7 +312,6 @@
                                 Home
                             </a>
                         </li>
-
                         <li class="w-full">
                             <a href="../SwarInfotech/about.html"
                                class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center cursor-pointer"
@@ -321,7 +319,6 @@
                                 About
                             </a>
                         </li>
-
                         <!-- Courses Mega Menu -->
                         <li class="w-full relative group mega-menu-trigger" @click="toggleMegaMenu('Services')" @mouseenter="openMegaMenuOnHover('Services')">
                             <a href="#"
@@ -392,7 +389,6 @@
                             <svg class="h-5 w-5 me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                             </svg>
-
                             Back
                         </button>
                         <!-- Title -->
@@ -405,7 +401,6 @@
                             </svg>
                         </button>
                     </div>
-
                     <!-- Breadcrumbs -->
                     <div x-show="breadcrumbs.length > 1" class="mt-2 flex items-center text-sm text-gray-500 dark:text-gray-400 dark:text-gray-500">
                         <template x-for="(crumb, index) in breadcrumbs" :key="index">
