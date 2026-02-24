@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best IT Services | Website & Mobile App Development - Swarinfotech</title>
     <meta name="description" content="We don’t just adapt to change—we create it ,IT,Software,Website,Mobile App">
@@ -60,10 +60,10 @@
     <script src="/SwarInfotech/assets/js/main.js"></script>
     <!-- Theme Switcher JS -->
     <script src="/SwarInfotech/assets/js/theme-switcher.js"></script>
-   <link href="/SwarInfotech/assets/css/Custom.css" rel="stylesheet" />
+    <link href="/SwarInfotech/assets/css/Custom.css" rel="stylesheet" />
     <!-- Completely Unique Custom CSS for hero slider -->
 </head>
-        
+
 <body class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 transition-all duration-300 ease-in-out min-h-screen"
       data-motion-enabled="true">
     <!-- Preloader -->
@@ -142,8 +142,7 @@
                         </li>
                         <!-- Courses Mega Menu -->
                         <li class="w-full relative group mega-menu-trigger" @click="toggleMegaMenu('Services')" @mouseenter="openMegaMenuOnHover('Services')">
-                            <a href="#"
-                               class="text-gray-700 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center group"
+                            <a href="Services/Services.html" class="text-gray-700 cursor-pointer dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center group"
                                x-bind:class="{'w-full px-8 py-4 text-xl border-b border-gray-100 dark:border-gray-700 text-md hover:bg-gray-100 dark:hover:bg-gray-700': mobileMenuOpen}">
                                 Services
                                 <svg class="ms-1 h-4 w-4 transition-transform duration-200" :class="megaMenuOpen === 'Services' ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -152,15 +151,13 @@
                             </a>
                         </li>
                         <li class="w-full">
-                            <a href="Tech.html"
-                               class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center cursor-pointer"
+                            <a href="Tech.html" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center cursor-pointer"
                                x-bind:class="{'w-full px-8 py-4 text-xl border-b border-gray-100 dark:border-gray-700 text-md hover:bg-gray-100 dark:hover:bg-gray-700': mobileMenuOpen}">
                                 Technologies
                             </a>
                         </li>
                         <li class="w-full">
-                            <a href="Contact.html"
-                               class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center cursor-pointer"
+                            <a href="Contact.html" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center cursor-pointer"
                                x-bind:class="{'w-full px-8 py-4 text-xl border-b border-gray-100 dark:border-gray-700 text-md hover:bg-gray-100 dark:hover:bg-gray-700': mobileMenuOpen}">
                                 Contact
                             </a>
@@ -170,8 +167,7 @@
                 <!-- Right side menu -->
                 <div class="flex flex-wrap items-center gap-4" x-bind:class="{'justify-center p-6': mobileMenuOpen}">
                     <!-- Theme Toggle -->
-                    <button x-data="{ themeSwitcher: new ThemeSwitcher() }"
-                            @click="themeSwitcher.toggleTheme()"
+                    <button x-data="{ themeSwitcher: new ThemeSwitcher() }" @click="themeSwitcher.toggleTheme()"
                             class="theme-toggle p-2 rounded-lg cursor-pointer transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white border border-gray-200 dark:border-gray-600">
                         <svg x-show="! themeSwitcher.isDark()" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
@@ -181,8 +177,7 @@
                         </svg>
                     </button>
                     <!-- Direction Toggle -->
-                    <button x-data="{ themeSwitcher: new ThemeSwitcher() }"
-                            @click="themeSwitcher.toggleDirection()"
+                    <button x-data="{ themeSwitcher: new ThemeSwitcher() }" @click="themeSwitcher.toggleDirection()"
                             class="direction-toggle p-2 rounded-lg cursor-pointer transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white border border-gray-200 dark:border-gray-600">
                         <div x-show="! themeSwitcher.isRTL()" class="w-5 h-5 d-flex content-center items-center text-xs">RTL</div>
                         <div x-show="themeSwitcher.isRTL()" class="w-5 h-5 d-flex content-center items-center text-xs">LTR</div>
@@ -191,21 +186,16 @@
             </div>
         </nav>
         <!-- Mega Menu Items -->
-        <div x-show="megaMenuOpen"
-             x-transition:enter="transition ease-out duration-500"
-             x-transition:enter-start="opacity-0 transform translate-y-4"
-             x-transition:enter-end="opacity-100 transform translate-y-0"
-             class="absolute top-full start-0 w-full max-h-[calc(100vh-10rem)] overflow-y-auto bg-white z-9999 dark:bg-gray-800 shadow-2xl border-t border-gray-100 dark:border-gray-700"
-             x-bind:class="{'!top-0 !max-h-screen': mobileMenuOpen}"
-             @click.stop>
+        <div x-show="megaMenuOpen" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0 transform translate-y-4"
+             x-transition:enter-end="opacity-100 transform translate-y-0" class="absolute top-full start-0 w-full max-h-[calc(100vh-10rem)] overflow-y-auto bg-white z-9999 dark:bg-gray-800 shadow-2xl border-t border-gray-100 dark:border-gray-700"
+             x-bind:class="{'!top-0 !max-h-screen': mobileMenuOpen}" @click.stop>
             <!-- Menu content with higher z-index -->
             <div class="relative z-20 mega-menu-content" @click.stop>
                 <!-- Mega Menu Header -->
                 <div x-show="mobileMenuOpen" class="bg-gray-50 dark:bg-gray-900 px-6 py-4 border-b border-gray-200 dark:border-gray-600">
                     <div class="flex items-center justify-between">
                         <!-- Back Button -->
-                        <button x-show="breadcrumbs.length > 1"
-                                class="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 cursor-pointer"
+                        <button x-show="breadcrumbs.length > 1" class="flex items-center text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 cursor-pointer"
                                 @click="goBack()">
                             <svg class="h-5 w-5 me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
@@ -278,8 +268,7 @@
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-purple-100 transition-colors">
                                                 <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                          d="M4 5h16M4 9h10M4 15h6M4 19h6M14 14l6-6 2 2-6 6-3 1 1-3z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5h16M4 9h10M4 15h6M4 19h6M14 14l6-6 2 2-6 6-3 1 1-3z" />
                                                 </svg>
                                             </div>
                                             <div>
@@ -297,8 +286,7 @@
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
                                                 <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                          d="M3 5h8v6H3V5zm10 0h8v6h-8V5zM3 13h8v6H3v-6zm10 0h8v6h-8v-6z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h8v6H3V5zm10 0h8v6h-8V5zM3 13h8v6H3v-6zm10 0h8v6h-8v-6z" />
                                                 </svg>
                                             </div>
                                             <div>
@@ -313,8 +301,7 @@
                                                 <svg class="h-5 w-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                     <circle cx="11" cy="11" r="6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle>
                                                     <line x1="16.5" y1="16.5" x2="20" y2="20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
-                                                    <path d="M4 12h2M18 12h2M12 4v2M12 18v2M5.5 5.5l1.5 1.5M17 17l1.5 1.5M5.5 18.5l1.5-1.5M17 7l1.5-1.5"
-                                                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M4 12h2M18 12h2M12 4v2M12 18v2M5.5 5.5l1.5 1.5M17 17l1.5 1.5M5.5 18.5l1.5-1.5M17 7l1.5-1.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 </svg>
                                             </div>
                                             <div>
@@ -332,7 +319,7 @@
                                             </div>
                                             <div>
                                                 <div class="text-sm font-medium text-gray-900 dark:text-white group-hover:text-purple-600 transition-colors">Website Maintenance & Support</div>
-                                                <div class="text-xs text-gray-500 dark:text-gray-400">Regular updates, backups, bug fixes, and technical support</div>
+                                                <div class="text-xs text-gray-500 dark:text-gray-400">Regular updates, backups, bug fixes and technical support</div>
                                             </div>
                                         </div>
                                     </a>
@@ -345,8 +332,7 @@
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
                                                 <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 6H19M7 13l-4-8M10 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 6H19M7 13l-4-8M10 21a1 1 0 100-2 1 1 0 000 2zm8 0a1 1 0 100-2 1 1 0 000 2z" />
                                                 </svg>
                                             </div>
                                             <div>
@@ -375,7 +361,7 @@
                                 <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-6 text-white">
                                     <h3 class="text-lg font-semibold mb-3">Our Services</h3>
                                     <p class="text-sm text-blue-100 mb-4 leading-relaxed">
-                                        We deliver end-to-end web and software development services, focused on quality, performance, and client satisfaction.
+                                        We deliver end-to-end web and software development services, focused on quality, performance and client satisfaction.
                                     </p>
                                     <a href="Services/Services.html" class="inline-block bg-white dark:bg-gray-800 text-blue-600 px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 hover:shadow-lg cursor-pointer">
                                         View Our Services
@@ -391,6 +377,13 @@
     <!-- Main Content -->
     <main class="pt-16 sm:pt-20 min-h-screen" data-motion="zoom-out" data-motion-delay="0" data-motion-stagger="0.01" data-motion-stagger-exclude=":first,:last">
         <section class="py-20 bg-gray-50 dark:bg-gray-900">
+            <nav class="flex mb-8" aria-label="Breadcrumb">
+                <ol class="inline-flex flex-wrap items-center space-x-1 md:space-x-3">
+                    <li><a href="index.html" class="text-gray-500 dark:text-gray-400 hover:text-indigo-600">Home</a></li>
+                    <li><span class="mx-2 text-gray-400 dark:text-gray-500">/</span></li>
+                    <li class="text-gray-900 dark:text-white font-medium">Contact</li>
+                </ol>
+            </nav>
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Section Header -->
                 <div class="text-center mb-16">
@@ -401,7 +394,8 @@
                         </svg>
                         Get In Touch
                     </div>
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Connect With Our
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                        Connect With Our
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">IT Experts </span>
                     </h2>
                     <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
@@ -421,8 +415,7 @@
                             </div>
                             <div>
                                 <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
-                                <input type="email" id="email" name="email" required
-                                       class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400"
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400"
                                        placeholder="Enter your email address">
                             </div>
                             <div>
@@ -443,68 +436,68 @@
                     </div>
                     <!-- Contact Information -->
                     <div class="space-y-8">
-                    <!-- Contact Details -->
-                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-200 dark:border-gray-600">
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get In Touch</h3>
-                          <div class="space-y-6">
-                        <!-- ADDRESS CARD --> 
-                      <div class="group relative bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-600 hover:shadow-xl overflow-hidden transition-all duration-300 card card-address">
-                      <div class="flex items-start gap-4">
-                      <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center icon6">
-                      <svg class="w-6 h-6 text-white-600" fill="currentColor" viewBox="0 0 20 20">
-                       <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                </svg>
-            </div>
-            <div>
-                <h4 class="font-semibold text-lg text-gray-900 dark:text-white">Address</h4>
-                <p class="text-gray-600 dark:text-gray-300">
-                    Sector-C, Aliganj<br>Lucknow, 226021
-                </p>
-            </div>
-        </div>
-        <!-- Progress Bar -->
-        <div class="progress"></div>
-    </div>
-    <!-- EMAIL CARD -->
-    <div class="group relative bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-600 hover:shadow-xl overflow-hidden transition-all duration-300 card card-email">
-        <div class="flex items-start gap-4">
-            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center icon6">
-                <svg class="w-6 h-6 text-white-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                </svg>
-            </div>
-            <div>
-                <h4 class="font-semibold text-lg text-gray-900 dark:text-white">Email</h4>
-                <p class="text-gray-600 dark:text-gray-300">
-                    info@swarinfotech.com<br>
-                    support@swarinfotech.com
-                </p>
-            </div>
-        </div>
-        <!-- Progress Bar -->
-        <div class="progress"></div>
-    </div>
-    <!-- PHONE CARD -->
-    <div class="group relative bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-600 hover:shadow-xl overflow-hidden transition-all duration-300 card card-contact">
-        <div class="flex items-start gap-4">
-            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center icon6">
-                <svg class="w-6 h-6 text-white-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.540l4.435.740a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.820 18 2 12.18 2 5V3z"></path>
-                </svg>
-            </div>
-            <div>
-                <h4 class="font-semibold text-lg text-gray-900 dark:text-white">Phone</h4>
-                <p class="text-gray-600 dark:text-gray-300">
-                    +91 123 4567 890<br>
-                    +91 987 6543 210
-                </p>
-            </div>
-        </div>
-        <!-- Progress Bar -->
-        <div class="progress"></div>
-    </div>
-</div>
+                        <!-- Contact Details -->
+                        <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-200 dark:border-gray-600">
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get In Touch</h3>
+                            <div class="space-y-6">
+                                <!-- ADDRESS CARD -->
+                                <div class="group relative bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-600 hover:shadow-xl overflow-hidden transition-all duration-300 card card-address">
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center icon6">
+                                            <svg class="w-6 h-6 text-white-600" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-lg text-gray-900 dark:text-white">Address</h4>
+                                            <p class="text-gray-600 dark:text-gray-300">
+                                                Sector-C, Aliganj<br>Lucknow, 226021
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div class="progress"></div>
+                                </div>
+                                <!-- EMAIL CARD -->
+                                <div class="group relative bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-600 hover:shadow-xl overflow-hidden transition-all duration-300 card card-email">
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center icon6">
+                                            <svg class="w-6 h-6 text-white-600" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-lg text-gray-900 dark:text-white">Email</h4>
+                                            <p class="text-gray-600 dark:text-gray-300">
+                                                info@swarinfotech.com<br>
+                                                support@swarinfotech.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div class="progress"></div>
+                                </div>
+                                <!-- PHONE CARD -->
+                                <div class="group relative bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-600 hover:shadow-xl overflow-hidden transition-all duration-300 card card-contact">
+                                    <div class="flex items-start gap-4">
+                                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center icon6">
+                                            <svg class="w-6 h-6 text-white-600" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.540l4.435.740a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.820 18 2 12.18 2 5V3z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-lg text-gray-900 dark:text-white">Phone</h4>
+                                            <p class="text-gray-600 dark:text-gray-300">
+                                                +91 123 4567 890<br>
+                                                +91 987 6543 210
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Progress Bar -->
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
                         </div>
                         <!-- Business Hours -->
                         <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-200 dark:border-gray-600">
@@ -567,11 +560,10 @@
             </div>
         </section>
     </main>
+
     <!-- Go to Top Button -->
-    <div x-data="{ show: false }"
-         x-init="window.addEventListener('scroll', () => { show = window.scrollY > 300 })"
-         x-show="show"
-         x-transition:enter="transition ease-out duration-300"
+    <div x-data="{ show: false }" x-init="window.addEventListener('scroll', () => { show = window.scrollY > 300 })"
+         x-show="show" x-transition:enter="transition ease-out duration-300"
          x-transition:enter-start="opacity-0 translate-y-4"
          x-transition:enter-end="opacity-100 translate-y-0"
          x-transition:leave="transition ease-in duration-300"
@@ -586,403 +578,7 @@
             </svg>
         </button>
     </div>
-    <!-- Promotional Modal -->
-    <div x-data="{
-        open: false,
-        openModal() {
-            if (localStorage.getItem(window.location.host+'_show-promotional-modal-1-1.0') === 'false') {
-                return;
-            }
-            this.open = true;
-        },
-        closeModal() {
-            localStorage.setItem(window.location.host+'_show-promotional-modal-1-1.0', false);
-            this.open = false;
-        }
-    }"
-         x-show="open"
-         x-init="setTimeout(() => { openModal() }, 3000)"
-         class="fixed inset-0 z-[99998] overflow-y-auto promotional-modal"
-         style="display: none;"
-         x-cloak>
-        <div class="flex items-center justify-center min-h-screen text-center p-4">
-            <!-- Background overlay -->
-            <div x-show="open"
-                 x-transition:enter="ease-out duration-700"
-                 x-transition:enter-start="opacity-0"
-                 x-transition:enter-end="opacity-100"
-                 x-transition:leave="ease-in duration-200"
-                 x-transition:leave-start="opacity-100"
-                 x-transition:leave-end="opacity-0"
-                 class="fixed inset-0 transition-opacity bg-gray-500/80 dark:bg-gray-900/50 backdrop-blur-xs cursor-pointer"
-                 onclick="
-                 document.querySelector('.promotional-modal-content').classList.add('scale-102');
-                 setTimeout(()=>
-                {
-                document.querySelector('.promotional-modal-content').classList.remove('scale-102');
-                }, 100);
-                "
-                aria-hidden="true">
-            </div>
-
-            <!-- This element is to trick the browser into centering the modal contents. -->
-            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-            <div x-show="open"
-                 x-transition:enter="ease-out duration-700"
-                 x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                 x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
-                 x-transition:leave="ease-in duration-200"
-                 x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
-                 x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                 class="promotional-modal-content inline-block align-bottom rounded-2xl text-left overflow-hidden transform transition-all sm:align-middle sm:max-w-lg sm:w-full md:max-w-6xl">
-                <div class="relative">
-                    <!-- Close button -->
-                    <button x-on:click="closeModal()"
-                            class="promotional-modal-close absolute top-4 right-4 z-[2] text-gray-400 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-200 focus:outline-none">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                    <div>
-                        <!-- Promotional Slider -->
-                        <div class="p-1 bg-white/50 dark:bg-gray-800 rounded-2xl shadow-xl"
-                             x-data="{
-                            courses: [
-    {
-        'id': 1,
-        'title': 'Complete Web Development Bootcamp',
-        'category': 'technology',
-        'price': '99',
-        'rating': '4.9',
-        'instructor': 'John Smith',
-        'students': '15420',
-        'image': './../assets\/images\/courses\/courses-1_pexels-photo-6517325.jpeg',
-        'alt': 'Complete Web Development Bootcamp course promo image classroom or laptop setup',
-        'description': 'Learn complete web development bootcamp with hands-on projects, real-world examples, and industry best practices.'
-    },
-    {
-        'id': 2,
-        'title': 'Data Science with Python',
-        'category': 'technology',
-        'price': '129',
-        'rating': '4.7',
-        'instructor': 'Sarah Johnson',
-        'students': '8930',
-        'image': './../assets\/images\/courses\/courses-2_pexels-photo-4974916.jpeg',
-        'alt': 'Data Science with Python course promo image classroom or laptop setup',
-        'description': 'Learn data science with python with hands-on projects, real-world examples, and industry best practices.'
-    },
-    {
-        'id': 3,
-        'title': 'UI\/UX Design Masterclass',
-        'category': 'design',
-        'price': '79',
-        'rating': '4.8',
-        'instructor': 'Mike Chen',
-        'students': '12300',
-        'image': './../assets\/images\/courses\/courses-3_pexels-photo-4087480.jpeg',
-        'alt': 'UI\/UX Design Masterclass course promo image classroom or laptop setup',
-        'description': 'Learn ui\/ux design masterclass with hands-on projects, real-world examples, and industry best practices.'
-    },
-    {
-        'id': 4,
-        'title': 'Digital Marketing Strategy',
-        'category': 'marketing',
-        'price': '89',
-        'rating': '4.6',
-        'instructor': 'Lisa Brown',
-        'students': '9650',
-        'image': './../assets\/images\/courses\/courses-4_pexels-photo-7948005.jpeg',
-        'alt': 'Digital Marketing Strategy course promo image classroom or laptop setup',
-        'description': 'Learn digital marketing strategy with hands-on projects, real-world examples, and industry best practices.'
-    }
-],
-                            books: [
-    {
-        'id': 1,
-        'title': 'JavaScript: The Complete Guide',
-        'category': 'programming',
-        'price': '29.99',
-        'rating': '4.9',
-        'author': 'Robert Miller',
-        'publisher': 'LearnBe Press',
-        'image': './../assets\/images\/books\/books-1_pexels-photo-7583440.jpeg',
-        'alt': 'Cover of JavaScript: The Complete Guide on a desk with notebooks',
-        'description': 'A practical guide to javascript: the complete guide with examples and exercises.'
-    },
-    {
-        'id': 2,
-        'title': 'Python for Data Science',
-        'category': 'programming',
-        'price': '34.99',
-        'rating': '4.7',
-        'author': 'Dr. Jane Wilson',
-        'publisher': 'LearnBe Press',
-        'image': './../assets\/images\/books\/books-2_pexels-photo-6476260.jpeg',
-        'alt': 'Cover of Python for Data Science on a desk with notebooks',
-        'description': 'A practical guide to python for data science with examples and exercises.'
-    },
-    {
-        'id': 3,
-        'title': 'Design Thinking Handbook',
-        'category': 'design',
-        'price': '24.99',
-        'rating': '4.8',
-        'author': 'Alex Thompson',
-        'publisher': 'LearnBe Press',
-        'image': './../assets\/images\/books\/books-3_pexels-photo-5428830.jpeg',
-        'alt': 'Cover of Design Thinking Handbook on a desk with notebooks',
-        'description': 'A practical guide to design thinking handbook with examples and exercises.'
-    },
-    {
-        'id': 4,
-        'title': 'Digital Marketing Mastery',
-        'category': 'marketing',
-        'price': '39.99',
-        'rating': '4.6',
-        'author': 'Marketing Experts',
-        'publisher': 'LearnBe Press',
-        'image': './../assets\/images\/books\/books-4_pexels-photo-6476577.jpeg',
-        'alt': 'Cover of Digital Marketing Mastery on a desk with notebooks',
-        'description': 'A practical guide to digital marketing mastery with examples and exercises.'
-    }
-],
-                            events: [
-    {
-        'id': 1,
-        'title': 'Advanced Web Development Workshop',
-        'category': 'technology',
-        'type': 'workshop',
-        'price': '75',
-        'rating': '4.9',
-        'speaker': 'Sarah Chen',
-        'attendees': '35\/45',
-        'date': '2025-09-15',
-        'time': '10:00 AM',
-        'location': 'Tech Hub Downtown',
-        'image': './../assets\/images\/events\/events-1_pexels-photo-7234403.jpeg',
-        'alt': 'Event photo of Advanced Web Development Workshop with audience and speaker',
-        'description': 'Join our advanced web development workshop to gain practical skills and network with professionals.'
-    },
-    {
-        'id': 2,
-        'title': 'Digital Marketing Trends 2025',
-        'category': 'marketing',
-        'type': 'seminar',
-        'price': '0',
-        'rating': '4.7',
-        'speaker': 'Marcus Rodriguez',
-        'attendees': '40\/50',
-        'date': '2025-09-18',
-        'time': '10:00 AM',
-        'location': 'Business Center',
-        'image': './../assets\/images\/events\/events-2_pexels-photo-8190814.jpeg',
-        'alt': 'Event photo of Digital Marketing Trends 2025 with audience and speaker',
-        'description': 'Join our digital marketing trends 2025 to gain practical skills and network with professionals.'
-    },
-    {
-        'id': 3,
-        'title': 'AI & Machine Learning Conference',
-        'category': 'technology',
-        'type': 'conference',
-        'price': '199',
-        'rating': '4.8',
-        'speaker': 'Dr. Emily Watson',
-        'attendees': '45\/55',
-        'date': '2025-09-22',
-        'time': '10:00 AM',
-        'location': 'Convention Center',
-        'image': './../assets\/images\/events\/events-3_pexels-photo-6476783.jpeg',
-        'alt': 'Event photo of AI & Machine Learning Conference with audience and speaker',
-        'description': 'Join our ai & machine learning conference to gain practical skills and network with professionals.'
-    },
-    {
-        'id': 4,
-        'title': 'UX\/UI Design Masterclass',
-        'category': 'design',
-        'type': 'workshop',
-        'price': '120',
-        'rating': '4.6',
-        'speaker': 'Alex Thompson',
-        'attendees': '50\/60',
-        'date': '2025-09-25',
-        'time': '10:00 AM',
-        'location': 'Design Studio',
-        'image': './../assets\/images\/events\/events-4_pexels-photo-7942526.jpeg',
-        'alt': 'Event photo of UX\/UI Design Masterclass with audience and speaker',
-        'description': 'Join our ux\/ui design masterclass to gain practical skills and network with professionals.'
-    }
-]
-                        }">
-                            <div class="swiper main-swiper relative"
-                                 data-swiper="{
-                                loop: true,
-                                speed: 1000,
-                                slidesPerView: 1,
-                                spaceBetween: 20,
-                                autoplay: {
-                                    delay: 5000,
-                                    pauseOnMouseEnter: true
-                                },
-                                navigation: {
-                                    nextEl: '.swiper-button-next',
-                                    prevEl: '.swiper-button-prev',
-                                },
-                                pagination: {
-                                    el: '.swiper-pagination',
-                                    clickable: true,
-                                },
-                            }">
-                                <div class="swiper-wrapper">
-                                    <!-- Courses Slide -->
-                                    <div class="swiper-slide">
-                                        <div class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 rounded-2xl p-4 lg:p-30 w-full">
-                                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                                                <div>
-                                                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-gray-300">Master New Skills with Our Courses</h2>
-                                                    <p class="text-gray-700 dark:text-gray-400 mb-6">Explore our expert-led courses designed to help you advance your career and achieve your learning goals.</p>
-                                                    <a href="../courses/courses.html" class="btn-primary text-white px-8 py-3 rounded-lg text-lg font-semibold inline-flex items-center">
-                                                        Explore Courses
-                                                        <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                                    <template x-for="course in courses.slice(0, 4)" :key="`promo-course-${course.id}`">
-                                                        <div class="bg-indigo-300/10 backdrop-blur-sm shadow-md rounded-xl p-4">
-                                                            <a href="../courses/course-details.html">
-                                                                <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">
-                                                                    <!-- Skeleton overlay -->
-                                                                    <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
-                                                                    <!-- Skeleton shimmer -->
-                                                                    <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-
-                                                                    <!-- Lazy image -->
-                                                                    <img data-src=""
-                                                                         :data-src="course.image" alt="Image"
-                                                                         class="w-full h-24 object-cover rounded-lg mb-2 lazyload"
-                                                                         :src="course.image" :alt="course.title" class="w-full h-24 object-cover rounded-lg mb-2">
-
-                                                                    <!-- SEO fallback for non-JS / crawlers -->
-                                                                    <noscript>
-                                                                        <img src="#" loading="lazy" alt="Image" :src="course.image" :alt="course.title" class="w-full h-24 object-cover rounded-lg mb-2">
-                                                                    </noscript>
-                                                                </div>
-                                                            </a>
-                                                            <a href="../courses/course-details.html">
-                                                                <h3 class="text-sm text-indigo-500 font-semibold truncate" x-text="course.title"></h3>
-                                                            </a>
-                                                            <p class="text-xs text-gray-600 truncate" x-text="'By ' + course.instructor"></p>
-                                                        </div>
-                                                    </template>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Books Slide -->
-                                    <div class="swiper-slide">
-                                        <div class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 rounded-2xl p-4 lg:p-30 w-full">
-                                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                                                <div>
-                                                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-gray-300">Expand Your Knowledge with Books</h2>
-                                                    <p class="text-gray-700 dark:text-gray-400 mb-6">Dive into our curated collection of books from industry leaders and experts.</p>
-                                                    <a href="../books/books.html" class="btn-primary text-white px-8 py-3 rounded-lg text-lg font-semibold inline-flex items-center">
-                                                        Browse Books
-                                                        <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                                    <template x-for="book in books.slice(0, 4)" :key="`promo-book-${book.id}`">
-                                                        <div class="bg-indigo-300/10 backdrop-blur-sm shadow-md rounded-xl p-4">
-                                                            <a href="../books/book-details.html">
-                                                                <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">
-                                                                    <!-- Skeleton overlay -->
-                                                                    <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-                                                                    <!-- Skeleton shimmer -->
-                                                                    <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-                                                                    <!-- Lazy image -->
-                                                                    <img data-src=""
-                                                                         :data-src="book.image" alt="Image"
-                                                                         class="w-full h-24 object-cover rounded-lg mb-2 lazyload"
-                                                                         :src="book.image" :alt="book.title" class="w-full h-24 object-cover rounded-lg mb-2">
-                                                                    <!-- SEO fallback for non-JS / crawlers -->
-                                                                    <noscript>
-                                                                        <img src="#" loading="lazy" alt="Image" :src="book.image" :alt="book.title" class="w-full h-24 object-cover rounded-lg mb-2">
-                                                                    </noscript>
-                                                                </div>
-                                                            </a>
-                                                            <a href="../books/book-details.html">
-                                                                <h3 class="text-sm text-indigo-500 font-semibold truncate" x-text="book.title"></h3>
-                                                            </a>
-                                                            <p class="text-xs text-gray-600 truncate" x-text="'By ' + book.author"></p>
-                                                        </div>
-                                                    </template>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Events Slide -->
-                                    <div class="swiper-slide">
-                                        <div class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 rounded-2xl p-4 lg:p-30 w-full">
-                                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                                                <div>
-                                                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-gray-300">Join Our Upcoming Events</h2>
-                                                    <p class="text-gray-700 dark:text-gray-400 mb-6">Participate in workshops, seminars, and conferences to network and learn from experts.</p>
-                                                    <a href="../events/events.html" class="btn-primary text-white px-8 py-3 rounded-lg text-lg font-semibold inline-flex items-center">
-                                                        View Events
-                                                        <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                                    <template x-for="event in events.slice(0, 4)" :key="`promo-event-${event.id}`">
-                                                        <div class="bg-indigo-300/10 backdrop-blur-sm shadow-md rounded-xl p-4">
-                                                            <a href="../events/event-details.html">
-                                                                <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">
-                                                                    <!-- Skeleton overlay -->
-                                                                    <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-                                                                    <!-- Skeleton shimmer -->
-                                                                    <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-                                                                    <!-- Lazy image -->
-                                                                    <img data-src=""
-                                                                         :data-src="event.image" alt="Image"
-                                                                         class="w-full h-24 object-cover rounded-lg mb-2 lazyload"
-                                                                         :src="event.image" :alt="event.title" class="w-full h-24 object-cover rounded-lg mb-2">
-                                                                    <!-- SEO fallback for non-JS / crawlers -->
-                                                                    <noscript>
-                                                                        <img src="#" loading="lazy" alt="Image" :src="event.image" :alt="event.title" class="w-full h-24 object-cover rounded-lg mb-2">
-                                                                    </noscript>
-                                                                </div>
-                                                            </a>
-                                                            <a href="../events/event-details.html">
-                                                                <h3 class="text-sm text-indigo-500 font-semibold truncate" x-text="event.title"></h3>
-                                                            </a>
-                                                            <p class="text-xs text-gray-600 truncate" x-text="event.date"></p>
-                                                        </div>
-                                                    </template>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Navigation Arrows -->
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                                <!-- Pagination -->
-                                <div class="swiper-pagination hidden"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- Footer -->
     <footer class="bg-gray-900 dark:bg-gray-950 text-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
@@ -999,9 +595,7 @@
                         <a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer p-2 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-700">
                             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M12 0C5.373 0 0 5.373 0 12c0 5.989 4.388 10.94 10.125 11.854v-8.385H7.078V12h3.047V9.356
-                                    c0-3.016 1.793-4.688 4.533-4.688 1.313 0 2.686.235 2.686.235v2.953h-1.514
-                                    c-1.494 0-1.953.927-1.953 1.875V12h3.328l-.532 3.469h-2.796v8.385C19.612
-                                    22.94 24 17.989 24 12c0-6.627-5.373-12-12-12z" />
+                                    c0-3.016 1.793-4.688 4.533-4.688 1.313 0 2.686.235 2.686.235v2.953h-1.514 c-1.494 0-1.953.927-1.953 1.875V12h3.328l-.532 3.469h-2.796v8.385C19.612 22.94 24 17.989 24 12c0-6.627-5.373-12-12-12z" />
                             </svg>
                         </a>
                         <a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer p-2 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-700">
