@@ -1,4 +1,182 @@
-﻿.card-container 
+@keyframes cosmic-pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(102, 126, 234, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
+            }
+        }
+        /* New floating particles animation */
+        @keyframes float-particles {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+            }
+
+            25% {
+                transform: translateY(-20px) translateX(10px) rotate(90deg);
+            }
+
+            50% {
+                transform: translateY(-40px) translateX(0) rotate(180deg);
+            }
+
+            75% {
+                transform: translateY(-20px) translateX(-10px) rotate(270deg);
+            }
+
+            100% {
+                transform: translateY(0) translateX(0) rotate(360deg);
+            }
+        }
+        /* New wave morphing effect */
+        @keyframes wave-morph {
+            0% {
+                border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+                transform: rotate(0deg);
+            }
+
+            33% {
+                border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+                transform: rotate(120deg);
+            }
+
+            66% {
+                border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+                transform: rotate(240deg);
+            }
+
+            100% {
+                border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+                transform: rotate(360deg);
+            }
+        }
+        /* New slide transitions with 3D effect */
+        @keyframes slide-3d-in {
+            from {
+                opacity: 0;
+                transform: perspective(1000px) rotateY(20deg) translateY(50px) scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
+            }
+        }
+
+        @keyframes slide-3d-out {
+            from {
+                opacity: 1;
+                transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
+            }
+
+            to {
+                opacity: 0;
+                transform: perspective(1000px) rotateY(-20deg) translateY(-50px) scale(0.9);
+            }
+        }
+
+        /* New gradient overlays */
+        .cosmic-gradient-1 {
+            background: linear-gradient(125deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+        }
+
+        .cosmic-gradient-2 {
+            background: linear-gradient(125deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
+        }
+
+        .cosmic-gradient-3 {
+            background: linear-gradient(125deg, var(--color-success) 0%, var(--color-success-dark) 100%);
+        }
+        /* New cosmic elements */
+        .cosmic-pulse {
+            animation: cosmic-pulse 3s infinite;
+        }
+
+        .float-particles {
+            animation: float-particles 8s infinite ease-in-out;
+        }
+
+        .wave-morph {
+            border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+            animation: wave-morph 12s infinite ease-in-out;
+        }
+
+        .slide-3d-in {
+            animation: slide-3d-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+        /* New swiper styling */
+        .cosmic-hero-swiper .swiper-pagination-bullet {
+            background: rgba(255, 255, 255, 0.3) !important;
+            width: 16px !important;
+            height: 16px !important;
+            border-radius: 50% !important;
+            opacity: 0.5 !important;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .cosmic-hero-swiper .swiper-pagination-bullet-active {
+            background: white !important;
+            opacity: 1 !important;
+            transform: scale(1.4);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+        }
+
+        .cosmic-hero-swiper .swiper-button-next,
+        .cosmic-hero-swiper .swiper-button-prev {
+            color: white !important;
+            background: rgba(255, 255, 255, 0.15) !important;
+            backdrop-filter: blur(10px);
+            border-radius: 50% !important;
+            width: 40px !important;
+            height: 40px !important;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            top: calc(50vh - var(--spacing) * 18);
+        }
+
+            .cosmic-hero-swiper .swiper-button-next:hover,
+            .cosmic-hero-swiper .swiper-button-prev:hover {
+                background: rgba(255, 255, 255, 0.3) !important;
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            }
+
+            .cosmic-hero-swiper .swiper-button-next::after,
+            .cosmic-hero-swiper .swiper-button-prev::after {
+                font-size: 16px !important;
+                font-weight: bold !important;
+            }
+        /* New slide content animation */
+        .cosmic-slide-content {
+            opacity: 0;
+            transform: perspective(1000px) rotateY(10deg) translateY(30px);
+            transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .swiper-slide-active .cosmic-slide-content {
+            opacity: 1;
+            transform: perspective(1000px) rotateY(0) translateY(0);
+        }
+
+        /* New floating elements */
+        .floating-element-1 {
+            animation: float-particles 6s infinite ease-in-out;
+        }
+
+        .floating-element-2 {
+            animation: float-particles 8s infinite ease-in-out;
+            animation-delay: 1s;
+        }
+
+        .floating-element-3 {
+            animation: float-particles 10s infinite ease-in-out;
+            animation-delay: 2s;
+        }
+.card-container 
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
