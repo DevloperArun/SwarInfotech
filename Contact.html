@@ -60,187 +60,8 @@
     <script src="/SwarInfotech/assets/js/main.js"></script>
     <!-- Theme Switcher JS -->
     <script src="/SwarInfotech/assets/js/theme-switcher.js"></script>
-            <link href="/SwarInfotech/assets/css/Custom.css" rel="stylesheet" />
+   <link href="/SwarInfotech/assets/css/Custom.css" rel="stylesheet" />
     <!-- Completely Unique Custom CSS for hero slider -->
-    <style>
-        /* New cosmic pulse animation */
-        @keyframes cosmic-pulse {
-            0% 
-                {
-                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
-            }
-
-            70% {
-                box-shadow: 0 0 0 15px rgba(102, 126, 234, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
-            }
-        }
-        /* New floating particles animation */
-        @keyframes float-particles {
-            0% {
-                transform: translateY(0) translateX(0) rotate(0deg);
-            }
-
-            25% {
-                transform: translateY(-20px) translateX(10px) rotate(90deg);
-            }
-
-            50% {
-                transform: translateY(-40px) translateX(0) rotate(180deg);
-            }
-
-            75% {
-                transform: translateY(-20px) translateX(-10px) rotate(270deg);
-            }
-
-            100% {
-                transform: translateY(0) translateX(0) rotate(360deg);
-            }
-        }
-        /* New wave morphing effect */
-        @keyframes wave-morph {
-            0% {
-                border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-                transform: rotate(0deg);
-            }
-            33% {
-                border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
-                transform: rotate(120deg);
-            }
-
-            66% {
-                border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-                transform: rotate(240deg);
-            }
-
-            100% {
-                border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-                transform: rotate(360deg);
-            }
-        }
-        /* New slide transitions with 3D effect */
-        @keyframes slide-3d-in {
-            from 
-            {
-                opacity: 0;
-                transform: perspective(1000px) rotateY(20deg) translateY(50px) scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
-            }
-        }
-
-        @keyframes slide-3d-out {
-            from {
-                opacity: 1;
-                transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
-            }
-
-            to {
-                opacity: 0;
-                transform: perspective(1000px) rotateY(-20deg) translateY(-50px) scale(0.9);
-            }
-        }
-
-        /* New gradient overlays */
-        .cosmic-gradient-1 {
-            background: linear-gradient(125deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-        }
-
-        .cosmic-gradient-2 {
-            background: linear-gradient(125deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
-        }
-
-        .cosmic-gradient-3 {
-            background: linear-gradient(125deg, var(--color-success) 0%, var(--color-success-dark) 100%);
-        }
-        /* New cosmic elements */
-        .cosmic-pulse {
-            animation: cosmic-pulse 3s infinite;
-        }
-        .float-particles 
-        {
-            animation: float-particles 8s infinite ease-in-out;
-        }
-        .wave-morph 
-        {
-            border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-            animation: wave-morph 12s infinite ease-in-out;
-        }
-        .slide-3d-in 
-        {
-            animation: slide-3d-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-        }
-        /* New swiper styling */
-        .cosmic-hero-swiper .swiper-pagination-bullet {
-            background: rgba(255, 255, 255, 0.3) !important;
-            width: 16px !important;
-            height: 16px !important;
-            border-radius: 50% !important;
-            opacity: 0.5 !important;
-            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-        .cosmic-hero-swiper .swiper-pagination-bullet-active 
-        {
-            background: white !important;
-            opacity: 1 !important;
-            transform: scale(1.4);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
-        }
-        .cosmic-hero-swiper .swiper-button-next,
-        .cosmic-hero-swiper .swiper-button-prev 
-        {
-            color: white !important;
-            background: rgba(255, 255, 255, 0.15) !important;
-            backdrop-filter: blur(10px);
-            border-radius: 50% !important;
-            width: 40px !important;
-            height: 40px !important;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            top: calc(50vh - var(--spacing) * 18);
-        }
-            .cosmic-hero-swiper .swiper-button-next:hover,
-            .cosmic-hero-swiper .swiper-button-prev:hover 
-        {
-                background: rgba(255, 255, 255, 0.3) !important;
-                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-            }
-            .cosmic-hero-swiper .swiper-button-next::after,
-            .cosmic-hero-swiper .swiper-button-prev::after {
-                font-size: 16px !important;
-                font-weight: bold !important;
-            }
-        /* New slide content animation */
-        .cosmic-slide-content {
-            opacity: 0;
-            transform: perspective(1000px) rotateY(10deg) translateY(30px);
-            transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .swiper-slide-active .cosmic-slide-content {
-            opacity: 1;
-            transform: perspective(1000px) rotateY(0) translateY(0);
-        }
-
-        /* New floating elements */
-        .floating-element-1 {
-            animation: float-particles 6s infinite ease-in-out;
-        }
-
-        .floating-element-2 {
-            animation: float-particles 8s infinite ease-in-out;
-            animation-delay: 1s;
-        }
-        .floating-element-3 {
-            animation: float-particles 10s infinite ease-in-out;
-            animation-delay: 2s;
-        }
-    </style>
 </head>
         
 <body class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 transition-all duration-300 ease-in-out min-h-screen"
@@ -414,10 +235,8 @@
                     </div>
                 </div>
                 <!-- Services Mega Menu -->
-                <div x-show="megaMenuOpen === 'Services'"
-                     x-transition:enter="transition ease-out duration-500 delay-100"
-                     x-transition:enter-start="opacity-0 transform translate-y-4"
-                     x-transition:enter-end="opacity-100 transform translate-y-0"
+                <div x-show="megaMenuOpen === 'Services'" x-transition:enter="transition ease-out duration-500 delay-100"
+                     x-transition:enter-start="opacity-0 transform translate-y-4" x-transition:enter-end="opacity-100 transform translate-y-0"
                      class="container mx-auto px-6 lg:px-8 py-12">
                     <div class="w-full" data-motion="fade-up" data-motion-stagger="0.2">
                         <!-- Header Section -->
@@ -582,17 +401,13 @@
                         </svg>
                         Get In Touch
                     </div>
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-                        Connect With Our
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                            IT Experts
-                        </span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Connect With Our
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">IT Experts </span>
                     </h2>
                     <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                         Looking for reliable IT solutions or technical guidance? Let’s discuss how we can support your business goals.
                     </p>
                 </div>
-
                 <div class="grid lg:grid-cols-2 gap-12">
                     <!-- Contact Form -->
                     <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-200 dark:border-gray-600">
@@ -603,7 +418,6 @@
                                 <input type="text" id="firstName" name="firstName" required
                                        class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400"
                                        placeholder="Enter your name">
-
                             </div>
                             <div>
                                 <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
@@ -622,26 +436,23 @@
                                 <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 resize-none"
                                           placeholder="Tell us how we can help you..."></textarea>
                             </div>
-                            <button type="submit"
-                                    class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-4 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 transform hover:scale-105 shadow-lg">
+                            <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-4 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 transform hover:scale-105 shadow-lg">
                                 Send Message
                             </button>
                         </form>
                     </div>
                     <!-- Contact Information -->
                     <div class="space-y-8">
-                        <!-- Contact Details -->
-                        <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-200 dark:border-gray-600">
-                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get In Touch</h3>
+                    <!-- Contact Details -->
+                    <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-200 dark:border-gray-600">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get In Touch</h3>
                           <div class="space-y-6">
-    <!-- ADDRESS CARD --> 
-    <div class="group relative bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-600 hover:shadow-xl overflow-hidden transition-all duration-300 card card-address">
-        <div class="flex items-start gap-4">
-            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center icon6">
-                <svg class="w-6 h-6 text-white-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                          clip-rule="evenodd"></path>
+                        <!-- ADDRESS CARD --> 
+                      <div class="group relative bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-600 hover:shadow-xl overflow-hidden transition-all duration-300 card card-address">
+                      <div class="flex items-start gap-4">
+                      <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center icon6">
+                      <svg class="w-6 h-6 text-white-600" fill="currentColor" viewBox="0 0 20 20">
+                       <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
                 </svg>
             </div>
             <div>
@@ -690,11 +501,9 @@
                 </p>
             </div>
         </div>
-
         <!-- Progress Bar -->
         <div class="progress"></div>
     </div>
-
 </div>
                         </div>
                         <!-- Business Hours -->
