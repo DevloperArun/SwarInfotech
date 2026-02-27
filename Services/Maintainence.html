@@ -62,171 +62,7 @@
     <!-- Theme Switcher JS -->
     <script src="/SwarInfotech/assets/js/theme-switcher.js"></script>
     <!-- Completely Unique Custom CSS for hero slider -->
-    <style>
-        /* New cosmic pulse animation */
-        @keyframes cosmic-pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
-            }
-
-            70% {
-                box-shadow: 0 0 0 15px rgba(102, 126, 234, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
-            }
-        }
-        /* New floating particles animation */
-        @keyframes float-particles {
-            0% {
-                transform: translateY(0) translateX(0) rotate(0deg);
-            }
-            25% {
-                transform: translateY(-20px) translateX(10px) rotate(90deg);
-            }
-            50% {
-                transform: translateY(-40px) translateX(0) rotate(180deg);
-            }
-            75% {
-                transform: translateY(-20px) translateX(-10px) rotate(270deg);
-            }
-            100% {
-                transform: translateY(0) translateX(0) rotate(360deg);
-            }
-        }
-        /* New wave morphing effect */
-        @keyframes wave-morph {
-            0% {
-                border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-                transform: rotate(0deg);
-            }
-
-            33% {
-                border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
-                transform: rotate(120deg);
-            }
-
-            66% {
-                border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-                transform: rotate(240deg);
-            }
-            100% {
-                border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-                transform: rotate(360deg);
-            }
-        }
-        /* New slide transitions with 3D effect */
-        @keyframes slide-3d-in {
-            from {
-                opacity: 0;
-                transform: perspective(1000px) rotateY(20deg) translateY(50px) scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
-            }
-        }
-        @keyframes slide-3d-out {
-            from {
-                opacity: 1;
-                transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
-            }
-            to {
-                opacity: 0;
-                transform: perspective(1000px) rotateY(-20deg) translateY(-50px) scale(0.9);
-            }
-        }
-        /* New gradient overlays */
-        .cosmic-gradient-1 {
-            background: linear-gradient(125deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-        }
-        .cosmic-gradient-2 {
-            background: linear-gradient(125deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
-        }
-        .cosmic-gradient-3 {
-            background: linear-gradient(125deg, var(--color-success) 0%, var(--color-success-dark) 100%);
-        }
-        /* New cosmic elements */
-        .cosmic-pulse {
-            animation: cosmic-pulse 3s infinite;
-        }
-        .float-particles {
-            animation: float-particles 8s infinite ease-in-out;
-        }
-        .wave-morph {
-            border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-            animation: wave-morph 12s infinite ease-in-out;
-        }
-        .slide-3d-in {
-            animation: slide-3d-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-        }
-        /* New swiper styling */
-        .cosmic-hero-swiper .swiper-pagination-bullet {
-            background: rgba(255, 255, 255, 0.3) !important;
-            width: 16px !important;
-            height: 16px !important;
-            border-radius: 50% !important;
-            opacity: 0.5 !important;
-            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-        .cosmic-hero-swiper .swiper-pagination-bullet-active {
-            background: white !important;
-            opacity: 1 !important;
-            transform: scale(1.4);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
-        }
-        .cosmic-hero-swiper .swiper-button-next,
-        .cosmic-hero-swiper .swiper-button-prev {
-            color: white !important;
-            background: rgba(255, 255, 255, 0.15) !important;
-            backdrop-filter: blur(10px);
-            border-radius: 50% !important;
-            width: 40px !important;
-            height: 40px !important;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            top: calc(50vh - var(--spacing) * 18);
-        }
-            .cosmic-hero-swiper .swiper-button-next:hover,
-            .cosmic-hero-swiper .swiper-button-prev:hover {
-                background: rgba(255, 255, 255, 0.3) !important;
-                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-            }
-            .cosmic-hero-swiper .swiper-button-next::after,
-            .cosmic-hero-swiper .swiper-button-prev::after {
-                font-size: 16px !important;
-                font-weight: bold !important;
-            }
-        /* New slide content animation */
-        .cosmic-slide-content {
-            opacity: 0;
-            transform: perspective(1000px) rotateY(10deg) translateY(30px);
-            transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .swiper-slide-active .cosmic-slide-content {
-            opacity: 1;
-            transform: perspective(1000px) rotateY(0) translateY(0);
-        }
-
-        /* New floating elements */
-        .floating-element-1 {
-            animation: float-particles 6s infinite ease-in-out;
-        }
-
-        .floating-element-2 {
-            animation: float-particles 8s infinite ease-in-out;
-            animation-delay: 1s;
-        }
-        .floating-element-3 
-         {
-            animation: float-particles 10s infinite ease-in-out;
-            animation-delay: 2s;
-        }
-    </style>
 </head>
-
 <body class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 transition-all duration-300 ease-in-out min-h-screen"
       data-motion-enabled="true">
     <!-- Preloader -->
@@ -273,13 +109,11 @@
                     <!-- Mobile Menu Header -->
                     <div x-show="mobileMenuOpen" class="bg-gray-50 dark:bg-gray-900 px-6 py-4 border-b border-gray-200 dark:border-gray-600">
                         <div class="flex items-center justify-between">
-                            <!-- Logo -->
                             <div class="flex-shrink-0">
                                 <a href="../index.html" class="flex items-center space-x-3 cursor-pointer hover:scale-105 transition-transform duration-200">
                                       <img src="../assets/images/Custom/logo.png" style="height: 70px;"/>
                                 </a>
                             </div>
-                            <!-- Close Button -->
                             <button class="text-gray-400 dark:text-gray-300 hover:text-gray-600 dark:hover:text-white transition-colors duration-200 p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700"
                                     @click="closeMobileMenu()">
                                 <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -296,7 +130,6 @@
                                 Home
                             </a>
                         </li>
-
                         <li class="w-full">
                             <a href="../about.html"
                                class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 flex justify-between items-center cursor-pointer"
@@ -462,8 +295,7 @@
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
                                                 <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                          d="M3 5h8v6H3V5zm10 0h8v6h-8V5zM3 13h8v6H3v-6zm10 0h8v6h-8v-6z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h8v6H3V5zm10 0h8v6h-8V5zM3 13h8v6H3v-6zm10 0h8v6h-8v-6z" />
                                                 </svg>
                                             </div>
                                             <div>
@@ -556,9 +388,7 @@
     </header>
     <!-- Main Content -->
     <main class="pt-16 sm:pt-20 min-h-screen"
-          data-motion="zoom-out"
-          data-motion-delay="0"
-          data-motion-stagger="0.01"
+          data-motion="zoom-out" data-motion-delay="0" data-motion-stagger="0.01"
           data-motion-stagger-exclude=":first,:last">
         <!-- Course Hero -->
         <section class="py-12">
@@ -597,23 +427,16 @@
                         <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
                             Complete Website Maintenance & Support Services
                         </h1>
-
                         <p class="text-xl text-gray-600 dark:text-gray-300 mb-6">
                             Keep your website secure, fast, and always up to date with our professional website maintenance and support services.
                             We ensure smooth performance, regular updates, security monitoring, and technical support so your business stays online 24/7.
                         </p>
-
                         <div class="mb-8">
                             <div class="lazyload-container relative overflow-hidden w-full h-64 md:h-96 object-cover rounded-xl">
-                                <!-- Skeleton overlay -->
                                 <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-                                <!-- Skeleton shimmer -->
                                 <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-                                <!-- Lazy image -->
-                                <img data-src="../assets//images/Custom/Maintainence.png"
-                                     alt="Complete Website Maintenance & Support Services"
-                                     class="w-full h-64 md:h-96 object-cover rounded-xl lazyload"
-                                     class="w-full h-64 md:h-96 object-cover rounded-xl">
+                                <img data-src="../assets/images/Custom/Maintainence.png" alt="Complete Website Maintenance & Support Services"
+                                     class="w-full h-64 md:h-96 object-cover rounded-xl lazyload"  class="w-full h-64 md:h-96 object-cover rounded-xl">
                                 <!-- SEO fallback for non-JS / crawlers -->
                                 <noscript>
                                     <img src="../assets/images/custom/Maintainence.png" loading="lazy" alt="Complete Website Maintenance & Support Services" class="w-full h-64 md:h-96 object-cover rounded-xl">
@@ -627,44 +450,34 @@
                             <div class="prose max-w-none">
                                 <p class="text-gray-600 dark:text-gray-300 mb-4">
                                     We provide reliable website maintenance and technical support services to keep your website
-                                    secure, fast, and fully functional at all times. Our team ensures your site runs smoothly
-                                    while you focus on growing your business.
+                                    secure, fast, and fully functional at all times. Our team ensures your site runs smoothly while you focus on growing your business.
                                 </p>
-
                                 <p class="text-gray-600 dark:text-gray-300 mb-4">
-                                    Our services include regular website updates, security monitoring, bug fixing,
-                                    performance optimization, backups, and server support.
-                                    We work with all major platforms including HTML, WordPress, PHP, and custom-built websites.
+                                    Our services include regular website updates, security monitoring, bug fixing, performance optimization, backups, and server support.
+                                    We work with all major platforms including HTML, WordPress, PHP and custom-built websites.
                                 </p>
-
                                 <p class="text-gray-600 dark:text-gray-300">
-                                    Whether you run a business website, e-commerce store, or enterprise portal,
-                                    our website maintenance and support solutions help prevent downtime,
-                                    improve user experience, and ensure long-term website stability and growth.
+                                    Whether you run a business website, e-commerce store or enterprise portal,our website maintenance and support solutions help prevent downtime,
+                                    improve user experience and ensure long-term website stability and growth.
                                 </p>
                             </div>
                         </div>
                         <!-- Course Description -->
                         <div class="border-b border-gray-200 dark:border-gray-700 mb-8">
                             <nav class="flex space-x-8">
-                                <button @click="activeTab='overview'" class="py-2 border-b-2"
-                                        :class="activeTab==='overview'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
+                                <button @click="activeTab='overview'" class="py-2 border-b-2" :class="activeTab==='overview'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
                                     Overview
                                 </button>
-                                <button @click="activeTab='services'" class="py-2 border-b-2"
-                                        :class="activeTab==='services'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
+                                <button @click="activeTab='services'" class="py-2 border-b-2" :class="activeTab==='services'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
                                     Services
                                 </button>
-                                <button @click="activeTab='expertise'" class="py-2 border-b-2"
-                                        :class="activeTab==='expertise'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
+                                <button @click="activeTab='expertise'" class="py-2 border-b-2" :class="activeTab==='expertise'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
                                     Expertise
                                 </button>
-                                <button @click="activeTab='process'" class="py-2 border-b-2"
-                                        :class="activeTab==='process'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
+                                <button @click="activeTab='process'" class="py-2 border-b-2" :class="activeTab==='process'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
                                     Process
                                 </button>
-                                <button @click="activeTab='reviews'" class="py-2 border-b-2"
-                                        :class="activeTab==='reviews'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
+                                <button @click="activeTab='reviews'" class="py-2 border-b-2" :class="activeTab==='reviews'?'border-indigo-500 text-indigo-600':'border-transparent text-gray-500'">
                                     Client Reviews
                                 </button>
                             </nav>
@@ -748,8 +561,7 @@
                                     <ul class="space-y-3 text-sm">
                                         <li class="flex items-center">
                                             <svg class="h-4 w-4 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                             </svg>
                                             <span class="text-gray-700 dark:text-gray-300">
                                                 Regular website updates & monitoring
@@ -787,15 +599,11 @@
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                       d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                                             </svg>
-                                            <span class="text-gray-700 dark:text-gray-300">
-                                                Website backups & performance optimization
-                                            </span>
+                                            <span class="text-gray-700 dark:text-gray-300">Website backups & performance optimization </span>
                                         </li>
-
                                         <li class="flex items-center">
                                             <svg class="h-4 w-4 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M7 8h10M7 12h10M7 16h6"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h10M7 16h6"></path>
                                             </svg>
                                             <span class="text-gray-700 dark:text-gray-300">
                                                 Ongoing technical support & priority assistance
@@ -806,7 +614,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section> 
@@ -825,22 +632,17 @@
         </svg>
         </button>
     </div>
-
     <!-- Promotional Modal -->
     <div x-data="{
         open: false,
-
         openModal() {
             if (localStorage.getItem(window.location.host+'_show-promotional-modal-1-1.0') === 'false') {
                 return;
             }
-
             this.open = true;
         },
-
         closeModal() {
             localStorage.setItem(window.location.host+'_show-promotional-modal-1-1.0', false);
-
             this.open = false;
         }
     }"
@@ -868,10 +670,8 @@
                 "
                 aria-hidden="true">
             </div>
-
             <!-- This element is to trick the browser into centering the modal contents. -->
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-
             <div x-show="open"
                  x-transition:enter="ease-out duration-700"
                  x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
@@ -888,7 +688,6 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
-
                     <div>
                         <!-- Promotional Slider -->
                         <div class="p-1 bg-white/50 dark:bg-gray-800 rounded-2xl shadow-xl"
@@ -942,129 +741,10 @@
         'alt': 'Digital Marketing Strategy course promo image classroom or laptop setup',
         'description': 'Learn digital marketing strategy with hands-on projects, real-world examples, and industry best practices.'
     }
-],
-                            books: [
-    {
-        'id': 1,
-        'title': 'JavaScript: The Complete Guide',
-        'category': 'programming',
-        'price': '29.99',
-        'rating': '4.9',
-        'author': 'Robert Miller',
-        'publisher': 'LearnBe Press',
-        'image': './../assets\/images\/books\/books-1_pexels-photo-7583440.jpeg',
-        'alt': 'Cover of JavaScript: The Complete Guide on a desk with notebooks',
-        'description': 'A practical guide to javascript: the complete guide with examples and exercises.'
-    },
-    {
-        'id': 2,
-        'title': 'Python for Data Science',
-        'category': 'programming',
-        'price': '34.99',
-        'rating': '4.7',
-        'author': 'Dr. Jane Wilson',
-        'publisher': 'LearnBe Press',
-        'image': './../assets\/images\/books\/books-2_pexels-photo-6476260.jpeg',
-        'alt': 'Cover of Python for Data Science on a desk with notebooks',
-        'description': 'A practical guide to python for data science with examples and exercises.'
-    },
-    {
-        'id': 3,
-        'title': 'Design Thinking Handbook',
-        'category': 'design',
-        'price': '24.99',
-        'rating': '4.8',
-        'author': 'Alex Thompson',
-        'publisher': 'LearnBe Press',
-        'image': './../assets\/images\/books\/books-3_pexels-photo-5428830.jpeg',
-        'alt': 'Cover of Design Thinking Handbook on a desk with notebooks',
-        'description': 'A practical guide to design thinking handbook with examples and exercises.'
-    },
-    {
-        'id': 4,
-        'title': 'Digital Marketing Mastery',
-        'category': 'marketing',
-        'price': '39.99',
-        'rating': '4.6',
-        'author': 'Marketing Experts',
-        'publisher': 'LearnBe Press',
-        'image': './../assets\/images\/books\/books-4_pexels-photo-6476577.jpeg',
-        'alt': 'Cover of Digital Marketing Mastery on a desk with notebooks',
-        'description': 'A practical guide to digital marketing mastery with examples and exercises.'
-    }
-],
-                            events: [
-    {
-        'id': 1,
-        'title': 'Advanced Web Development Workshop',
-        'category': 'technology',
-        'type': 'workshop',
-        'price': '75',
-        'rating': '4.9',
-        'speaker': 'Sarah Chen',
-        'attendees': '35\/45',
-        'date': '2025-09-15',
-        'time': '10:00 AM',
-        'location': 'Tech Hub Downtown',
-        'image': './../assets\/images\/events\/events-1_pexels-photo-7234403.jpeg',
-        'alt': 'Event photo of Advanced Web Development Workshop with audience and speaker',
-        'description': 'Join our advanced web development workshop to gain practical skills and network with professionals.'
-    },
-    {
-        'id': 2,
-        'title': 'Digital Marketing Trends 2025',
-        'category': 'marketing',
-        'type': 'seminar',
-        'price': '0',
-        'rating': '4.7',
-        'speaker': 'Marcus Rodriguez',
-        'attendees': '40\/50',
-        'date': '2025-09-18',
-        'time': '10:00 AM',
-        'location': 'Business Center',
-        'image': './../assets\/images\/events\/events-2_pexels-photo-8190814.jpeg',
-        'alt': 'Event photo of Digital Marketing Trends 2025 with audience and speaker',
-        'description': 'Join our digital marketing trends 2025 to gain practical skills and network with professionals.'
-    },
-    {
-        'id': 3,
-        'title': 'AI & Machine Learning Conference',
-        'category': 'technology',
-        'type': 'conference',
-        'price': '199',
-        'rating': '4.8',
-        'speaker': 'Dr. Emily Watson',
-        'attendees': '45\/55',
-        'date': '2025-09-22',
-        'time': '10:00 AM',
-        'location': 'Convention Center',
-        'image': './../assets\/images\/events\/events-3_pexels-photo-6476783.jpeg',
-        'alt': 'Event photo of AI & Machine Learning Conference with audience and speaker',
-        'description': 'Join our ai & machine learning conference to gain practical skills and network with professionals.'
-    },
-    {
-        'id': 4,
-        'title': 'UX\/UI Design Masterclass',
-        'category': 'design',
-        'type': 'workshop',
-        'price': '120',
-        'rating': '4.6',
-        'speaker': 'Alex Thompson',
-        'attendees': '50\/60',
-        'date': '2025-09-25',
-        'time': '10:00 AM',
-        'location': 'Design Studio',
-        'image': './../assets\/images\/events\/events-4_pexels-photo-7942526.jpeg',
-        'alt': 'Event photo of UX\/UI Design Masterclass with audience and speaker',
-        'description': 'Join our ux\/ui design masterclass to gain practical skills and network with professionals.'
-    }
-]
-                        }">
+]}">
                             <div class="swiper main-swiper relative"
                                  data-swiper="{
-                                loop: true,
-                                speed: 1000,
-                                slidesPerView: 1,
+                                loop: true,                                speed: 1000,                                slidesPerView: 1,
                                 spaceBetween: 20,
                                 autoplay: {
                                     delay: 5000,
@@ -1101,7 +781,6 @@
                                                                 <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">
                                                                     <!-- Skeleton overlay -->
                                                                     <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                                                     <!-- Skeleton shimmer -->
                                                                     <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
                                                                     <img data-src=""
@@ -1115,11 +794,9 @@
                                                                     </noscript>
                                                                 </div>
                                                             </a>
-
                                                             <a href="#">
                                                                 <h3 class="text-sm text-indigo-500 font-semibold truncate" x-text="course.title"></h3>
                                                             </a>
-
                                                             <p class="text-xs text-gray-600 truncate" x-text="'By ' + course.instructor"></p>
                                                         </div>
                                                     </template>
@@ -1127,7 +804,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <!-- Books Slide -->
                                     <div class="swiper-slide">
                                         <div class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 rounded-2xl p-4 lg:p-30 w-full">
@@ -1230,8 +906,8 @@
                     <ul class="space-y-3">
                         <li><a href="../about.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">About</a></li>
                         <li><a href="Services.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Services</a></li>
-                        <li><a href="Tech.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Technologies</a></li>
-                        <li><a href="Contact.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
+                        <li><a href="../Tech.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Technologies</a></li>
+                        <li><a href="../Contact.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Gallery</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Carrier</a></li>
                     </ul>
