@@ -62,186 +62,6 @@
     <!-- Theme Switcher JS -->
     <script src="/SwarInfotech/assets/js/theme-switcher.js"></script>
     <!-- Completely Unique Custom CSS for hero slider -->
-    <style>
-        /* New cosmic pulse animation */
-        @keyframes cosmic-pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
-            }
-
-            70% {
-                box-shadow: 0 0 0 15px rgba(102, 126, 234, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
-            }
-        }
-
-        /* New floating particles animation */
-        @keyframes float-particles {
-            0% {
-                transform: translateY(0) translateX(0) rotate(0deg);
-            }
-
-            25% {
-                transform: translateY(-20px) translateX(10px) rotate(90deg);
-            }
-
-            50% {
-                transform: translateY(-40px) translateX(0) rotate(180deg);
-            }
-
-            75% {
-                transform: translateY(-20px) translateX(-10px) rotate(270deg);
-            }
-
-            100% {
-                transform: translateY(0) translateX(0) rotate(360deg);
-            }
-        }
-
-        @keyframes wave-morph {
-            0% {
-                border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-                transform: rotate(0deg);
-            }
-
-            33% {
-                border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
-                transform: rotate(120deg);
-            }
-
-            66% {
-                border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-                transform: rotate(240deg);
-            }
-
-            100% {
-                border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-                transform: rotate(360deg);
-            }
-        }
-        /* New slide transitions with 3D effect */
-        @keyframes slide-3d-in {
-            from {
-                opacity: 0;
-                transform: perspective(1000px) rotateY(20deg) translateY(50px) scale(0.9);
-            }
-
-            to {
-                opacity: 1;
-                transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
-            }
-        }
-
-        @keyframes slide-3d-out {
-            from {
-                opacity: 1;
-                transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
-            }
-
-            to {
-                opacity: 0;
-                transform: perspective(1000px) rotateY(-20deg) translateY(-50px) scale(0.9);
-            }
-        }
-
-        .cosmic-gradient-1 {
-            background: linear-gradient(125deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-        }
-
-        .cosmic-gradient-2 {
-            background: linear-gradient(125deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
-        }
-
-        .cosmic-gradient-3 {
-            background: linear-gradient(125deg, var(--color-success) 0%, var(--color-success-dark) 100%);
-        }
-        /* New cosmic elements */
-        .cosmic-pulse {
-            animation: cosmic-pulse 3s infinite;
-        }
-
-        .float-particles {
-            animation: float-particles 8s infinite ease-in-out;
-        }
-
-        .wave-morph {
-            border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-            animation: wave-morph 12s infinite ease-in-out;
-        }
-
-        .slide-3d-in {
-            animation: slide-3d-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-        }
-        /* New swiper styling */
-        .cosmic-hero-swiper .swiper-pagination-bullet {
-            background: rgba(255, 255, 255, 0.3) !important;
-            width: 16px !important;
-            height: 16px !important;
-            border-radius: 50% !important;
-            opacity: 0.5 !important;
-            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-
-        .cosmic-hero-swiper .swiper-pagination-bullet-active {
-            background: white !important;
-            opacity: 1 !important;
-            transform: scale(1.4);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
-        }
-
-        .cosmic-hero-swiper .swiper-button-next,
-        .cosmic-hero-swiper .swiper-button-prev {
-            color: white !important;
-            background: rgba(255, 255, 255, 0.15) !important;
-            backdrop-filter: blur(10px);
-            border-radius: 50% !important;
-            width: 40px !important;
-            height: 40px !important;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            top: calc(50vh - var(--spacing) * 18);
-        }
-
-            .cosmic-hero-swiper .swiper-button-next:hover,
-            .cosmic-hero-swiper .swiper-button-prev:hover {
-                background: rgba(255, 255, 255, 0.3) !important;
-                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-            }
-
-            .cosmic-hero-swiper .swiper-button-next::after,
-            .cosmic-hero-swiper .swiper-button-prev::after {
-                font-size: 16px !important;
-                font-weight: bold !important;
-            }
-        /* New slide content animation */
-        .cosmic-slide-content {
-            opacity: 0;
-            transform: perspective(1000px) rotateY(10deg) translateY(30px);
-            transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .swiper-slide-active .cosmic-slide-content {
-            opacity: 1;
-            transform: perspective(1000px) rotateY(0) translateY(0);
-        }
-        /* New floating elements */
-        .floating-element-1 {
-            animation: float-particles 6s infinite ease-in-out;
-        }
-
-        .floating-element-2 {
-            animation: float-particles 8s infinite ease-in-out;
-            animation-delay: 1s;
-        }
-
-        .floating-element-3 {
-            animation: float-particles 10s infinite ease-in-out;
-            animation-delay: 2s;
-        }
-    </style>
 </head>
 
 <body class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 transition-all duration-300 ease-in-out min-h-screen"
@@ -277,7 +97,6 @@
                     </button>
                 </div>
             </div>
-
             <div class="hidden lg:flex items-center justify-between h-20"
                  x-bind:class="{'navbar-menu-mobile bg-white dark:bg-gray-800 !block fixed inset-0 z-[60] h-screen overflow-y-auto': mobileMenuOpen}">
                 <!-- Logo -->
@@ -603,13 +422,10 @@
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="text-center p-6 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 hover:shadow-lg dark:hover:shadow-gray-700/25 transition-shadow card card-1">
-                        <!--<div class="flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900/30
-    rounded-full mb-4 mx-auto transform hover:scale-110 transition duration-300 ease-in-out">-->
                         <div class="flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-xl mb-4 mx-auto icon6">
                             <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 18l6-6-6-6M8 6l-6 6 6 6M14 4l-4 16" />
                             </svg>
-
                         </div>
                         <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3"> Website Development</h3>
                         <p class="text-gray-600 dark:text-gray-300"> We build fast, secure, and scalable websites using modern technologies to ensure smooth performance across all devices.</p>
@@ -698,18 +514,7 @@
                         <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Hosting and Bulk SMS</h3>
                         <p class="text-gray-600 dark:text-gray-300">We offers reliable web hosting and instant bulk SMS solutions to power your business online and keep your customers connected.</p>
                         <div class="progress"></div>
-                    </div>                  
-                    <!--<template x-for="benefit in benefits" :key="benefit.id">
-                        <div class="text-center p-6 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800 hover:shadow-lg dark:hover:shadow-gray-700/25 transition-shadow">
-                            <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                                 :class="benefit.bgColor">
-                                <i :class="benefit.icon + ' text-2xl'" :class="benefit.iconColor"></i>
-                            </div>
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3" x-text="benefit.title"></h3>
-                            <p class="text-gray-600 dark:text-gray-300" x-text="benefit.description"></p>
-                            <div class="progress"></div>
-                        </div>
-                    </template>-->
+                    </div>
                 </div>
                     </div>
                </section>
@@ -735,8 +540,8 @@
                                 <li class="flex items-start">
                                     <div class="w-6 h-6 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mt-0.5 mr-3 flex-shrink-0" style="background-color: oklch(0.72 0.18 305.53 / 0.75);">
                                         <svg class="w-3 h-3 text-white-600 dark:text-white-400" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-  </svg>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                        </svg>
                                     </div>
                                     <div class="text-gray-700 dark:text-gray-300" x-text="service.text"></div>
                                 </li>
@@ -753,8 +558,8 @@
                                 <li class="flex items-start">
                                     <div class="w-6 h-6 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mt-0.5 mr-3 flex-shrink-0" style="background-color: oklch(0.72 0.18 305.53 / 0.75);" >
                                         <svg class="w-3 h-3 text-white-600 dark:text-white-400" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
-  </svg>
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                         </svg>
                                     </div>
                                     <span class="text-gray-700 dark:text-gray-300" x-text="point.text"></span>
                                 </li>
@@ -775,7 +580,6 @@
                         A structured and transparent approach to deliver reliable IT solutions
                     </p>
                 </div>
-
                 <div class="grid md:grid-cols-4 gap-8">
                     <!-- Step 1 -->
                     <div class="text-center">
@@ -792,14 +596,12 @@
                             We understand your business goals, technical needs, and project scope.
                         </p>
                     </div>
-
                     <!-- Step 2 -->
                     <div class="text-center">
                         <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
                             <!-- Planning & Design Icon -->
                             <svg class="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      d="M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
                             </svg>
                         </div>
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
@@ -857,7 +659,6 @@
             </svg>
         </button>
     </div>
-
     <!-- Footer -->
     <footer class="bg-gray-900 dark:bg-gray-950 text-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
@@ -868,7 +669,7 @@
                         <img src="../assets/images/Custom/logo.png" style="height: 75px;" />
                     </div>
                     <p class="text-gray-400 dark:text-gray-300 mb-6 leading-relaxed">
-                        At Swarinfotech, we deliver cutting-edge Web Development, Mobile App solutions, and SEO services to help businesses grow, engage users, and succeed in the digital world.
+                        At Swarinfotech, we deliver cutting-edge Web Development, Mobile App solutions and SEO services to help businesses grow, engage users, and succeed in the digital world.
                     </p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer p-2 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-700">
