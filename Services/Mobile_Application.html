@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best IT Services | Website & Mobile App Development - Swarinfotech</title>
     <meta name="description" content="We don’t just adapt to change—we create it ,IT,Software,Website,Mobile App">
@@ -60,182 +60,6 @@
     <script src="/SwarInfotech/assets/js/main.js"></script>
     <!-- Theme Switcher JS -->
     <script src="/SwarInfotech/assets/js/theme-switcher.js"></script>
-    <!-- Completely Unique Custom CSS for hero slider -->
-    <style>
-        /* New cosmic pulse animation */
-        @keyframes cosmic-pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
-            }
-
-            70% {
-                box-shadow: 0 0 0 15px rgba(102, 126, 234, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
-            }
-        }
-
-        /* New floating particles animation */
-        @keyframes float-particles {
-            0% {
-                transform: translateY(0) translateX(0) rotate(0deg);
-            }
-
-            25% {
-                transform: translateY(-20px) translateX(10px) rotate(90deg);
-            }
-
-            50% {
-                transform: translateY(-40px) translateX(0) rotate(180deg);
-            }
-
-            75% {
-                transform: translateY(-20px) translateX(-10px) rotate(270deg);
-            }
-
-            100% {
-                transform: translateY(0) translateX(0) rotate(360deg);
-            }
-        }
-
-        /* New wave morphing effect */
-        @keyframes wave-morph {
-            0% {
-                border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-                transform: rotate(0deg);
-            }
-
-            33% {
-                border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
-                transform: rotate(120deg);
-            }
-
-            66% {
-                border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-                transform: rotate(240deg);
-            }
-            100% {
-                border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-                transform: rotate(360deg);
-            }
-        }
-        /* New slide transitions with 3D effect */
-        @keyframes slide-3d-in {
-            from {
-                opacity: 0;
-                transform: perspective(1000px) rotateY(20deg) translateY(50px) scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
-            }
-        }
-
-        @keyframes slide-3d-out {
-            from {
-                opacity: 1;
-                transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
-            }
-
-            to {
-                opacity: 0;
-                transform: perspective(1000px) rotateY(-20deg) translateY(-50px) scale(0.9);
-            }
-        }
-        /* New gradient overlays */
-        .cosmic-gradient-1 {
-            background: linear-gradient(125deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-        }
-
-        .cosmic-gradient-2 {
-            background: linear-gradient(125deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
-        }
-
-        .cosmic-gradient-3 {
-            background: linear-gradient(125deg, var(--color-success) 0%, var(--color-success-dark) 100%);
-        }
-        /* New cosmic elements */
-        .cosmic-pulse {
-            animation: cosmic-pulse 3s infinite;
-        }
-
-        .float-particles {
-            animation: float-particles 8s infinite ease-in-out;
-        }
-
-        .wave-morph {
-            border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-            animation: wave-morph 12s infinite ease-in-out;
-        }
-
-        .slide-3d-in {
-            animation: slide-3d-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-        }
-        /* New swiper styling */
-        .cosmic-hero-swiper .swiper-pagination-bullet {
-            background: rgba(255, 255, 255, 0.3) !important;
-            width: 16px !important;
-            height: 16px !important;
-            border-radius: 50% !important;
-            opacity: 0.5 !important;
-            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-        .cosmic-hero-swiper .swiper-pagination-bullet-active {
-            background: white !important;
-            opacity: 1 !important;
-            transform: scale(1.4);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
-        }
-
-        .cosmic-hero-swiper .swiper-button-next,
-        .cosmic-hero-swiper .swiper-button-prev {
-            color: white !important;
-            background: rgba(255, 255, 255, 0.15) !important;
-            backdrop-filter: blur(10px);
-            border-radius: 50% !important;
-            width: 40px !important;
-            height: 40px !important;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            top: calc(50vh - var(--spacing) * 18);
-        }
-            .cosmic-hero-swiper .swiper-button-next:hover,
-            .cosmic-hero-swiper .swiper-button-prev:hover {
-                background: rgba(255, 255, 255, 0.3) !important;
-                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-            }
-        .cosmic-hero-swiper .swiper-button-next::after,
-            .cosmic-hero-swiper .swiper-button-prev::after {
-                font-size: 16px !important;
-                font-weight: bold !important;
-            }
-        /* New slide content animation */
-        .cosmic-slide-content {
-            opacity: 0;
-            transform: perspective(1000px) rotateY(10deg) translateY(30px);
-            transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .swiper-slide-active .cosmic-slide-content {
-            opacity: 1;
-            transform: perspective(1000px) rotateY(0) translateY(0);
-        }
-        /* New floating elements */
-        .floating-element-1 {
-            animation: float-particles 6s infinite ease-in-out;
-        }
-        .floating-element-2 {
-            animation: float-particles 8s infinite ease-in-out;
-            animation-delay: 1s;
-        }
-        .floating-element-3 
-         {
-            animation: float-particles 10s infinite ease-in-out;
-            animation-delay: 2s;
-        }
-    </style>
 </head>
 <body class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 transition-all duration-300 ease-in-out min-h-screen"
       data-motion-enabled="true">
@@ -298,7 +122,6 @@
                             </button>
                         </div>
                     </div>
-
                     <ul class="flex items-center space-x-1" x-bind:class="{'flex-col !items-start': mobileMenuOpen}">
                         <li class="w-full">
                             <a href="../index.html"
@@ -608,17 +431,11 @@
                         <p class="text-xl text-gray-600 dark:text-gray-300 mb-6">
                             Learn industry-ready mobile app development with Flutter or React Native. Build powerful, real-world Android & iOS apps and get job-ready as a professional mobile app
                         </p>
-
                         <div class="mb-8">
                             <div class="lazyload-container relative overflow-hidden w-full h-64 md:h-96 object-cover rounded-xl">
-                                <!-- Skeleton overlay -->
                                 <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-                                <!-- Skeleton shimmer -->
                                 <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-                                <!-- Lazy image -->
-                                <img data-src="../assets//images/Custom/s_mobile.jpg"
-                                     alt="Mobile Application"
-                                     class="w-full h-64 md:h-96 object-cover rounded-xl lazyload"
+                                <img data-src="../assets//images/Custom/s_mobile.jpg" alt="Mobile Application" class="w-full h-64 md:h-96 object-cover rounded-xl lazyload"
                                      class="w-full h-64 md:h-96 object-cover rounded-xl">
                                 <!-- SEO fallback for non-JS / crawlers -->
                                 <noscript>
@@ -856,10 +673,8 @@
                 "
                 aria-hidden="true">
             </div>
-
             <!-- This element is to trick the browser into centering the modal contents. -->
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-
             <div x-show="open"
                  x-transition:enter="ease-out duration-700"
                  x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
@@ -1089,14 +904,12 @@
                                                                 <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">
                                                                     <!-- Skeleton overlay -->
                                                                     <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                                                     <!-- Skeleton shimmer -->
                                                                     <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
                                                                     <img data-src=""
                                                                          :data-src="course.image" alt="Image"
                                                                          class="w-full h-24 object-cover rounded-lg mb-2 lazyload"
                                                                          :src="course.image" :alt="course.title" class="w-full h-24 object-cover rounded-lg mb-2">
-
                                                                     <!-- SEO fallback for non-JS / crawlers -->
                                                                     <noscript>
                                                                         <img src="#" loading="lazy" alt="Image" :src="course.image" :alt="course.title" class="w-full h-24 object-cover rounded-lg mb-2">
@@ -1107,7 +920,6 @@
                                                             <a href="#">
                                                                 <h3 class="text-sm text-indigo-500 font-semibold truncate" x-text="course.title"></h3>
                                                             </a>
-
                                                             <p class="text-xs text-gray-600 truncate" x-text="'By ' + course.instructor"></p>
                                                         </div>
                                                     </template>
@@ -1220,8 +1032,8 @@
                     <ul class="space-y-3">
                         <li><a href="../about.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">About</a></li>
                         <li><a href="Servces.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Services</a></li>
-                        <li><a href="../ech.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Technologies</a></li>
-                        <li><a href="..Contact.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
+                        <li><a href="../Tech.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Technologies</a></li>
+                        <li><a href="../Contact.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Gallery</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Carrier</a></li>
                     </ul>
