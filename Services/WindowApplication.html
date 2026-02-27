@@ -60,187 +60,7 @@
     <script src="/SwarInfotech/assets/js/main.js"></script>
     <!-- Theme Switcher JS -->
     <script src="/SwarInfotech/assets/js/theme-switcher.js"></script>
-    <!-- Completely Unique Custom CSS for hero slider -->
-    <style>
-        /* New cosmic pulse animation */
-        @keyframes cosmic-pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
-            }
-
-            70% {
-                box-shadow: 0 0 0 15px rgba(102, 126, 234, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0);
-            }
-        }
-
-        /* New floating particles animation */
-        @keyframes float-particles {
-            0% {
-                transform: translateY(0) translateX(0) rotate(0deg);
-            }
-
-            25% {
-                transform: translateY(-20px) translateX(10px) rotate(90deg);
-            }
-
-            50% {
-                transform: translateY(-40px) translateX(0) rotate(180deg);
-            }
-
-            75% {
-                transform: translateY(-20px) translateX(-10px) rotate(270deg);
-            }
-
-            100% {
-                transform: translateY(0) translateX(0) rotate(360deg);
-            }
-        }
-
-        /* New wave morphing effect */
-        @keyframes wave-morph {
-            0% {
-                border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-                transform: rotate(0deg);
-            }
-
-            33% {
-                border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
-                transform: rotate(120deg);
-            }
-
-            66% {
-                border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-                transform: rotate(240deg);
-            }
-            100% {
-                border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-                transform: rotate(360deg);
-            }
-        }
-
-        /* New slide transitions with 3D effect */
-        @keyframes slide-3d-in {
-            from {
-                opacity: 0;
-                transform: perspective(1000px) rotateY(20deg) translateY(50px) scale(0.9);
-            }
-
-            to {
-                opacity: 1;
-                transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
-            }
-        }
-
-        @keyframes slide-3d-out {
-            from {
-                opacity: 1;
-                transform: perspective(1000px) rotateY(0) translateY(0) scale(1);
-            }
-
-            to {
-                opacity: 0;
-                transform: perspective(1000px) rotateY(-20deg) translateY(-50px) scale(0.9);
-            }
-        }
-        /* New gradient overlays */
-        .cosmic-gradient-1 {
-            background: linear-gradient(125deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-        }
-
-        .cosmic-gradient-2 {
-            background: linear-gradient(125deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
-        }
-
-        .cosmic-gradient-3 {
-            background: linear-gradient(125deg, var(--color-success) 0%, var(--color-success-dark) 100%);
-        }
-        /* New cosmic elements */
-        .cosmic-pulse {
-            animation: cosmic-pulse 3s infinite;
-        }
-
-        .float-particles {
-            animation: float-particles 8s infinite ease-in-out;
-        }
-
-        .wave-morph {
-            border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-            animation: wave-morph 12s infinite ease-in-out;
-        }
-
-        .slide-3d-in {
-            animation: slide-3d-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-        }
-        /* New swiper styling */
-        .cosmic-hero-swiper .swiper-pagination-bullet {
-            background: rgba(255, 255, 255, 0.3) !important;
-            width: 16px !important;
-            height: 16px !important;
-            border-radius: 50% !important;
-            opacity: 0.5 !important;
-            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-        .cosmic-hero-swiper .swiper-pagination-bullet-active {
-            background: white !important;
-            opacity: 1 !important;
-            transform: scale(1.4);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
-        }
-
-        .cosmic-hero-swiper .swiper-button-next,
-        .cosmic-hero-swiper .swiper-button-prev {
-            color: white !important;
-            background: rgba(255, 255, 255, 0.15) !important;
-            backdrop-filter: blur(10px);
-            border-radius: 50% !important;
-            width: 40px !important;
-            height: 40px !important;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            top: calc(50vh - var(--spacing) * 18);
-        }
-            .cosmic-hero-swiper .swiper-button-next:hover,
-            .cosmic-hero-swiper .swiper-button-prev:hover {
-                background: rgba(255, 255, 255, 0.3) !important;
-                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-            }
-
-            .cosmic-hero-swiper .swiper-button-next::after,
-            .cosmic-hero-swiper .swiper-button-prev::after {
-                font-size: 16px !important;
-                font-weight: bold !important;
-            }
-        /* New slide content animation */
-        .cosmic-slide-content {
-            opacity: 0;
-            transform: perspective(1000px) rotateY(10deg) translateY(30px);
-            transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .swiper-slide-active .cosmic-slide-content {
-            opacity: 1;
-            transform: perspective(1000px) rotateY(0) translateY(0);
-        }
-        .floating-element-1 
-         {
-            animation: float-particles 6s infinite ease-in-out;
-        }
-        .floating-element-2 {
-            animation: float-particles 8s infinite ease-in-out;
-            animation-delay: 1s;
-        }
-        .floating-element-3 
-         {
-            animation: float-particles 10s infinite ease-in-out;
-            animation-delay: 2s;
-        }
-    </style>
 </head>
-
 <body class="bg-gradient-to-br from-indigo-100 via-white to-purple-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 transition-all duration-300 ease-in-out min-h-screen"
       data-motion-enabled="true">
     <!-- Preloader -->
@@ -274,7 +94,6 @@
                     </button>
                 </div>
             </div>
-
             <div class="hidden lg:flex items-center justify-between h-20"
                  x-bind:class="{'navbar-menu-mobile bg-white dark:bg-gray-800 !block fixed inset-0 z-[60] h-screen overflow-y-auto': mobileMenuOpen}">
                 <!-- Logo -->
@@ -369,7 +188,6 @@
                 </div>
             </div>
         </nav>
-
         <!-- Mega Menu Items -->
         <div x-show="megaMenuOpen"
              x-transition:enter="transition ease-out duration-500"
@@ -478,8 +296,7 @@
                                         <div class="flex items-center space-x-3">
                                             <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
                                                 <svg class="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                          d="M3 5h8v6H3V5zm10 0h8v6h-8V5zM3 13h8v6H3v-6zm10 0h8v6h-8v-6z" />
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h8v6H3V5zm10 0h8v6h-8V5zM3 13h8v6H3v-6zm10 0h8v6h-8v-6z" />
                                                 </svg>
                                             </div>
                                             <div>
@@ -614,8 +431,7 @@
                             <div class="lazyload-container relative overflow-hidden w-full h-64 md:h-96 object-cover rounded-xl">
                                 <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
                                 <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
-                                <img data-src="../assets/images/Custom/Web.png" alt="Web Development Course"
-                                     class="w-full h-64 md:h-96 object-cover rounded-xl lazyload"
+                                <img data-src="../assets/images/Custom/Web.png" alt="Web Development Course" class="w-full h-64 md:h-96 object-cover rounded-xl lazyload"
                                      class="w-full h-64 md:h-96 object-cover rounded-xl">
                                 <noscript>
                                     <img src="../assets/images/custom/Web.png" loading="lazy" alt="Web Development Course" class="w-full h-64 md:h-96 object-cover rounded-xl">
@@ -629,13 +445,12 @@
                             </h2>
                             <div class="prose max-w-none">
                                 <p class="text-gray-600 dark:text-gray-300 mb-4">
-                                    We provide end-to-end Windows application development services tailored to your business needs.From requirement analysis and UI/UX design to development, testing, and deployment,
-                                    we build secure, reliable, and high-performance desktop applications.
+                                    We provide end-to-end Windows application development services tailored to your business needs.From requirement analysis and UI/UX design to development, testing and deployment
+                                    we build secure, reliable and high-performance desktop applications.
                                 </p>
                                 <p class="text-gray-600 dark:text-gray-300 mb-4">
-                                    Our expertise includes Windows app development using C#, .NET, WinForms, WPF, and .NET MAUI,
-                                    along with database integration, APIs, and system-level functionality.
-                                    We create scalable, efficient, and user-friendly applications for long-term use.
+                                    Our expertise includes Windows app development using C#, .NET, WinForms, WPF and .NET MAUI
+                                    along with database integration, APIs and system-level functionality. We create scalable, efficient and user-friendly applications for long-term use.
                                 </p>
                                 <p class="text-gray-600 dark:text-gray-300">
                                     Whether you need a business desktop application, enterprise software,inventory or billing system, or a custom Windows solution,
@@ -735,7 +550,6 @@
                                         Request Software Quote
                                     </a>
                                 </div>
-
                                 <div class="text-center text-sm text-gray-600 dark:text-gray-300 mb-6">
                                     100% Satisfaction Guarantee | Fast Delivery | Expert Windows Developers
                                 </div>
@@ -746,23 +560,19 @@
                                     <ul class="space-y-3 text-sm">
                                         <li class="flex items-center">
                                             <svg class="h-4 w-4 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                             </svg>
                                             <span class="text-gray-700 dark:text-gray-300">
                                                 Custom Windows desktop application development
                                             </span>
                                         </li>
-
                                         <li class="flex items-center">
                                             <svg class="h-4 w-4 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                                             </svg>
-                                            <span class="text-gray-700 dark:text-gray-300">
-                                                WinForms, WPF & .NET MAUI solutions
+                                            <span class="text-gray-700 dark:text-gray-300"> WinForms, WPF & .NET MAUI solutions
                                             </span>
                                         </li>
-
                                         <li class="flex items-center">
                                             <svg class="h-4 w-4 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -771,7 +581,6 @@
                                                 Database integration & enterprise connectivity
                                             </span>
                                         </li>
-
                                         <li class="flex items-center">
                                             <svg class="h-4 w-4 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
@@ -805,7 +614,6 @@
             </div>
         </section> 
     </main>
-
     <!-- Go to Top Button -->
     <div x-data="{ show: false }" x-init="window.addEventListener('scroll', () => { show = window.scrollY > 300 })"
          x-show="show" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4"
@@ -820,7 +628,6 @@
         </svg>
         </button>
     </div>
-
     <!-- Promotional Modal -->
     <div x-data="{
         open: false,
@@ -859,7 +666,6 @@
                 "
                 aria-hidden="true">
             </div>
-
             <!-- This element is to trick the browser into centering the modal contents. -->
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
             <div x-show="open"
@@ -930,124 +736,7 @@
         'alt': 'Digital Marketing Strategy course promo image classroom or laptop setup',
         'description': 'Learn digital marketing strategy with hands-on projects, real-world examples, and industry best practices.'
     }
-],
-                            books: [
-    {
-        'id': 1,
-        'title': 'JavaScript: The Complete Guide',
-        'category': 'programming',
-        'price': '29.99',
-        'rating': '4.9',
-        'author': 'Robert Miller',
-        'publisher': 'LearnBe Press',
-        'image': './../assets\/images\/books\/books-1_pexels-photo-7583440.jpeg',
-        'alt': 'Cover of JavaScript: The Complete Guide on a desk with notebooks',
-        'description': 'A practical guide to javascript: the complete guide with examples and exercises.'
-    },
-    {
-        'id': 2,
-        'title': 'Python for Data Science',
-        'category': 'programming',
-        'price': '34.99',
-        'rating': '4.7',
-        'author': 'Dr. Jane Wilson',
-        'publisher': 'LearnBe Press',
-        'image': './../assets\/images\/books\/books-2_pexels-photo-6476260.jpeg',
-        'alt': 'Cover of Python for Data Science on a desk with notebooks',
-        'description': 'A practical guide to python for data science with examples and exercises.'
-    },
-    {
-        'id': 3,
-        'title': 'Design Thinking Handbook',
-        'category': 'design',
-        'price': '24.99',
-        'rating': '4.8',
-        'author': 'Alex Thompson',
-        'publisher': 'LearnBe Press',
-        'image': './../assets\/images\/books\/books-3_pexels-photo-5428830.jpeg',
-        'alt': 'Cover of Design Thinking Handbook on a desk with notebooks',
-        'description': 'A practical guide to design thinking handbook with examples and exercises.'
-    },
-    {
-        'id': 4,
-        'title': 'Digital Marketing Mastery',
-        'category': 'marketing',
-        'price': '39.99',
-        'rating': '4.6',
-        'author': 'Marketing Experts',
-        'publisher': 'LearnBe Press',
-        'image': './../assets\/images\/books\/books-4_pexels-photo-6476577.jpeg',
-        'alt': 'Cover of Digital Marketing Mastery on a desk with notebooks',
-        'description': 'A practical guide to digital marketing mastery with examples and exercises.'
-    }
-],
-                            events: [
-    {
-        'id': 1,
-        'title': 'Advanced Web Development Workshop',
-        'category': 'technology',
-        'type': 'workshop',
-        'price': '75',
-        'rating': '4.9',
-        'speaker': 'Sarah Chen',
-        'attendees': '35\/45',
-        'date': '2025-09-15',
-        'time': '10:00 AM',
-        'location': 'Tech Hub Downtown',
-        'image': './../assets\/images\/events\/events-1_pexels-photo-7234403.jpeg',
-        'alt': 'Event photo of Advanced Web Development Workshop with audience and speaker',
-        'description': 'Join our advanced web development workshop to gain practical skills and network with professionals.'
-    },
-    {
-        'id': 2,
-        'title': 'Digital Marketing Trends 2025',
-        'category': 'marketing',
-        'type': 'seminar',
-        'price': '0',
-        'rating': '4.7',
-        'speaker': 'Marcus Rodriguez',
-        'attendees': '40\/50',
-        'date': '2025-09-18',
-        'time': '10:00 AM',
-        'location': 'Business Center',
-        'image': './../assets\/images\/events\/events-2_pexels-photo-8190814.jpeg',
-        'alt': 'Event photo of Digital Marketing Trends 2025 with audience and speaker',
-        'description': 'Join our digital marketing trends 2025 to gain practical skills and network with professionals.'
-    },
-    {
-        'id': 3,
-        'title': 'AI & Machine Learning Conference',
-        'category': 'technology',
-        'type': 'conference',
-        'price': '199',
-        'rating': '4.8',
-        'speaker': 'Dr. Emily Watson',
-        'attendees': '45\/55',
-        'date': '2025-09-22',
-        'time': '10:00 AM',
-        'location': 'Convention Center',
-        'image': './../assets\/images\/events\/events-3_pexels-photo-6476783.jpeg',
-        'alt': 'Event photo of AI & Machine Learning Conference with audience and speaker',
-        'description': 'Join our ai & machine learning conference to gain practical skills and network with professionals.'
-    },
-    {
-        'id': 4,
-        'title': 'UX\/UI Design Masterclass',
-        'category': 'design',
-        'type': 'workshop',
-        'price': '120',
-        'rating': '4.6',
-        'speaker': 'Alex Thompson',
-        'attendees': '50\/60',
-        'date': '2025-09-25',
-        'time': '10:00 AM',
-        'location': 'Design Studio',
-        'image': './../assets\/images\/events\/events-4_pexels-photo-7942526.jpeg',
-        'alt': 'Event photo of UX\/UI Design Masterclass with audience and speaker',
-        'description': 'Join our ux\/ui design masterclass to gain practical skills and network with professionals.'
-    }
-]
-                        }">
+]}">
                             <div class="swiper main-swiper relative"
                                  data-swiper="{
                                 loop: true,
@@ -1089,14 +778,12 @@
                                                                 <div class="lazyload-container relative overflow-hidden w-full h-24 object-cover rounded-lg mb-2">
                                                                     <!-- Skeleton overlay -->
                                                                     <div class="skeleton absolute inset-0 flex items-center justify-center z-10"></div>
-
                                                                     <!-- Skeleton shimmer -->
                                                                     <div class="absolute inset-0 z-0 skeleton-shimmer"></div>
                                                                     <img data-src=""
                                                                          :data-src="course.image" alt="Image"
                                                                          class="w-full h-24 object-cover rounded-lg mb-2 lazyload"
                                                                          :src="course.image" :alt="course.title" class="w-full h-24 object-cover rounded-lg mb-2">
-
                                                                     <!-- SEO fallback for non-JS / crawlers -->
                                                                     <noscript>
                                                                         <img src="#" loading="lazy" alt="Image" :src="course.image" :alt="course.title" class="w-full h-24 object-cover rounded-lg mb-2">
@@ -1221,7 +908,7 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-6">Support</h3>
                     <ul class="space-y-3">
-                        <li><a href="../contact.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
+                        <li><a href="../Contact.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Contact</a></li>
                         <li><a href="../FAQ.html" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">FAQ</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Help Center</a></li>
                         <li><a href="#" class="text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer hover:underline">Terms of Service</a></li>
