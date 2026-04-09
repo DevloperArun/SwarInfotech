@@ -31,26 +31,25 @@
 (function () {
     let theme = localStorage.getItem('theme');
 
-    // Apply dark class immediately (no flicker)
     if (theme === 'dark') {
         document.documentElement.classList.add('dark');
-        document.body.classList.add('dark');
     }
-
-    // After DOM load → set logo
-    document.addEventListener("DOMContentLoaded", function () {
-        var logoele = document.getElementById("logo");
-
-        if (!logoele) return;
-
-        if (theme === 'dark') {
-            logoele.src = "assets/images/Custom/darklogo.png?v=1";
-        } else {
-            logoele.src = "assets/images/Custom/logo.png?v=1";
-        }
-    });
-
 })();
+</script>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    let theme = localStorage.getItem('theme');
+    var logoele = document.getElementById("logo");
+
+    if (!logoele) return;
+
+    if (theme === 'dark') {
+        logoele.src = "assets/images/Custom/darklogo.png?v=1";
+    } else {
+        logoele.src = "assets/images/Custom/logo.png?v=1";
+    }
+});
 </script>
   
     <link href="/SwarInfotech/assets/css/Custom.css" rel="stylesheet" />
