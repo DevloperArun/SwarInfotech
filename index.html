@@ -29,9 +29,17 @@
     <!-- Immediate dark theme init -->
     <script>
         let theme = localStorage.getItem('theme');
-        if (theme && theme == 'dark') {
+     var logoele= document.getElementById("logo");
+      
+        if (theme && theme == 'dark') 
+        {
             document?.documentElement?.classList?.add('dark');
             document?.body?.classList?.add('dark');
+            logoele.src="assets/images/Custom/darklogo.png";
+        }
+      else 
+        {
+           logoele.src="assets/images/Custom/logo.png";
         }
     </script>
     <link href="/SwarInfotech/assets/css/Custom.css" rel="stylesheet" />
@@ -113,7 +121,7 @@
                  x-bind:class="{'navbar-menu-mobile bg-white dark:bg-gray-800 !block fixed inset-0 z-[60] h-screen overflow-y-auto': mobileMenuOpen}">
                 <!-- Logo -->
                 <div class="hidden lg:block flex-shrink-0">
-                    <a href="index.html" class="flex items-center space-x-3 cursor-pointer hover:scale-105 transition-transform duration-200">
+                    <a href="index.html" class="flex items-center space-x-3 cursor-pointer transition-transform duration-200">
                     <img src="assets/images/Custom/logo.png" />
                 </a>   
                 </div>
@@ -125,7 +133,8 @@
                             <!-- Logo -->
                             <div class="flex-shrink-0">
                                 <a href="index.html" class="flex items-center space-x-3 cursor-pointer  transition-transform duration-200">
-                                      <img src="assets/images/Custom/logo.png"/>
+                                      <img src="assets/images/Custom/logo.png" id="logo" />
+                                  
                                 </a>
                             </div>
                             <!-- Close Button -->
