@@ -29,20 +29,12 @@
     <!-- Immediate dark theme init -->
     <script>
         let theme = localStorage.getItem('theme');
-     var logoele= document.getElementById("logo");
-      
         if (theme && theme == 'dark') 
         {
             document?.documentElement?.classList?.add('dark');
             document?.body?.classList?.add('dark');
-            logoele.src="assets/images/Custom/darklogo.png";
-        }
-      else 
-        {
-           logoele.src="assets/images/Custom/logo.png";
         }
     </script>
-
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     
