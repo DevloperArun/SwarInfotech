@@ -42,6 +42,30 @@
            logoele.src="assets/images/Custom/logo.png";
         }
     </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    
+    let theme = localStorage.getItem('theme');
+    var logoele = document.getElementById("logo");
+
+    if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
+
+        if (logoele) {
+            logoele.src = "assets/images/Custom/darklogo.png";
+        }
+    } 
+    else {
+        if (logoele) {
+            logoele.src = "assets/images/Custom/logo.png";
+        }
+    }
+
+});
+</script>
+  
     <link href="/SwarInfotech/assets/css/Custom.css" rel="stylesheet" />
     <!-- Fonts -->
     <link rel="stylesheet" href="/SwarInfotech/assets/fonts/quicksand/quicksand.css">
